@@ -63,7 +63,7 @@
 /*!
  @brief The raw data format of video data.
  */
-@property (nonatomic, assign) ZoomVideoSDKVideoRawDataFormat format;
+@property (nonatomic, assign) ZoomVideoSDKFrameDataFormat format;
 
 /*!
  @brief The video raw data rotation.

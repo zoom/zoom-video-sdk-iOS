@@ -12,7 +12,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "ZoomVideoSDK-iOS",
-            targets: ["ZoomVideoSDK", "ZoomVideoSDKScreenShare", "zoomcml", "CptShare"]),
+            targets: ["ZoomVideoSDK", "zoomcml", "CptShare"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -24,9 +24,6 @@ let package = Package(
         .binaryTarget(
                     name: "ZoomVideoSDK",
                     path: "ZoomVideoSDK.xcframework"),
-        .binaryTarget(
-                    name: "ZoomVideoSDKScreenShare",
-                    path: "ZoomVideoSDKScreenShare.xcframework"),
         .binaryTarget(
                     name: "zoomcml",
                     path: "zoomcml.xcframework"),

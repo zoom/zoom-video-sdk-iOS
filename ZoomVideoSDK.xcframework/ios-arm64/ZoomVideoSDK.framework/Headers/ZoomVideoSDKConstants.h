@@ -161,7 +161,16 @@ typedef NS_ENUM(NSUInteger, ZoomVideoSDKLiveStreamStatus) {
  */
 typedef NS_ENUM(NSUInteger, ZoomVideoSDKVideoRawDataFormat) {
     ZoomVideoSDKVideoRawDataFormatI420            = 1,
+} DEPRECATED_MSG_ATTRIBUTE("Use ZoomVideoSDKFrameDataFormat instead");
+
+/*!
+ @brief ZoomVideoSDKFrameDataFormat An enumeration of raw data frame format.
+ */
+typedef NS_ENUM(NSUInteger, ZoomVideoSDKFrameDataFormat) {
+    ZoomVideoSDKFrameDataFormat_I420            = 1,
+    ZoomVideoSDKFrameDataFormat_I420_Limit,
 };
+
 
 /*!
  @brief ZoomVideoSDKVideoRawDataRotation The direction of video.
@@ -331,6 +340,36 @@ typedef NS_ENUM(NSUInteger, ZoomVideoSDKVirtualBackgroundDataType)
     ZoomVideoSDKVirtualBackgroundDataType_None,
     ZoomVideoSDKVirtualBackgroundDataType_Image,
     ZoomVideoSDKVirtualBackgroundDataType_Blur,
+};
+
+/**
+ * @brief Enumerations of the type for crc protocol.
+ */
+
+typedef NS_ENUM(NSUInteger, ZoomVideoSDKCRCProtocol) {
+    ///H323
+    ZoomVideoSDKCRCProtocol_H323        = 0,
+    ///SIP
+    ZoomVideoSDKCRCProtocol_SIP,
+};
+
+/**
+ * @brief Enumerations of the type for crc call out status.
+ */
+
+typedef NS_ENUM(NSUInteger, ZoomVideoSDKCRCCallStatus) {
+    ///OK
+    ZoomVideoSDKCRCCallStatus_Success        = 0,
+    ///Ring
+    ZoomVideoSDKCRCCallStatus_Ring,
+    ///Timeout
+    ZoomVideoSDKCRCCallStatus_Timeout,
+    ///Busy
+    ZoomVideoSDKCRCCallStatus_Busy,
+    ///Decline
+    ZoomVideoSDKCRCCallStatus_Decline,
+    ///Failed
+    ZoomVideoSDKCRCCallStatus_Failed,
 };
 
 #endif /* ZoomVideoSDKConstants_h */

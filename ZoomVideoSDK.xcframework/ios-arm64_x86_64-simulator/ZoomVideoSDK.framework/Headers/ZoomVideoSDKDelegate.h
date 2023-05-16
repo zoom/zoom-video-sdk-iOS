@@ -230,14 +230,14 @@
  @brief Callback: when a live transcription message is received.
  @param messageInfo The live transcription message 
  */
-- (void)onLiveTranscriptionMsgReceived:(ZoomVideoSDKLiveTranscriptionMessageInfo *)messageInfo;
+- (void)onLiveTranscriptionMsgReceived:(ZoomVideoSDKLiveTranscriptionMessageInfo *_Nullable)messageInfo;
 
 /**
  @brief Callback: Invoked when a live translation error occurs.
- @param speakingLanguage The spoken message language.
- @param transcriptLanguageId The message language you want to translate.
+ @param spokenLanguage The spoken message language.
+ @param transcriptLanguage The message language you want to translate.
  */
-- (void)onLiveTranscriptionMsgError:(ZoomVideoSDKLiveTranscriptionLanguage *)spokenLanguage transLanguage:(ZoomVideoSDKLiveTranscriptionLanguage *)transcriptLanguage;
+- (void)onLiveTranscriptionMsgError:(ZoomVideoSDKLiveTranscriptionLanguage *_Nullable)spokenLanguage transLanguage:(ZoomVideoSDKLiveTranscriptionLanguage *_Nullable)transcriptLanguage;
 
 /**
  @brief The callback will be triggered if the proxy requests to input the username and password.Use the handler to configure the related information. For more details, see {@link ZMVideoSDKProxySettingHandler}.
@@ -257,7 +257,13 @@
  @param status status video network quality. For more details, See {@link ZoomVideoSDKNetworkStatus}.
  @param user The pointer to the user who speaks the message. For more details, refer to {@link ZoomVideoSDKUser}.
  */
-- (void)onUserVideoNetworkStatusChanged:(ZoomVideoSDKNetworkStatus)status user:(ZoomVideoSDKUser *)user;
+- (void)onUserVideoNetworkStatusChanged:(ZoomVideoSDKNetworkStatus)status user:(ZoomVideoSDKUser *_Nullable)user;
+
+/*!
+ @brief Callback event of the call CRC device's status.
+ @param state The call out status.
+ */
+- (void)onCallCRCDeviceStatusChanged:(ZoomVideoSDKCRCCallStatus)state;
 
 @end
 

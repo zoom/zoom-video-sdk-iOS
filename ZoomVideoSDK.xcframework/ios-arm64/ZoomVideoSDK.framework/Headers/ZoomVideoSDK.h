@@ -24,6 +24,7 @@
 #import "ZoomVideoSDKLiveTranscriptionHelper.h"
 #import "ZoomVideoSDKNetworkConnectionHelper.h"
 #import "ZoomVideoSDKVirtualBackgroundHelper.h"
+#import "ZoomVideoSDKCRCHelper.h"
 
 /*!
  @class ZoomVideoSDKExtendParams
@@ -448,5 +449,11 @@
  @return A [ZoomVideoSDKLiveTranscriptionHelper] instance.
  */
 - (ZoomVideoSDKVirtualBackgroundHelper * _Nonnull)getVirtualBackgroundHelper;
+
+/**
+ @brief Get crc helper object.
+ @return If the function succeeds, the return value is the crc helper object. Otherwise returns nil.
+ */
+- (ZoomVideoSDKCRCHelper * _Nonnull)getCRCHelper;
 
 @end
