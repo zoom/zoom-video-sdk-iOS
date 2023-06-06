@@ -3,11 +3,11 @@
 ## **This repo contains SDK package only, for full packages including the sample app, please visit: https://marketplace.zoom.us to download.**
 
 ## Documentation
-Please visit [Zoom iOS Video SDK](https://marketplace.zoom.us/docs/sdk/video/ios) to learn how to use the SDK and run the sample application.
+Please visit [Zoom iOS Video SDK](https://developers.zoom.us/docs/video-sdk/ios/) to learn how to use the SDK and run the sample application.
 
 ## Changelog
 
-For the changelog, see [Video SDK - iOS](https://marketplace.zoom.us/docs/changelog#labels/video-sdk-i-os).
+For the changelog, see [Video SDK - iOS](https://devsupport.zoom.us/hc/en-us/sections/9481978507149-iOS).
 
 ## Support
 
