@@ -46,6 +46,7 @@ typedef NS_ENUM(NSUInteger,ZoomVideoSDKError)
     Errors_Session_No_Rights,
     Errors_Session_Already_In_Progress,
     Errors_Session_Dont_Support_SessionType,
+    Errors_Session_You_Have_No_Share,
     Errors_Session_Reconncting,
     Errors_Session_Disconncting,
     Errors_Session_Not_Started = 2010,
@@ -198,6 +199,8 @@ typedef NS_ENUM(NSUInteger, ZoomVideoSDKVideoResolution) {
     ZoomVideoSDKVideoResolution_360,
     /// video resolution 720
     ZoomVideoSDKVideoResolution_720,
+    /// auto change
+    ZoomVideoSDKVideoResolution_Auto = 100,
 };
 
 /*!
@@ -284,7 +287,6 @@ typedef NS_ENUM(NSUInteger, ZoomVideoSDKLiveTranscriptionOperationType) {
     ZoomVideoSDKLiveTranscriptionOperationType_Delete,  /// operation  delete
     ZoomVideoSDKLiveTranscriptionOperationType_Complete,/// operation  complete
     ZoomVideoSDKLiveTranscriptionOperationType_NotSupported,/// operation  not support
-    ZoomVideoSDKLiveTranscriptionOperationType_NoTranslation, ///operation  no  translation
 };
 
 typedef NS_ENUM(NSUInteger, ZoomVideoSDKSystemPermissionType) {
@@ -370,6 +372,70 @@ typedef NS_ENUM(NSUInteger, ZoomVideoSDKCRCCallStatus) {
     ZoomVideoSDKCRCCallStatus_Decline,
     ///Failed
     ZoomVideoSDKCRCCallStatus_Failed,
+};
+
+/**
+ * @brief Enumerations of the type for annotation tool type.
+ */
+typedef NS_ENUM(NSUInteger,ZoomVideoSDKAnnotationToolType) {
+    ZoomVideoSDKAnnotationToolType_None = 0,
+    ZoomVideoSDKAnnotationToolType_Pen,
+    ZoomVideoSDKAnnotationToolType_HighLighter,
+    ZoomVideoSDKAnnotationToolType_AutoLine,
+    ZoomVideoSDKAnnotationToolType_AutoRectangle,
+    ZoomVideoSDKAnnotationToolType_AutoEllipse,
+    ZoomVideoSDKAnnotationToolType_AutoArrow,
+    ZoomVideoSDKAnnotationToolType_AutoRectangleFill,
+    ZoomVideoSDKAnnotationToolType_AutoEllipseFill,
+    ZoomVideoSDKAnnotationToolType_SpotLight,
+    ZoomVideoSDKAnnotationToolType_Arrow,
+    ZoomVideoSDKAnnotationToolType_ERASER,
+    ZoomVideoSDKAnnotationToolType_Picker,
+    ZoomVideoSDKAnnotationToolType_AutoRectangleSemiFill,
+    ZoomVideoSDKAnnotationToolType_AutoEllipseSemiFill,
+    ZoomVideoSDKAnnotationToolType_AutoDoubleArrow,
+    ZoomVideoSDKAnnotationToolType_AutoDiamond,
+    ZoomVideoSDKAnnotationToolType_AutoStampArrow,
+    ZoomVideoSDKAnnotationToolType_AutoStampCheck,
+    ZoomVideoSDKAnnotationToolType_AutoStampX,
+    ZoomVideoSDKAnnotationToolType_AutoStampStar,
+    ZoomVideoSDKAnnotationToolType_AutoStampHeart,
+    ZoomVideoSDKAnnotationToolType_AutoStampQm,
+};
+
+/**
+ * @brief Enumerations of the type for annotation clear type.
+ */
+typedef NS_ENUM(NSUInteger,ZoomVideoSDKAnnotationClearType) {
+    ZoomVideoSDKAnnotationClearType_All = 0,
+    ZoomVideoSDKAnnotationClearType_Others,
+    ZoomVideoSDKAnnotationClearType_My,
+};
+
+/**
+ * @brief Enumerations for the video subscribe failed reason.
+ */
+typedef NS_ENUM(NSUInteger, ZoomVideoSDKSubscribeFailReason) {
+    ZoomVideoSDKSubscribeFailReason_None = 0,
+    ZoomVideoSDKSubscribeFailReason_HasSubscribe1080POr720P,
+    ZoomVideoSDKSubscribeFailReason_HasSubscribeTwo720P,
+    ZoomVideoSDKSubscribeFailReason_HasSubscribeExceededLimit,
+    ZoomVideoSDKSubscribeFailReason_HasSubscribeTwoShare,
+    ZoomVideoSDKSubscribeFailReason_HasSubscribeVideo1080POr720PAndOneShare
+};
+
+/**
+ * @brief Enumerations of the type for chat Privilege type
+ */
+typedef NS_ENUM(NSUInteger, ZoomVideoSDKChatPrivilegeType) {
+    /// Unknown type
+    ZoomVideoSDKChatPrivilege_Unknown = 0,
+    /// allow participant  to chat with everyone or only some one
+    ZoomVideoSDKChatPrivilege_Everyone_Publicly_And_Privately,
+    /// allow participant to chat with no one
+    ZoomVideoSDKChatPrivilege_No_One,
+    /// allow participant to chat with host,manager and everyone
+    ZoomVideoSDKChatPrivilege_Everyone_Publicly,
 };
 
 #endif /* ZoomVideoSDKConstants_h */

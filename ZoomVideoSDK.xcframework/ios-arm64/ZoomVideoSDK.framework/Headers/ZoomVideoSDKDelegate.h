@@ -92,6 +92,13 @@
 - (void)onLiveStreamStatusChanged:(ZoomVideoSDKLiveStreamHelper * _Nullable)helper status:(ZoomVideoSDKLiveStreamStatus)status;
 
 /*!
+ @brief The chat privilege of participant has changed.
+ @param helper Chat helper utility.
+ @param currentPrivilege The new chat privilege. See [ZoomVideoSDKChatPrivilegeType].
+*/
+- (void)onChatPrivilegeChanged:(ZoomVideoSDKChatHelper * _Nullable)helper privilege:(ZoomVideoSDKChatPrivilegeType)currentPrivilege;
+
+/*!
  @brief Callback: Invoked when receiving a chat message.
  @param helper Chat helper utility.
  @param chatMessage the object which contains the message content. See [ZoomVideoSDKChatMessage].
@@ -233,6 +240,12 @@
 - (void)onLiveTranscriptionMsgReceived:(ZoomVideoSDKLiveTranscriptionMessageInfo *_Nullable)messageInfo;
 
 /**
+ @brief Callback: Original language message received callback.
+ @param messageInfo messageInfo The spoken language message, refer to {@link ZMVideoSDKLiveTranscriptionMessageInfo}.
+ */
+- (void)onOriginalLanguageMsgReceived:(ZoomVideoSDKLiveTranscriptionMessageInfo *_Nullable)messageInfo;
+
+/**
  @brief Callback: Invoked when a live translation error occurs.
  @param spokenLanguage The spoken message language.
  @param transcriptLanguage The message language you want to translate.
@@ -265,8 +278,38 @@
  */
 - (void)onCallCRCDeviceStatusChanged:(ZoomVideoSDKCRCCallStatus)state;
 
+/*!
+ @brief Callback for the annotation helper clean up. After this callback, SDK will release the ZoomVideoSDKAnnotationHelper as well.
+ @param helper The helper clean up object.
+ */
+- (void)onAnnotationHelperCleanUp:(ZoomVideoSDKAnnotationHelper *_Nullable)helper;
+
+/*!
+ @brief Callback for the annotation privilege change.
+ @param enable YES means the user is able to annotate, NO means the user is not able to annotate.
+ @param user The user who changed viewer's annotation privilege
+ */
+- (void)onAnnotationPrivilegeChange:(BOOL)enable shareOwner:(ZoomVideoSDKUser *_Nullable)user;
+
+/**
+ @brief Callback event for the subscribed user's video fail reason.
+ @param failReason The fail reason. For more details, see {@link ZoomVideoSDKSubscribeFailReason}.
+ @param user The pointer to the user whose view we would like to subscribe. For more details, refer to {@link ZMVideoSDKUser}.
+ @param view The view that failed to subscribe.
+ */
+- (void)onVideoCanvasSubscribeFail:(ZoomVideoSDKSubscribeFailReason)failReason user:(ZoomVideoSDKUser *_Nullable)user view:(UIView *_Nullable)view;
+
+/**
+ @brief Callback event for the subscribed user's share fail reason.
+ @param failReason The fail reason. For more details, see {@link ZoomVideoSDKSubscribeFailReason}.
+ @param user The pointer to the user whose view we would like to subscribe. For more details, refer to {@link ZMVideoSDKUser}.
+ @param view The view that failed to subscribe.
+ */
+- (void)onShareCanvasSubscribeFail:(ZoomVideoSDKSubscribeFailReason)failReason user:(ZoomVideoSDKUser *_Nullable)user view:(UIView *_Nullable)view;
+
 @end
 
+#pragma mark - ZoomVideoSDKVirtualAudioSpeaker
 /*!
  @brief An interface that handles the virtual audio speaker.
  */
@@ -416,7 +459,7 @@
 @optional
 /*!
  @brief Callback for share source can start send raw data.
- @param sender See [ZoomVideoSDKShareSender].
+ @param rawDataSender See [ZoomVideoSDKShareSender].
  */
 - (void)onShareSendStarted:(ZoomVideoSDKShareSender *_Nullable)rawDataSender;
 

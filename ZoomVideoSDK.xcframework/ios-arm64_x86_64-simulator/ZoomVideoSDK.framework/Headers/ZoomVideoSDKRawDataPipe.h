@@ -34,16 +34,20 @@
 
 /*!
  @brief Call the function to subscribe video or share raw data. You can subscribe your 'preview video' data with userid=0 before entering the session, you can call it  just after you called "joinSession:". Otherwise, you can subscribe video or share raw data using the real userid in callback "onUserJoin:".
+ @param delegate the object receive the "ZoomVideoSDKRawDataPipeDelegate" event.
+ @param resolution the resolution you want to subscribe. Valid only for video data.
  @return The result of the method.
+ @warning The param resolution can't using "ZoomVideoSDKVideoResolution_Auto" in this function. must be sperify the resolution you want.
  */
-- (ZoomVideoSDKError)subscribeWithDelegate:(id<ZoomVideoSDKRawDataPipeDelegate>)delegate
-                                  resolution:(ZoomVideoSDKVideoResolution)resolution;
+- (ZoomVideoSDKError)subscribeWithDelegate:(id<ZoomVideoSDKRawDataPipeDelegate> _Nullable)delegate
+                                resolution:(ZoomVideoSDKVideoResolution)resolution;
 
 /*!
  @brief Call the function to unsubscribe video or share raw data.
+ @param delegate the object receive the "ZoomVideoSDKRawDataPipeDelegate" event.  Which pass in "subscribeWithDelegate:resolution:"
  @return The result of the method.
  */
-- (ZoomVideoSDKError)unSubscribeWithDelegate:(id<ZoomVideoSDKRawDataPipeDelegate>)delegate;
+- (ZoomVideoSDKError)unSubscribeWithDelegate:(id<ZoomVideoSDKRawDataPipeDelegate> _Nullable)delegate;
 
 @end
 

@@ -55,6 +55,7 @@
  */
 @interface ZoomVideoSDKChatHelper : NSObject
 
+
 /*!
  @brief Call this method to send a chat message to a specific user.
  @param user The receiver.
@@ -96,5 +97,20 @@
  @return YES if private chat is disabled, otherwise NO.
  */
 - (BOOL)IsPrivateChatDisabled;
+
+/*!
+ @brief Set participant Chat Privilege when in session
+ @param privilege The chat privilege of the participant
+ @return If the function succeeds, it will return Errors_Success, otherwise failed.
+ @warning Only meeting host/manager can run the function
+ */
+- (ZoomVideoSDKError)changeChatPrivilege:(ZoomVideoSDKChatPrivilegeType)privilege;
+
+/*!
+ @brief get participant Chat Privilege when in session
+ @return the result of participant chat Privilege.
+ */
+- (ZoomVideoSDKChatPrivilegeType)getChatPrivilege;
+
 
 @end

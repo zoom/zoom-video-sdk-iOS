@@ -32,17 +32,45 @@
 - (ZoomVideoSDKShareStatus *_Nullable)shareStatus;
 
 /*!
- @brief Call the function to subscribe video or share data. You can subscribe your 'preview video' data with userid=0 before entering the session, you can just call it  after you called "joinSession:". Otherwise, you can subscribe video or share data using the real userid in callback "onUserJoin:".
- @param view the object of UIView, that's you need render video.
- @param aspect the video‘s aspect.
+ @brief Subscribe to the user's video or share view.
+ @param view the object of UIView, that's you need render data.
+ @param aspect Specify a render's aspect, valid only for video canvas.
  @return The result of this method.
  */
-- (ZoomVideoSDKError)subscribeWithView:(UIView * _Nullable)view andAspectMode:(ZoomVideoSDKVideoAspect)aspect;
+- (ZoomVideoSDKError)subscribeWithView:(UIView * _Nullable)view
+                         andAspectMode:(ZoomVideoSDKVideoAspect)aspect
+DEPRECATED_MSG_ATTRIBUTE("Use subscribeWithView:aspectMode:andResolution: instead");
+
+/*!
+ @brief Subscribe to the user's video or share view.
+ @param view the object of UIView, that's you need render data.
+ @param aspect the render's aspect.
+ @param resolution Specify a render's resolution, valid only for video canvas.
+ @return The result of this method.
+ */
+- (ZoomVideoSDKError)subscribeWithView:(UIView * _Nullable)view
+                            aspectMode:(ZoomVideoSDKVideoAspect)aspect
+                         andResolution:(ZoomVideoSDKVideoResolution)resolution;
 
 /*!
  @brief Call the function to unsubscribe video or share data.
  @return The result of the method.
  */
 - (ZoomVideoSDKError)unSubscribeWithView:(UIView * _Nullable)view;
+
+/**
+ @brief Set the video aspect mode.
+ @param aspect The aspect mode of video.
+ @param view The UIView object to render video.
+ */
+- (void)setAspectMode:(ZoomVideoSDKVideoAspect)aspect toView:(UIView * _Nullable)view;
+
+/**
+ @brief Set the video resolution.
+ @param resolution The  video resolution. Valid only for video canvas
+ @param view The UIView object to render video.
+ @return If the function succeeds, it will return Error_Success.
+ */
+- (ZoomVideoSDKError)setResolution:(ZoomVideoSDKVideoResolution)resolution toView:(UIView * _Nullable)view;
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ZoomVideoSDKAnnotationHelper.h"
+
 @protocol ZoomVideoSDKShareSource;
 /*!
  @class ZoomVideoSDKShareStatus
@@ -40,7 +42,7 @@
  @param pSource External share source,To get extended error information, see {@link ZMVideoSDKShareSource}.
  @return If the function succeeds, it will return Errors_Success.Otherwise failed. To get extended error information, see [ZoomVideoSDKError].
  */
-- (ZoomVideoSDKError)startSharingExternalSource:(id<ZoomVideoSDKShareSource>)pSource;
+- (ZoomVideoSDKError)startSharingExternalSource:(id<ZoomVideoSDKShareSource> _Nullable)pSource;
 
 /*!
  @brief Stop view or screen share.
@@ -93,4 +95,39 @@
  */
 - (BOOL)enableShareDeviceAudio:(BOOL)enable;
 
+/*!
+ @brief Whether annotation feature is supported or not.
+ @return The result of it.
+ */
+- (BOOL)isAnnotationFeatureSupport;
+
+/*!
+ @brief Disable or enable viewer’s annotation by the share owner.
+ @param disable YES means annotation is disabled, NO means it is enabled.
+ @return the result of this.
+ @warning Only the share owner can call this function.
+ */
+- (ZoomVideoSDKError)disableViewerAnnotation:(BOOL)disable;
+
+/*!
+ @brief Whether annotation on current sharing is disabled or not.
+ @return the result of this.
+ @warning Only the share owner can call this function.
+ */
+- (BOOL)isViewerAnnotationDisabled;
+
+/*!
+ @brief Creates annotation helper based on shared view.
+ @param view the shared view. Pass the nil will return the helper for self sharing.
+ @return The result of it.
+ @warning The view passed in this function should be subscribed share view. And if the share view aspect mode is full fill, the annotate not supported.
+ */
+- (ZoomVideoSDKAnnotationHelper * _Nullable)createAnnotationHelper:(UIView * _Nullable)view;
+
+/*!
+ @brief Destroys annotation helper.
+ @param helper ZoomVideoSDKAnnotationHelper.
+ @return The result of it.
+ */
+- (ZoomVideoSDKError)destroyAnnotationHelper:(ZoomVideoSDKAnnotationHelper * _Nullable)helper;
 @end

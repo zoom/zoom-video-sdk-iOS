@@ -128,7 +128,7 @@
 
 /*!
 @brief Set the translation language of the current user.
-@param languageID: The translation language ID. If the language id is set to -1, live translation will be disabled.
+@param languageID The translation language ID. If the language id is set to -1, live translation will be disabled.
 @return If the function succeeds, the return value is Success. Otherwise failed. To get extended error information,
 */
 - (ZoomVideoSDKError)setTranslationLanguage:(NSInteger)languageID;

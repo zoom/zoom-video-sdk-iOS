@@ -109,6 +109,11 @@
  @brief Determine if my voice in the mixed audio raw data or not. default is YES.
  */
 @property (assign, nonatomic) BOOL isMyVoiceInMix;
+
+/**
+ @brief If the volume is muted or the volume is low, need to automatically adjust the volume of speaker? Default is NO.
+ */
+@property (nonatomic, assign) BOOL autoAdjustSpeakerVolume;
 @end
 
 /*!
