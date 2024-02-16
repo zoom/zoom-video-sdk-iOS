@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/ZoomVideoSDK.h</key>
 		<data>
-		MlMgvjB1dphzckEJZzrNp7tmaOw=
+		M4WT1fkP9jACCZPq9fxNH/sn8J0=
 		</data>
 		<key>Headers/ZoomVideoSDKAnnotationHelper.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Headers/ZoomVideoSDKDelegate.h</key>
 		<data>
-		AtoKhfR4Gfj75rLVYfVb/9iVshA=
+		8hMODqhFXq7CKFtvDqx4TdoQbok=
 		</data>
 		<key>Headers/ZoomVideoSDKLiveStreamHelper.h</key>
 		<data>
@@ -76,6 +76,10 @@
 		<data>
 		sW707SPUEW7CZvA3669JNk+9axg=
 		</data>
+		<key>Headers/ZoomVideoSDKRemoteCameraControlHelper.h</key>
+		<data>
+		/9kd6h8bGNVyk+NhDtV2ilvRjjk=
+		</data>
 		<key>Headers/ZoomVideoSDKSession.h</key>
 		<data>
 		TvV5doyfPT//xUOHWCPxwDYoeDA=
@@ -98,7 +102,7 @@
 		</data>
 		<key>Headers/ZoomVideoSDKUser.h</key>
 		<data>
-		f8Iw0yE1hazI4Tdz30XT6HWqqic=
+		zJKh7fAxxuwVDGBu9dWmvce+3ns=
 		</data>
 		<key>Headers/ZoomVideoSDKUserHelper.h</key>
 		<data>
@@ -130,7 +134,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		fOE3oHYVhweW6bSCs+/2V40ZL9k=
+		/EE0WTBxXPEaZoKC9BJWQnojDbU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -147,7 +151,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q93t7rgxjex5yKu0ZMGjKnRbSzr3/0OSRpL00NUZKmM=
+			V/ADjIcxSLetOYCxPURks4SUXoRNFF4YBNdf4mSwBno=
 			</data>
 		</dict>
 		<key>Headers/ZoomVideoSDKAnnotationHelper.h</key>
@@ -217,7 +221,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+kUzsr0IRT0r2RN+cyvxGQasJ5NvuNSZFWcY225A3u0=
+			K/VtpEUaVK9Esp3HagtWYqrTSCbkTDm5600WqoIwLJI=
 			</data>
 		</dict>
 		<key>Headers/ZoomVideoSDKLiveStreamHelper.h</key>
@@ -269,6 +273,13 @@
 			UKxLONNx5Xi4BsdEj/OKvaK6ZpExXew4XVa5nJOiQ3c=
 			</data>
 		</dict>
+		<key>Headers/ZoomVideoSDKRemoteCameraControlHelper.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+Hy5fnQz5i7W/5BfuXLXm3brtJKC+oYmNQnG2G/3HOw=
+			</data>
+		</dict>
 		<key>Headers/ZoomVideoSDKSession.h</key>
 		<dict>
 			<key>hash2</key>
@@ -308,7 +319,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wijrfE2DfClCUnJbk7zhj4yL5cpE6IFzmf8KnKFVHEw=
+			e+GTJgkym/o0/9pXw+K7nke124YHQo7KSLuDzUBvDSU=
 			</data>
 		</dict>
 		<key>Headers/ZoomVideoSDKUserHelper.h</key>

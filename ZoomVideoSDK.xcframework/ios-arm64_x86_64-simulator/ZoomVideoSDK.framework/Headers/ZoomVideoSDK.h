@@ -26,6 +26,7 @@
 #import "ZoomVideoSDKNetworkConnectionHelper.h"
 #import "ZoomVideoSDKVirtualBackgroundHelper.h"
 #import "ZoomVideoSDKCRCHelper.h"
+#import "ZoomVideoSDKRemoteCameraControlHelper.h"
 
 /*!
  @class ZoomVideoSDKExtendParams

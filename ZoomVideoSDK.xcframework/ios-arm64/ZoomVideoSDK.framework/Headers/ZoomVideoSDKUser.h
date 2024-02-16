@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "ZoomVideoSDKRawDataPipe.h"
 #import "ZoomVideoSDKVideoCanvas.h"
-
+#import "ZoomVideoSDKRemoteCameraControlHelper.h"
 /*!
  @class ZoomVideoSDKVideoStatisticInfo
  @brief Video statistic information.
@@ -144,6 +144,12 @@
  @return a list of all video canvas. For more information, see [ZoomVideoSDKVideoCanvas].
  */
 - (NSArray <ZoomVideoSDKVideoCanvas *> *_Nullable)getMultiCameraCanvasList;
+
+/*!
+ @brief Get the helper class instance to access the remote camera control.
+ @return If the function succeeds, the return value is the remote camera control helper object. Otherwise returns null. For more details, see {@link ZoomVideoSDKRemoteCameraControlHelper}.
+ */
+- (ZoomVideoSDKRemoteCameraControlHelper *_Nullable)getRemoteCameraControlHelper;
 /*!
  @brief The user's share canvas.
  */

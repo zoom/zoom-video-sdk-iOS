@@ -190,6 +190,14 @@
 - (void)onCommandReceived:(NSString * _Nullable)commandContent sendUser:(ZoomVideoSDKUser * _Nullable)sendUser;
 
 /**
+ @brief Callback for when the current user is granted camera control access.
+ @note Once the current user sends the camera control request, this callback will be triggered with the result of the request.
+ @param user The pointer to the user who received the request.
+ @param isApproved The result of the camera control request.
+ */
+- (void)onCameraControlRequestResult:(ZoomVideoSDKUser*)user approved:(BOOL)isApproved;
+
+/**
  @brief Callback: Invoked when cloud recording status has started, paused, stopped, resumed, or otherwise changed.
  @param status  Cloud recording status defined in [ZoomVideoSDKRecordingStatus].
  @param handler  could handle the action user Accept or Decline;
