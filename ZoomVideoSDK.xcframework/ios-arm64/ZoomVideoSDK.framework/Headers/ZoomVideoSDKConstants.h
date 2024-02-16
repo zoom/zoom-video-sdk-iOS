@@ -41,7 +41,7 @@ typedef NS_ENUM(NSUInteger,ZoomVideoSDKError)
     Errors_JoinSession_Token_UserIdentity_TooLong,
     Errors_Session_Base = 2000,
     Errors_Session_Module_Not_Found,
-    Errors_Session_Service_Invaild,
+    Errors_Session_Service_Invalid,
     Errors_Session_Join_Failed,
     Errors_Session_No_Rights,
     Errors_Session_Already_In_Progress,
@@ -57,6 +57,7 @@ typedef NS_ENUM(NSUInteger,ZoomVideoSDKError)
     Errors_Session_Client_Incompatible,
     Errors_Session_Audio_Error = 3000,
     Errors_Session_Audio_No_Microphone,
+    Errors_Session_Audio_No_Speaker,
     Errors_Session_Video_Error = 4000,
     Errors_Session_Video_Device_Error,
     
@@ -65,6 +66,7 @@ typedef NS_ENUM(NSUInteger,ZoomVideoSDKError)
     Errors_Dont_Support_Multi_Stream_Video_User,
     Errors_Fail_Assign_User_Privilege,
     Errors_No_Recording_In_Process,
+    Errors_Set_Virtual_Background_Fail,
     
     Errors_Malloc_Failed = 6001,
     Errors_Not_In_Session,
@@ -271,8 +273,10 @@ typedef NS_ENUM(NSUInteger, ZoomVideoSDKVideoPreferenceMode) {
 };
 
 typedef NS_ENUM(NSUInteger, ZoomVideoSDKMultiCameraStreamStatus) {
-    ZoomVideoSDKMultiCameraStreamStatus_Joined,    /// Broadcasted to all users. This status is received when a new camera has been successfully added to the session as the multiple cameras.
-    ZoomVideoSDKMultiCameraStreamStatus_Left,      /// Broadcasted to all users. This status is received when a camera that is being used as the multiple cameras has left the session.
+    ZoomVideoSDKMultiCameraStreamStatus_JoinStart, ///<Current user only. This status is received when the current user starts the attempt to use multiple cameras in the session.
+    ZoomVideoSDKMultiCameraStreamStatus_JoinFail, ///<Current user only. This status is received when the current user fails the attempt to use multiple cameras in the session.
+    ZoomVideoSDKMultiCameraStreamStatus_Joined, ///<Broadcasted to all users. This status is received when a new camera has been successfully added to the session as the multiple cameras.
+    ZoomVideoSDKMultiCameraStreamStatus_Left, ///<Broadcasted to all users. This status is received when a camera that is being used as the multiple cameras has left the session.
 };
 
 typedef NS_ENUM(NSUInteger, ZoomVideoSDKLiveTranscriptionStatus) {
@@ -407,9 +411,9 @@ typedef NS_ENUM(NSUInteger,ZoomVideoSDKAnnotationToolType) {
  * @brief Enumerations of the type for annotation clear type.
  */
 typedef NS_ENUM(NSUInteger,ZoomVideoSDKAnnotationClearType) {
-    ZoomVideoSDKAnnotationClearType_All = 0,
-    ZoomVideoSDKAnnotationClearType_Others,
-    ZoomVideoSDKAnnotationClearType_My,
+    ZoomVideoSDKAnnotationClearType_All = 0,    ///<Clear all annotations. Hosts, managers and shared meeting owners can use.
+    ZoomVideoSDKAnnotationClearType_Others,     ///<Clear only the others' annotations. Only shared meeting owners can use.
+    ZoomVideoSDKAnnotationClearType_My,         ///<Clear only your own annotations. Everyone can use.
 };
 
 /**
@@ -417,11 +421,10 @@ typedef NS_ENUM(NSUInteger,ZoomVideoSDKAnnotationClearType) {
  */
 typedef NS_ENUM(NSUInteger, ZoomVideoSDKSubscribeFailReason) {
     ZoomVideoSDKSubscribeFailReason_None = 0,
-    ZoomVideoSDKSubscribeFailReason_HasSubscribe1080POr720P,
-    ZoomVideoSDKSubscribeFailReason_HasSubscribeTwo720P,
+    ZoomVideoSDKSubscribeFailReason_HasSubscribeShare, // has subscribe share and try to subscribe 720 video
     ZoomVideoSDKSubscribeFailReason_HasSubscribeExceededLimit,
-    ZoomVideoSDKSubscribeFailReason_HasSubscribeTwoShare,
-    ZoomVideoSDKSubscribeFailReason_HasSubscribeVideo1080POr720PAndOneShare
+    ZoomVideoSDKSubscribeFailReason_HasSubscribe1080POr720P,
+    ZoomVideoSDKSubscribeFailReason_HasSubscribeOneShare, // try to subscribe the second share
 };
 
 /**
@@ -437,5 +440,12 @@ typedef NS_ENUM(NSUInteger, ZoomVideoSDKChatPrivilegeType) {
     /// allow participant to chat with host,manager and everyone
     ZoomVideoSDKChatPrivilege_Everyone_Publicly,
 };
+
+
+typedef NS_ENUM(NSInteger, ZoomVideoSDKAudioChannel) {
+    ZoomVideoSDKAudioChannel_Mono,         /// mono
+    ZoomVideoSDKAudioChannel_Stereo,       /// stereo
+};
+
 
 #endif /* ZoomVideoSDKConstants_h */

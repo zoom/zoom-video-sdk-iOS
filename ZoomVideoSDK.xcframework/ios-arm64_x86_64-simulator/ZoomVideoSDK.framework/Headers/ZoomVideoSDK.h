@@ -5,6 +5,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import "ZoomVideoSDKSession.h"
 #import "ZoomVideoSDKUser.h"
 #import "ZoomVideoSDKDelegate.h"
 #import "ZoomVideoSDKConstants.h"
@@ -35,6 +36,9 @@
  @brief Audio speaker test file path, only support mp3 format.The size cannot exceed 1M.
  */
 @property (nonatomic, copy) NSString * _Nullable speakerTestFilePath;
+
+@property (nonatomic, assign) NSInteger wrapperType;
+
 @end
 
 /*!
@@ -159,156 +163,22 @@
 /*!
 @brief [Optional] Session external video source delegate.
 */
-@property (nonatomic, assign) id<ZoomVideoSDKVideoSource> _Nullable externalVideoSourceDelegate;
+@property (weak, nonatomic) id<ZoomVideoSDKVideoSource> _Nullable externalVideoSourceDelegate;
 
 /*!
 @brief [Optional] Session pre-processer delegate.
 */
-@property (nonatomic, assign) id<ZoomVideoSDKVideoSourcePreProcessor> _Nullable preProcessorDelegate;
+@property (weak, nonatomic) id<ZoomVideoSDKVideoSourcePreProcessor> _Nullable preProcessorDelegate;
 
 /*!
 @brief [Optional] Session external audio source delegate.
 */
-@property (nonatomic, assign) id<ZoomVideoSDKVirtualAudioMic> _Nullable virtualAudioMicDelegate;
+@property (weak, nonatomic) id<ZoomVideoSDKVirtualAudioMic> _Nullable virtualAudioMicDelegate;
 
 /*!
 @brief [Optional] Session virtual speaker.
 */
-@property (nonatomic, assign) id<ZoomVideoSDKVirtualAudioSpeaker> _Nullable virtualAudioSpeakerDelegate;
-@end
-
-/*!
- @class ZoomVideoSDKSessionAudioStatisticInfo
- @brief Session audio statistic information
-*/
-@interface ZoomVideoSDKSessionAudioStatisticInfo : NSObject
-/// The frequency in kilohertz (KHz) sent by the current user.
-@property(nonatomic, assign, readonly) NSInteger  sendFrequency;
-/// The audio latency (delay in network data transfer) experienced by the current user while sending data.
-@property(nonatomic, assign, readonly) NSInteger  sendLatency;
-/// The audio jitter (change in latency) experienced by the current user while sending data.
-@property(nonatomic, assign, readonly) NSInteger  sendJitter;
-/// The average audio packet loss sent by the current user.
-@property(nonatomic, assign, readonly) CGFloat    sendPacketLossAvg;
-/// The maximum audio packet loss sent by the current user.
-@property(nonatomic, assign, readonly) CGFloat    sendPacketLossMax;
-
-/// The frequency in kilohertz (KHz) received by the current user.
-@property(nonatomic, assign, readonly) NSInteger  recvFrequency;
-/// The audio latency (delay in network data transfer) experienced by the current user while receiving data.
-@property(nonatomic, assign, readonly) NSInteger  recvLatency;
-/// The audio jitter (change in latency) experienced by the current user while receiving data.
-@property(nonatomic, assign, readonly) NSInteger  recvJitter;
-/// The average audio packet loss received by the current user.
-@property(nonatomic, assign, readonly) CGFloat    recvPacketLossAvg;
-/// The maximum audio packet loss received by the current user.
-@property(nonatomic, assign, readonly) CGFloat    recvPacketLossMax;
-@end
-
-/*!
-@brief The Session video or share statistic information
-*/
-
-@interface ZoomVideoSDKSessionASVStatisticInfo : NSObject
-/// The frame width in pixels sent by the current user.
-@property(nonatomic, assign, readonly) NSInteger  sendFrameWidth;
-/// The frame height in pixels sent by the current user.
-@property(nonatomic, assign, readonly) NSInteger  sendFrameHeight;
-/// The frame rate in FPS sent by the current user.
-@property(nonatomic, assign, readonly) NSInteger  sendFps;
-/// The video latency (delay in network data transfer) experienced by the current user while sending data.
-@property(nonatomic, assign, readonly) NSInteger  sendLatency;
-/// The video jitter (change in latency) experienced by the current user while sending data.
-@property(nonatomic, assign, readonly) NSInteger  sendJitter;
-/// The average video packet loss sent by the current user.
-@property(nonatomic, assign, readonly) CGFloat    sendPacketLossAvg;
-/// The maximum video packet loss sent by the current user.
-@property(nonatomic, assign, readonly) CGFloat    sendPacketLossMax;
-
-/// The frame width in pixels received by the current user.
-@property(nonatomic, assign, readonly) NSInteger  recvFrameWidth;
-/// The frame height in pixels received by the current user.
-@property(nonatomic, assign, readonly) NSInteger  recvFrameHeight;
-/// The frame rate in FPS received by the current user.
-@property(nonatomic, assign, readonly) NSInteger  recvFps;
-/// The video latency (delay in network data transfer) experienced by the current user while receiving data.
-@property(nonatomic, assign, readonly) NSInteger  recvLatency;
-/// The video jitter (change in latency) experienced by the current user while receiving data.
-@property(nonatomic, assign, readonly) NSInteger  recvJitter;
-/// The video average packet loss received by the current user.
-@property(nonatomic, assign, readonly) CGFloat    recvPacketLossAvg;
-/// The maximum video packet loss received by the current user.
-@property(nonatomic, assign, readonly) CGFloat    recvPacketLossMax;
-@end
-
-
-/*!
- @brief Zoom Video SDK session.
- */
-@interface ZoomVideoSDKSession : NSObject
-
-/*!
-@brief Get the session's name.
-*/
-- (NSString * _Nullable)getSessionName;
-
-/*!
-@brief Get the session Id.
-@warning Only the host can get the session Id.
-*/
-- (NSString * _Nullable)getSessionID;
-
-/*!
-@brief Get the session number.
-@warning get the session number
-*/
-- (unsigned long long)getSessionNumber;
-
-/*!
-@brief Get the session's password.
-*/
-- (NSString * _Nullable)getSessionPassword;
-
-/*!
-@brief Get the session phone passcode.
-@warning get the session phone passcode
-*/
-- (NSString * _Nullable)getSessionPhonePasscode;
-
-/*!
-@brief Get the host's name.
-*/
-- (NSString * _Nullable)getSessionHostName;
-
-/*!
-@brief Get the session's host user object.
-*/
-- (ZoomVideoSDKUser * _Nullable)getSessionHost;
-
-/*!
-@brief Get a list of the session's remote users.
-*/
-- (NSArray <ZoomVideoSDKUser *>* _Nullable)getRemoteUsers;
-
-/*!
-@brief Get the session's user object for myself.
-*/
-- (ZoomVideoSDKUser * _Nullable)getMySelf;
-
-/*!
-@brief Get the session's audio statistic information.
-*/
-- (ZoomVideoSDKSessionAudioStatisticInfo * _Nullable)getSessionAudioStatisticInfo;
-
-/*!
-@brief Get the session's video statistic information.
-*/
-- (ZoomVideoSDKSessionASVStatisticInfo * _Nullable)getSessionVideoStatisticInfo;
-/*!
-@brief Get the session's screen share statistic information.
-*/
-- (ZoomVideoSDKSessionASVStatisticInfo * _Nullable)getSessionShareStatisticInfo;
-
+@property (weak, nonatomic) id<ZoomVideoSDKVirtualAudioSpeaker> _Nullable virtualAudioSpeakerDelegate;
 @end
 
 /*!
@@ -322,7 +192,7 @@
 /*!
  @brief The delegate of ZoomVideoSDK, a listener object that groups together all the callbacks related to a session.
  */
-@property (nullable, assign, nonatomic) id<ZoomVideoSDKDelegate> delegate;
+@property (weak, nonatomic) id<ZoomVideoSDKDelegate> _Nullable delegate;
 
 /*!
  @brief Returns ZoomVideoSDK instance.

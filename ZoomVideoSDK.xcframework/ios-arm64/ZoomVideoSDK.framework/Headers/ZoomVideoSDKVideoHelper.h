@@ -105,10 +105,10 @@
 - (BOOL)rotateMyVideo:(UIDeviceOrientation)rotation;
 
 /*!
- @brief Call this method to mirror my video.
- @param enable YES will mirror the video, NO will reset the mirror effect back.
+ @brief Mirrors the current user's video.
+ @param enable YES to enable mirror my video, NO to reset the mirror effect back.
  @return the result of it.
- @warning this function only for canvas.
+ @warning Valid only for canvas.
  */
 - (ZoomVideoSDKError)mirrorMyVideo:(BOOL)enable;
 
@@ -117,7 +117,14 @@
  @return Returns YES if the mirror effect enabled, NO otherwise.
  @warning this function only for canvas.
  */
-- (BOOL)isMirrorMyVideoEnabled;
+- (BOOL)isMirrorMyVideoEnabled DEPRECATED_MSG_ATTRIBUTE("Use - (BOOL)isMyVideoMirrored; instead");
+
+/*!
+ @brief Determine whether mirror my video is enabled.
+ @return Returns YES if mirror  my video is enabled, otherwise NO.
+ @warning this function only for canvas.
+ */
+- (BOOL)isMyVideoMirrored;
 
 /*!
  @brief Switch to the next available camera.

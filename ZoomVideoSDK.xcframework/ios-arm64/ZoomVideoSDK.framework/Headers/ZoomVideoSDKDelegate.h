@@ -11,6 +11,7 @@
 #import "ZoomVideoSDKPreProcessRawData.h"
 #import "ZoomVideoSDKVideoSender.h"
 #import "ZoomVideoSDKShareSender.h"
+#import "ZoomVideoSDKShareAudioSender.h"
 #import "ZoomVideoSDKAudioSender.h"
 #import "ZoomVideoSDKVideoCapability.h"
 #import "ZoomVideoSDKVideoHelper.h"
@@ -163,7 +164,7 @@
 
 /*!
  @brief Callback: Invoked when receiving shared raw audio data.
- @param rawData awData Raw audio data. See [ZoomVideoSDKAudioRawData].
+ @param rawData rawData Raw audio data. See [ZoomVideoSDKAudioRawData].
  */
 - (void)onSharedAudioRawDataReceived:(ZoomVideoSDKAudioRawData * _Nullable)rawData;
 
@@ -241,7 +242,7 @@
 
 /**
  @brief Callback: Original language message received callback.
- @param messageInfo messageInfo The spoken language message, refer to {@link ZMVideoSDKLiveTranscriptionMessageInfo}.
+ @param messageInfo messageInfo The spoken language message, refer to {@link ZoomVideoSDKLiveTranscriptionMessageInfo}.
  */
 - (void)onOriginalLanguageMsgReceived:(ZoomVideoSDKLiveTranscriptionMessageInfo *_Nullable)messageInfo;
 
@@ -253,13 +254,13 @@
 - (void)onLiveTranscriptionMsgError:(ZoomVideoSDKLiveTranscriptionLanguage *_Nullable)spokenLanguage transLanguage:(ZoomVideoSDKLiveTranscriptionLanguage *_Nullable)transcriptLanguage;
 
 /**
- @brief The callback will be triggered if the proxy requests to input the username and password.Use the handler to configure the related information. For more details, see {@link ZMVideoSDKProxySettingHandler}.
+ @brief The callback will be triggered if the proxy requests to input the username and password.Use the handler to configure the related information. For more details, see {@link ZoomVideoSDKProxySettingHandler}.
  @param handler The handler will be destroyed once the function calls end.
  */
 - (void)onProxySettingNotification:(ZoomVideoSDKProxySettingHandler *_Nonnull)handler;
 
 /**
- @brief The callback will be triggered when the SSL is verified.Use the handler to check the related information. For more details, see {@link ZMVideoSDKSSLCertVerificationHandler}.
+ @brief The callback will be triggered when the SSL is verified.Use the handler to check the related information. For more details, see {@link ZoomVideoSDKSSLCertVerificationHandler}.
  @param handler The handler will be destroyed once the function calls end.
  */
 - (void)onSSLCertVerifiedFailNotification:(ZoomVideoSDKSSLCertificateInfo *_Nonnull)handler;
@@ -294,7 +295,7 @@
 /**
  @brief Callback event for the subscribed user's video fail reason.
  @param failReason The fail reason. For more details, see {@link ZoomVideoSDKSubscribeFailReason}.
- @param user The pointer to the user whose view we would like to subscribe. For more details, refer to {@link ZMVideoSDKUser}.
+ @param user The pointer to the user whose view we would like to subscribe. For more details, refer to {@link ZoomVideoSDKUser}.
  @param view The view that failed to subscribe.
  */
 - (void)onVideoCanvasSubscribeFail:(ZoomVideoSDKSubscribeFailReason)failReason user:(ZoomVideoSDKUser *_Nullable)user view:(UIView *_Nullable)view;
@@ -302,7 +303,7 @@
 /**
  @brief Callback event for the subscribed user's share fail reason.
  @param failReason The fail reason. For more details, see {@link ZoomVideoSDKSubscribeFailReason}.
- @param user The pointer to the user whose view we would like to subscribe. For more details, refer to {@link ZMVideoSDKUser}.
+ @param user The pointer to the user whose view we would like to subscribe. For more details, refer to {@link ZoomVideoSDKUser}.
  @param view The view that failed to subscribe.
  */
 - (void)onShareCanvasSubscribeFail:(ZoomVideoSDKSubscribeFailReason)failReason user:(ZoomVideoSDKUser *_Nullable)user view:(UIView *_Nullable)view;
@@ -395,14 +396,17 @@
  @param supportCapabilityArray See ZoomVideoSDKVideoCapability
  @param suggestCapability See ZoomVideoSDKVideoCapability
  */
-- (void)onInitialize:(ZoomVideoSDKVideoSender *_Nonnull)rawDataSender supportCapabilityArray:(NSArray *_Nonnull)supportCapabilityArray suggestCapability:(ZoomVideoSDKVideoCapability *_Nonnull)suggestCapability;
+- (void)onInitialize:(ZoomVideoSDKVideoSender *_Nonnull)rawDataSender
+supportCapabilityArray:(NSArray *_Nonnull)supportCapabilityArray
+   suggestCapability:(ZoomVideoSDKVideoCapability *_Nonnull)suggestCapability;
 
 /*!
  @brief Callback for video size or fps changed.
  @param supportCapabilityArray See ZoomVideoSDKVideoCapability
  @param suggestCapability See ZoomVideoSDKVideoCapability
  */
-- (void)onPropertyChange:(NSArray *_Nonnull)supportCapabilityArray suggestCapability:(ZoomVideoSDKVideoCapability *_Nonnull)suggestCapability;
+- (void)onPropertyChange:(NSArray *_Nonnull)supportCapabilityArray
+       suggestCapability:(ZoomVideoSDKVideoCapability *_Nonnull)suggestCapability;
 
 /*!
  @brief Callback for video source should start send raw data.
@@ -467,5 +471,25 @@
  @brief Callback for share source stop send raw data.
  */
 - (void)onShareSendStopped;
+
+@end
+
+#pragma mark - ZoomVideoSDKShareAudioSource
+/*!
+ @brief Custom external share source interface.
+ */
+@protocol ZoomVideoSDKShareAudioSource <NSObject>
+
+@optional
+/*!
+ @brief Callback for audio source to start sending raw data.
+ @param sender The object of MobileRTCShareSender to send share source.
+ */
+- (void)onStartSendAudio:(ZoomVideoSDKShareAudioSender *_Nonnull)sender;
+
+/*!
+ @brief Callback for audio source to stop sending raw data.
+ */
+- (void)onStopSendAudio;
 
 @end

@@ -48,7 +48,7 @@
 - (ZoomVideoSDKVirtualBackgroundItem * _Nullable)addVirtualBackgroundItem:(UIImage *_Nullable)image;
 /*!
  @brief Remove virtual background object.
- @param imageItem The ZMVideoSDKVirtualBackgroundItem object to be removed.
+ @param imageItem The ZoomVideoSDKVirtualBackgroundItem object to be removed.
  @return If the function succeeds, it will return Errors_Success.
  */
 - (ZoomVideoSDKError)removeVirtualBackgroundItem:(ZoomVideoSDKVirtualBackgroundItem *_Nullable)imageItem;
@@ -59,7 +59,7 @@
 - (NSArray<ZoomVideoSDKVirtualBackgroundItem * > * _Nullable)getVirtualBackgroundItemList;
 /*!
  @brief Select virtual background item.
- @param imageItem The ZMVideoSDKVirtualBackgroundItem object to select.
+ @param imageItem The ZoomVideoSDKVirtualBackgroundItem object to select.
  @return If the function succeeds, it will return Errors_Success.
  */
 - (ZoomVideoSDKError)setVirtualBackgroundItem:(ZoomVideoSDKVirtualBackgroundItem *_Nullable)imageItem;

@@ -81,7 +81,6 @@
  @brief Clears the annotation content.
  @param type the specify clear type.
  @return The result of it.
- @warning Host and manager can clear all and clear my; Share owner can clear all, clear others and clear my; Attendee can only clear my.
  */
 - (ZoomVideoSDKError)clear:(ZoomVideoSDKAnnotationClearType)type;
 @end

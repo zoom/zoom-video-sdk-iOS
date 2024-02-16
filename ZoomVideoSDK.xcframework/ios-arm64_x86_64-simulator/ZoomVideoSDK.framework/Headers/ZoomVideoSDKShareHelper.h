@@ -10,6 +10,7 @@
 #import "ZoomVideoSDKAnnotationHelper.h"
 
 @protocol ZoomVideoSDKShareSource;
+@protocol ZoomVideoSDKShareAudioSource;
 /*!
  @class ZoomVideoSDKShareStatus
  @brief Share status of user
@@ -39,10 +40,19 @@
 
 /*!
  @brief Share an external source.
- @param pSource External share source,To get extended error information, see {@link ZMVideoSDKShareSource}.
+ @param delegate External share source,To get extended information, see {@link ZoomVideoSDKShareSource}.
  @return If the function succeeds, it will return Errors_Success.Otherwise failed. To get extended error information, see [ZoomVideoSDKError].
  */
-- (ZoomVideoSDKError)startSharingExternalSource:(id<ZoomVideoSDKShareSource> _Nullable)pSource;
+- (ZoomVideoSDKError)startSharingExternalSource:(id<ZoomVideoSDKShareSource> _Nullable)delegate DEPRECATED_MSG_ATTRIBUTE("Use -startSharingExternalSource:andAudioSource: instead");
+
+/*!
+ @brief Share an external source.
+ @param shareDelegate External share source,To get extended information, see {@link ZoomVideoSDKShareSource}.
+ @param audioDelegate External share audio source,To get extended information, see {@link ZoomVideoSDKShareAudioSource}.
+ @return If the function succeeds, it will return Errors_Success.Otherwise failed. To get extended error information, see [ZoomVideoSDKError].
+ @warning   If audioDelegate is non-null, it means share user-defined audio at the same time.
+ */
+- (ZoomVideoSDKError)startSharingExternalSource:(id<ZoomVideoSDKShareSource> _Nullable)shareDelegate andAudioSource:(id <ZoomVideoSDKShareAudioSource> _Nullable)audioDelegate;
 
 /*!
  @brief Stop view or screen share.
@@ -83,14 +93,14 @@
 - (BOOL)isScreenSharingOut;
 
 /*!
- @brief Check other is audio or not share when screen sharing.
+ @brief Determine if the SDK has enabled share device audio when screen sharing.
  @return The result of it.
  */
 - (BOOL)isShareDeviceAudioEnabled;
 
 /*!
- @brief Enble share audio when screen sharing.
- @param enable share audio or not.
+ @brief Enable or disable the device audio  shared together when screen sharing.
+ @param enable share audio out or not.
  @return The result of it.
  */
 - (BOOL)enableShareDeviceAudio:(BOOL)enable;
@@ -120,7 +130,7 @@
  @brief Creates annotation helper based on shared view.
  @param view the shared view. Pass the nil will return the helper for self sharing.
  @return The result of it.
- @warning The view passed in this function should be subscribed share view. And if the share view aspect mode is full fill, the annotate not supported.
+ @warning The view passed in this function should be subscribed share view. And if the share view aspect mode is full fill, the annotate not supported. When the share owner not  support the feature of annotate, the others should not do annotate in that case.
  */
 - (ZoomVideoSDKAnnotationHelper * _Nullable)createAnnotationHelper:(UIView * _Nullable)view;
 

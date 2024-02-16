@@ -53,6 +53,18 @@ DEPRECATED_MSG_ATTRIBUTE("Use subscribeWithView:aspectMode:andResolution: instea
                          andResolution:(ZoomVideoSDKVideoResolution)resolution;
 
 /*!
+ @brief Subscribe to the user's video or share view in Picture-in-Picture mode for video calls.
+ @param view the object of UIView, that's you need render data.
+ @param aspect the render's aspect.
+ @param resolution Specify a render's resolution, valid only for video canvas.
+ @note To know more about PiP mode for video calls, please visit https://developer.apple.com/documentation/avkit/adopting_picture_in_picture_for_video_calls .
+ @return The result of this method.
+ */
+- (ZoomVideoSDKError)subscribeWithPiPView:(UIView * _Nullable)view
+                               aspectMode:(ZoomVideoSDKVideoAspect)aspect
+                            andResolution:(ZoomVideoSDKVideoResolution)resolution;
+
+/*!
  @brief Call the function to unsubscribe video or share data.
  @return The result of the method.
  */
