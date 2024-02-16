@@ -8,9 +8,9 @@
 		<data>
 		C6kEfG4gTPt+5Y3SrqnAfK7Bw5Q=
 		</data>
-		<key>ZoomVideoSDKScreenShare</key>
+		<key>Info.plist</key>
 		<data>
-		8qKO2yk4n0lSDv+6zhPQHCnvAWU=
+		loONpEEOSar4d2g/ZqfwkyvGwUs=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -24,17 +24,6 @@
 			<key>hash2</key>
 			<data>
 			pFGtDs6fKIn/BXzK1xpC148p0Wipb+Z9dKLrQHRmxpw=
-			</data>
-		</dict>
-		<key>ZoomVideoSDKScreenShare</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			8qKO2yk4n0lSDv+6zhPQHCnvAWU=
-			</data>
-			<key>hash2</key>
-			<data>
-			7ikvWYNFiUarM0OVI6KCgvXWO5NYPJdKKtBQzpQL/zU=
 			</data>
 		</dict>
 	</dict>
