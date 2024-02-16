@@ -45,6 +45,7 @@
  @brief Set the annotation tool type.
  @param type the specify annotation tool type.
  @return The result of it.
+ @warning The tool type ZoomVideoSDKAnnotationToolType_Picker and ZoomVideoSDKAnnotationToolType_SpotLight are not support for viewer.
  */
 - (ZoomVideoSDKError)setToolType:(ZoomVideoSDKAnnotationToolType)type;
 /*!

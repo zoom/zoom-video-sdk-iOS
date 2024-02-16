@@ -58,13 +58,14 @@
 - (ZoomVideoSDKError)unSubscribe;
 
 /*!
- @brief Reset Audio Session including Category and Mode.
+ @brief Reset Audio Session including Category and Mode for ZoomVideoSDK Audio Session Environment When developer change audio session in session
  @return Yes means set auidio success, otherwise failed.
  */
 - (BOOL)resetAudioSession;
 
 /*!
- @brief Clean Audio Session including Category and Mode. 
+ @brief Clean Audio Session including Category and Mode.
+ @warning SDK will restore audio session status after session end. if developer call overrideOutputAudioPort interface wtth AVAudioSessionPortBuiltInSpeaker in AVAudioSessionCategoryPlayAndRecord Category before join session, then sdk can not restore audio session BuiltInSpeaker output when session end,
  */
 - (void)cleanAudioSession;
 
