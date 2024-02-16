@@ -16,15 +16,15 @@
 /*!
  @brief The country ID.
  */
-@property (nonatomic, strong) NSString     * _Nullable countryID;
+@property (nonatomic, copy) NSString     * _Nullable countryID;
 /*!
  @brief The country name.
  */
-@property (nonatomic, strong) NSString     * _Nullable countryName;
+@property (nonatomic, copy) NSString     * _Nullable countryName;
 /*!
  @brief The country code.
  */
-@property (nonatomic, strong) NSString     * _Nullable countryCode;
+@property (nonatomic, copy) NSString     * _Nullable countryCode;
 @end
 
 
@@ -36,19 +36,19 @@
 /*!
  @brief The country ID.
  */
-@property (nonatomic, strong) NSString     * _Nullable countryID;
+@property (nonatomic, copy) NSString     * _Nullable countryID;
 /*!
  @brief The country code.
  */
-@property (nonatomic, strong) NSString     * _Nullable countryCode;
+@property (nonatomic, copy) NSString     * _Nullable countryCode;
 /*!
  @brief The country name.
  */
-@property (nonatomic, strong) NSString     * _Nullable countryName;
+@property (nonatomic, copy) NSString     * _Nullable countryName;
 /*!
  @brief Dial in number.
  */
-@property (nonatomic, strong) NSString     * _Nullable number;
+@property (nonatomic, copy) NSString     * _Nullable number;
 /*!
  @brief Dial in number format string for display.
  */
