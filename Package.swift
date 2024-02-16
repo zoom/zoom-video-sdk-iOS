@@ -6,13 +6,22 @@ import PackageDescription
 let package = Package(
     name: "ZoomVideoSDK-iOS",
     platforms: [
-            .iOS(.v11)
+            .iOS(.v13)
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "ZoomVideoSDK-iOS",
             targets: ["ZoomVideoSDK"]),
+        .library(
+            name: "ZoomVideoSDK-iOS-CptShare",
+            targets: ["ZoomVideoSDK-CptShare"]),
+        .library(
+            name: "ZoomVideoSDK-iOS-Annotation",
+            targets: ["ZoomVideoSDK-Annotation"]),
+        .library(
+            name: "ZoomVideoSDK-iOS-zoomcml",
+            targets: ["ZoomVideoSDK-zoomcml"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -24,5 +33,14 @@ let package = Package(
         .binaryTarget(
                     name: "ZoomVideoSDK",
                     path: "ZoomVideoSDK.xcframework"),
+        .binaryTarget(
+                    name: "ZoomVideoSDK-CptShare",
+                    path: "CptShare.xcframework"),
+        .binaryTarget(
+                    name: "ZoomVideoSDK-Annotation",
+                    path: "zm_annoter_dynamic.xcframework"),
+        .binaryTarget(
+                    name: "ZoomVideoSDK-zoomcml",
+                    path: "zoomcml.xcframework"),
     ]
 )
