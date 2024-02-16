@@ -23,20 +23,18 @@
     "availability" : {
       "macOS" : "10.13",
       "tvOS" : "11.0",
+      "visionOS" : "1.0",
       "watchOS" : "4.0",
       "iOS" : "11.0",
       "macCatalyst" : "11.0"
     },
     "neuralNetworkLayerTypeHistogram" : {
       "Concat" : 1,
-      "LoadConstant" : 1,
-      "Multiply" : 1,
       "ActivationReLU" : 39,
-      "UnaryInverse" : 1,
       "Add" : 9,
       "Deconvolution" : 1,
       "Crop" : 1,
-      "Convolution" : 52,
+      "Convolution" : 50,
       "ActivationSigmoid" : 1
     },
     "modelType" : {

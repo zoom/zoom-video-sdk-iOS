@@ -33,6 +33,7 @@
     "availability" : {
       "macOS" : "10.13",
       "tvOS" : "11.0",
+      "visionOS" : "1.0",
       "watchOS" : "4.0",
       "iOS" : "11.0",
       "macCatalyst" : "11.0"
@@ -46,7 +47,7 @@
       "PoolingAverage" : 3,
       "Deconvolution" : 1,
       "Crop" : 1,
-      "Convolution" : 52,
+      "Convolution" : 51,
       "ActivationSigmoid" : 2,
       "InnerProduct" : 1
     },
