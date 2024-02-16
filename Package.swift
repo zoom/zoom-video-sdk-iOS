@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "ZoomVideoSDK-iOS",
+    name: "ZoomVideoSDK-iOS-CptShare",
     platforms: [
             .iOS(.v11)
     ],
