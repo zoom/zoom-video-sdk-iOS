@@ -447,5 +447,10 @@ typedef NS_ENUM(NSInteger, ZoomVideoSDKAudioChannel) {
     ZoomVideoSDKAudioChannel_Stereo,       /// stereo
 };
 
+typedef NS_ENUM(NSInteger, ZoomVideoSDKTestMicStatus) {
+    ZoomVideoSDKMic_CanTest = 0,///<Test the mic via TestMicStartRecording. It is useless to call TestMicStopTesting/TestMicPlayRecording in this status.
+    ZoomVideoSDKMic_Recording,///<Test the mic via TestMicStopTesting/TestMicPlayRecording. It is useless to call TestMicStartRecording in this status.
+    ZoomVideoSDKMic_CanPlay,///<Test the mic via TestMicStopTesting/TestMicPlayRecording. It is useless call TestMicStartRecording in this status.
+};
 
 #endif /* ZoomVideoSDKConstants_h */

@@ -231,6 +231,19 @@
 - (void)onMultiCameraStreamStatusChanged:(ZoomVideoSDKMultiCameraStreamStatus)status parentUser:(ZoomVideoSDKUser *_Nullable)user videoCanvas:(ZoomVideoSDKVideoCanvas *_Nullable)videoCanvas;
 
 /**
+ @brief Callback: Notify the mic status when testing.
+ @param status The mic status. For more details, See [ZoomVideoSDKTestMicStatus].
+ */
+- (void)onTestMicStatusChanged:(ZoomVideoSDKTestMicStatus)status;
+
+/**
+ @brief Callback: Notify the current mic or speaker volume when testing.
+ @param micVolume Specify the volume of the mic.
+ @param speakerVolume Specify the volume of the speaker.
+ */
+- (void)onMicSpeakerVolumeChanged:(int)micVolume speakerVolume:(int)speakerVolume;
+
+/**
  @brief Callback: Invoked when the SDK requires system permissions to continue functioning.
  @param permissionType The type of system permission that is required. See [ZoomVideoSDKSystemPermissionType].
  */
