@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ZoomVideoSDK.h"
+#import <ZoomVideoSDK/ZoomVideoSDK.h>
 
 /*!
  @class ZoomVideoSDKAudioHelper

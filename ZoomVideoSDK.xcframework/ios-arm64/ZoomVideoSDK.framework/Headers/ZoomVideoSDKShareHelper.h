@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ZoomVideoSDKAnnotationHelper.h"
+#import <ZoomVideoSDK/ZoomVideoSDKAnnotationHelper.h>
 
 @protocol ZoomVideoSDKShareSource;
 @protocol ZoomVideoSDKShareAudioSource;

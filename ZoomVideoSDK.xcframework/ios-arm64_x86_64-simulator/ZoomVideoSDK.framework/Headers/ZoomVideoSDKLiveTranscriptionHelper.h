@@ -17,7 +17,7 @@
 /*!
 @brief localized language name of transcription language
 */
-@property(nonatomic, copy, readonly) NSString *languageName;
+@property(nonatomic, copy, readonly) NSString * _Nullable languageName;
 
 @end
 
@@ -27,19 +27,19 @@
 /*!
 @brief message id of transcription message
 */
-@property (nonatomic, copy)NSString *messageID;
+@property (nonatomic, copy)NSString * _Nullable messageID;
 /*!
 @brief speaker id of transcription message
 */
-@property (nonatomic, copy)NSString *speakerID;
+@property (nonatomic, copy)NSString * _Nullable speakerID;
 /*!
 @brief speak name  of transcription message
 */
-@property (nonatomic, copy)NSString *speakerName;
+@property (nonatomic, copy)NSString * _Nullable speakerName;
 /*!
 @brief message content  of transcription message
 */
-@property (nonatomic, copy)NSString *messageContent;
+@property (nonatomic, copy)NSString * _Nullable messageContent;
 /*!
 @brief time stamp  of transcription message
 */
@@ -79,7 +79,7 @@
 @brief Get the list of all available spoken languages in session.
 @return If the function succeeds, the return value is the list of the available spoken languages in a session.Otherwise failed, the return value is NULL.
 */
-- (NSArray <ZoomVideoSDKLiveTranscriptionLanguage*>*)getAvailableSpokenLanguages;
+- (NSArray <ZoomVideoSDKLiveTranscriptionLanguage*>* _Nullable )getAvailableSpokenLanguages;
 
 /*!
 @brief Set the spoken language of the current user.
@@ -92,7 +92,7 @@
 @brief Get the spoken language of the current user.
 @return If the function succeeds, return the current spoken language.
 */
-- (ZoomVideoSDKLiveTranscriptionLanguage *)getSpokenLanguage;
+- (ZoomVideoSDKLiveTranscriptionLanguage * _Nullable)getSpokenLanguage;
 
 /*!
 @brief Enable or disable to receive original and translated content. If you enable this feature, you must start live transcription.
@@ -111,7 +111,7 @@
 @brief Get the list of all history translation messages in a session.
 @return If the function succeeds, the return value is a list of all history translation messages in a session.
 */
-- (NSArray <ZoomVideoSDKLiveTranscriptionMessageInfo *> *)getHistoryTranslationMessageList;
+- (NSArray <ZoomVideoSDKLiveTranscriptionMessageInfo *> * _Nullable)getHistoryTranslationMessageList;
 
 /*!
 @brief Determine whether the feature to receive original and translated is available.
@@ -124,7 +124,7 @@
 @brief Get the list of all available translation languages in a session.
 @return If the function succeeds, the return value is the list of all available translation languages in a session. Otherwise failed, the return value is NULL.
 */
-- (NSArray <ZoomVideoSDKLiveTranscriptionLanguage*>*)getAvailableTranslationLanguages;
+- (NSArray <ZoomVideoSDKLiveTranscriptionLanguage*>* _Nullable)getAvailableTranslationLanguages;
 
 /*!
 @brief Set the translation language of the current user.
@@ -137,7 +137,7 @@
 @brief Get the translation language of the current user.
 @return If the function succeeds, return the current translation language.
 */
-- (ZoomVideoSDKLiveTranscriptionLanguage *)getTranslationLanguage;
+- (ZoomVideoSDKLiveTranscriptionLanguage * _Nullable)getTranslationLanguage;
 
 @end
 

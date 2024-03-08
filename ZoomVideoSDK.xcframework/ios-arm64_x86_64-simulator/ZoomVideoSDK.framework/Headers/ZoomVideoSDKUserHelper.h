@@ -21,7 +21,7 @@
  @param changeUser user in the session
  @return YES indicates that name change is success. Otherwise, this function returns NO.
  */
-- (BOOL)changeName:(NSString*)inputName withUser:(ZoomVideoSDKUser *)changeUser;
+- (BOOL)changeName:(NSString* _Nullable)inputName withUser:(ZoomVideoSDKUser * _Nullable)changeUser;
 
 /*!
  @brief Assign a user as the session host.
@@ -29,7 +29,7 @@
  @return YES  indicates that the user is now the host. Otherwise, this function returns NO.
  @warning only session host can run this function, and userId should not be myself.
  */
-- (BOOL)makeHost:(ZoomVideoSDKUser *)user;
+- (BOOL)makeHost:(ZoomVideoSDKUser * _Nullable)user;
 
 /*!
  @brief Assign a user as the session manager.
@@ -37,7 +37,7 @@
  @return YES  indicates that the user is now the manager. Otherwise, this function returns NO.
  @warning only session host can run this function, and userId should not be myself.
  */
-- (BOOL)makeManager:(ZoomVideoSDKUser *)user;
+- (BOOL)makeManager:(ZoomVideoSDKUser * _Nullable)user;
 
 /*!
  @brief Revoke manager rights from a user.
@@ -45,7 +45,7 @@
  @return YES indicates that the user no longer has manager rights. Otherwise, this function returns NO.
  @warning only session host can run this function, and userId should not be myself.
  */
-- (BOOL)revokeManager:(ZoomVideoSDKUser *)user;
+- (BOOL)revokeManager:(ZoomVideoSDKUser * _Nullable)user;
 
 /*!
  @brief Remove user from session.
@@ -53,6 +53,6 @@
  @return YES indicates that the function succeeds. Otherwise, this function returns NO.
  @warning The method is available only for the host, and the host can not remove himself.
  */
-- (BOOL)removeUser:(ZoomVideoSDKUser *)user;
+- (BOOL)removeUser:(ZoomVideoSDKUser * _Nullable)user;
 
 @end
