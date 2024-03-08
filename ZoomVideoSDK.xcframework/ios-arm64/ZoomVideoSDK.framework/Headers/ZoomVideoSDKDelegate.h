@@ -4,23 +4,23 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ZoomVideoSDKConstants.h"
-#import "ZoomVideoSDKVideoRawData.h"
-#import "ZoomVideoSDKAudioRawData.h"
-#import "ZoomVideoSDKChatHelper.h"
-#import "ZoomVideoSDKPreProcessRawData.h"
-#import "ZoomVideoSDKVideoSender.h"
-#import "ZoomVideoSDKShareSender.h"
-#import "ZoomVideoSDKShareAudioSender.h"
-#import "ZoomVideoSDKAudioSender.h"
-#import "ZoomVideoSDKVideoCapability.h"
-#import "ZoomVideoSDKVideoHelper.h"
-#import "ZoomVideoSDKAudioHelper.h"
-#import "ZoomVideoSDKShareHelper.h"
-#import "ZoomVideoSDKRecordingHelper.h"
-#import "ZoomVideoSDKLiveStreamHelper.h"
-#import "ZoomVideoSDKUserHelper.h"
-#import "ZoomVideoSDKLiveTranscriptionHelper.h"
+#import <ZoomVideoSDK/ZoomVideoSDKConstants.h>
+#import <ZoomVideoSDK/ZoomVideoSDKVideoRawData.h>
+#import <ZoomVideoSDK/ZoomVideoSDKAudioRawData.h>
+#import <ZoomVideoSDK/ZoomVideoSDKChatHelper.h>
+#import <ZoomVideoSDK/ZoomVideoSDKPreProcessRawData.h>
+#import <ZoomVideoSDK/ZoomVideoSDKVideoSender.h>
+#import <ZoomVideoSDK/ZoomVideoSDKShareSender.h>
+#import <ZoomVideoSDK/ZoomVideoSDKShareAudioSender.h>
+#import <ZoomVideoSDK/ZoomVideoSDKAudioSender.h>
+#import <ZoomVideoSDK/ZoomVideoSDKVideoCapability.h>
+#import <ZoomVideoSDK/ZoomVideoSDKVideoHelper.h>
+#import <ZoomVideoSDK/ZoomVideoSDKAudioHelper.h>
+#import <ZoomVideoSDK/ZoomVideoSDKShareHelper.h>
+#import <ZoomVideoSDK/ZoomVideoSDKRecordingHelper.h>
+#import <ZoomVideoSDK/ZoomVideoSDKLiveStreamHelper.h>
+#import <ZoomVideoSDK/ZoomVideoSDKUserHelper.h>
+#import <ZoomVideoSDK/ZoomVideoSDKLiveTranscriptionHelper.h>
 
 @class ZoomVideoSDKRawDataPipe;
 @class ZoomVideoSDKVideoCanvas;
@@ -195,7 +195,7 @@
  @param user The pointer to the user who received the request.
  @param isApproved The result of the camera control request.
  */
-- (void)onCameraControlRequestResult:(ZoomVideoSDKUser*)user approved:(BOOL)isApproved;
+- (void)onCameraControlRequestResult:(ZoomVideoSDKUser* _Nullable)user approved:(BOOL)isApproved;
 
 /**
  @brief Callback: Invoked when cloud recording status has started, paused, stopped, resumed, or otherwise changed.

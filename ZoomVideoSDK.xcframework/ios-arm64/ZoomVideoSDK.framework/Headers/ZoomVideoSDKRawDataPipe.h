@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ZoomVideoSDKDelegate.h"
+#import <ZoomVideoSDK/ZoomVideoSDKDelegate.h>
 
 /*!
  @class ZoomVideoSDKRawDataPipe

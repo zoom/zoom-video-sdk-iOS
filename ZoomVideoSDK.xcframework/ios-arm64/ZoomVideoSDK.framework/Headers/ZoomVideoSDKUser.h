@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ZoomVideoSDKRawDataPipe.h"
-#import "ZoomVideoSDKVideoCanvas.h"
-#import "ZoomVideoSDKRemoteCameraControlHelper.h"
+#import <ZoomVideoSDK/ZoomVideoSDKRawDataPipe.h>
+#import <ZoomVideoSDK/ZoomVideoSDKVideoCanvas.h>
+#import <ZoomVideoSDK/ZoomVideoSDKRemoteCameraControlHelper.h>
 /*!
  @class ZoomVideoSDKVideoStatisticInfo
  @brief Video statistic information.

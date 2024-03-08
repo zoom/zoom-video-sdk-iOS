@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ZoomVideoSDKConstants.h"
+#import <ZoomVideoSDK/ZoomVideoSDKConstants.h>
 
 @interface ZoomVideoSDKRemoteCameraControlHelper : NSObject
 /**

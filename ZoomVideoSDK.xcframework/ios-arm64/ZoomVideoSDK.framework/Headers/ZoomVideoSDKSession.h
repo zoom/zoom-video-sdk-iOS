@@ -1,7 +1,7 @@
 
 
 #import <Foundation/Foundation.h>
-#import "ZoomVideoSDKUser.h"
+#import <ZoomVideoSDK/ZoomVideoSDKUser.h>
 /*!
  @class ZoomVideoSDKSessionAudioStatisticInfo
  @brief Session audio statistic information
