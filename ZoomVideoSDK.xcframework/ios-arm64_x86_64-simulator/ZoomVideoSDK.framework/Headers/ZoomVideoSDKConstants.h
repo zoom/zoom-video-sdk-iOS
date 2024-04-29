@@ -22,6 +22,7 @@ typedef NS_ENUM(NSUInteger,ZoomVideoSDKError)
     Errors_No_Impl,
     Errors_Dont_Support_Feature,
     Errors_Unknown,
+    Errors_Remove_Folder_Fail,
     Errors_Auth_Base = 1000,
     Errors_Auth_Error,
     Errors_Auth_Empty_Key_or_Secret,
@@ -158,22 +159,13 @@ typedef NS_ENUM(NSUInteger, ZoomVideoSDKLiveStreamStatus) {
     ZoomVideoSDKLiveStreamStatus_StartFailed,
     ZoomVideoSDKLiveStreamStatus_Ended,
 };
-
-/*!
- @brief ZoomVideoSDKVideoRawDataFormat An enumeration of video raw data format.
- */
-typedef NS_ENUM(NSUInteger, ZoomVideoSDKVideoRawDataFormat) {
-    ZoomVideoSDKVideoRawDataFormatI420            = 1,
-} DEPRECATED_MSG_ATTRIBUTE("Use ZoomVideoSDKFrameDataFormat instead");
-
-/*!
+/*
  @brief ZoomVideoSDKFrameDataFormat An enumeration of raw data frame format.
  */
 typedef NS_ENUM(NSUInteger, ZoomVideoSDKFrameDataFormat) {
     ZoomVideoSDKFrameDataFormat_I420            = 1,
     ZoomVideoSDKFrameDataFormat_I420_Limit,
 };
-
 
 /*!
  @brief ZoomVideoSDKVideoRawDataRotation The direction of video.

@@ -1,0 +1,96 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "storagePrecision" : "Float32",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 2)",
+        "shortDescription" : "",
+        "shape" : "[1, 2]",
+        "name" : "hasglasses",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 2)",
+        "shortDescription" : "",
+        "shape" : "[1, 2]",
+        "name" : "transopaque",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 2 × 1 × 1)",
+        "shortDescription" : "",
+        "shape" : "[1, 2, 1, 1]",
+        "name" : "roundsquare_pool",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 2)",
+        "shortDescription" : "",
+        "shape" : "[1, 2]",
+        "name" : "roundsquare",
+        "type" : "MultiArray"
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 4,
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "visionOS" : "1.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "neuralNetworkLayerTypeHistogram" : {
+      "Squeeze" : 3,
+      "ActivationReLU" : 41,
+      "Softmax" : 3,
+      "ReshapeStatic" : 3,
+      "Transpose" : 12,
+      "ExpandDims" : 3,
+      "Convolution" : 40,
+      "AddBroadcastable" : 12,
+      "PoolingMax" : 7
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "4.0",
+      "com.github.apple.coremltools.source" : "onnx==1.11.0"
+    },
+    "generatedClassName" : "avatar_glassesall",
+    "inputSchema" : [
+      {
+        "height" : "64",
+        "colorspace" : "RGB",
+        "isOptional" : "0",
+        "width" : "128",
+        "isColor" : "1",
+        "formattedType" : "Image (Color 128 × 64)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "input_1"
+      }
+    ],
+    "method" : "predict"
+  }
+]

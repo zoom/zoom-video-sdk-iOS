@@ -113,13 +113,6 @@
 - (ZoomVideoSDKError)mirrorMyVideo:(BOOL)enable;
 
 /*!
- @brief Call this method get mirror effect enabled or not.
- @return Returns YES if the mirror effect enabled, NO otherwise.
- @warning this function only for canvas.
- */
-- (BOOL)isMirrorMyVideoEnabled DEPRECATED_MSG_ATTRIBUTE("Use - (BOOL)isMyVideoMirrored; instead");
-
-/*!
  @brief Determine whether mirror my video is enabled.
  @return Returns YES if mirror  my video is enabled, otherwise NO.
  @warning this function only for canvas.

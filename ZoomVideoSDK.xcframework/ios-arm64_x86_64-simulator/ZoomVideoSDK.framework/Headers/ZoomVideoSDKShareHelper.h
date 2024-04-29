@@ -40,13 +40,6 @@
 
 /*!
  @brief Share an external source.
- @param delegate External share source,To get extended information, see {@link ZoomVideoSDKShareSource}.
- @return If the function succeeds, it will return Errors_Success.Otherwise failed. To get extended error information, see [ZoomVideoSDKError].
- */
-- (ZoomVideoSDKError)startSharingExternalSource:(id<ZoomVideoSDKShareSource> _Nullable)delegate DEPRECATED_MSG_ATTRIBUTE("Use -startSharingExternalSource:andAudioSource: instead");
-
-/*!
- @brief Share an external source.
  @param shareDelegate External share source,To get extended information, see {@link ZoomVideoSDKShareSource}.
  @param audioDelegate External share audio source,To get extended information, see {@link ZoomVideoSDKShareAudioSource}.
  @return If the function succeeds, it will return Errors_Success.Otherwise failed. To get extended error information, see [ZoomVideoSDKError].
@@ -59,6 +52,18 @@
  @return If the function succeeds, the return value is Errors_Success. Otherwise failed. To get extended error information, see [ZoomVideoSDKError].
  */
 - (ZoomVideoSDKError)stopShare;
+
+/**
+ @brief Pause share.
+ @return If the function succeeds, the return value is Errors_Success. Otherwise failed. To get extended error information, see {@link ZoomVideoSDKError}.
+ */
+- (ZoomVideoSDKError)pauseShare;
+
+/**
+ @brief Resume share.
+ @return If the function succeeds, the return value is Errors_Success. Otherwise failed. To get extended error information, see {@link ZoomVideoSDKError}.
+ */
+- (ZoomVideoSDKError)resumeShare;
 
 /*!
  @brief Lock sharing the view or screen. Only the host can call this method.

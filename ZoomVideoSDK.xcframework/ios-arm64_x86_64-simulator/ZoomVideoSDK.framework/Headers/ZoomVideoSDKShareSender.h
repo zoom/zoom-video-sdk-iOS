@@ -18,16 +18,6 @@
  @param width Frame width.
  @param height Frame height.
  @param frameLength Buffer length.
- @return If the function succeeds, the return value is ZoomVideoSDKError_Success.Otherwise failed. To get extended error information, see [ZoomVideoSDKError].
- */
-- (ZoomVideoSDKError)sendShareFrame:(char*)frameBuffer width:(int)width height:(int)height frameLength:(int)frameLength DEPRECATED_MSG_ATTRIBUTE("Use -sendShareFrame: width: height: frameLength: format: instead");
-
-/*!
- @brief Send one frame data.
- @param frameBuffer FrameBuffer YUVI420 buffer..
- @param width Frame width.
- @param height Frame height.
- @param frameLength Buffer length.
  @param format buffer format.
  @return If the function succeeds, the return value is ZoomVideoSDKError_Success.Otherwise failed. To get extended error information, see [ZoomVideoSDKError].
  */

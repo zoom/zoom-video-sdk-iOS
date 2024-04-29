@@ -10,7 +10,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		lxJ1nun7Qoqa1mysDnVXBs51VaQ=
+		AFkNMhVS1KL4Yuh+ITIrMA8dqnw=
 		</data>
 		<key>afn_iOS_hori.mlmodelc/analytics/coremldata.bin</key>
 		<data>
@@ -59,6 +59,54 @@
 		<key>afn_iOS_vert.mlmodelc/neural_network_optionals/coremldata.bin</key>
 		<data>
 		uA3l0Th1hUHF8FJlrRRKufqG0ds=
+		</data>
+		<key>avatar_beardall.mlmodelc/analytics/coremldata.bin</key>
+		<data>
+		+ZX9qqJ4xxoSZf0J/of5T9F2nYs=
+		</data>
+		<key>avatar_beardall.mlmodelc/coremldata.bin</key>
+		<data>
+		vEX7KzNBcZnTgoMXheMRwFtAVWo=
+		</data>
+		<key>avatar_beardall.mlmodelc/metadata.json</key>
+		<data>
+		ju58NEgi8xTAdw4L7BFaqDnkvnw=
+		</data>
+		<key>avatar_beardall.mlmodelc/model.espresso.weights</key>
+		<data>
+		x4da0A3vbYVv0Ec+9Wop8PsOxQA=
+		</data>
+		<key>avatar_beardall.mlmodelc/model/coremldata.bin</key>
+		<data>
+		96qx+hsg/KmPREzNXdnSj6vRz1w=
+		</data>
+		<key>avatar_beardall.mlmodelc/neural_network_optionals/coremldata.bin</key>
+		<data>
+		tkgF5pxT7RlO+9uypQti9obolyA=
+		</data>
+		<key>avatar_glassesall.mlmodelc/analytics/coremldata.bin</key>
+		<data>
+		EI47hoIyqJWtGCdXY6ZMmJVxuO4=
+		</data>
+		<key>avatar_glassesall.mlmodelc/coremldata.bin</key>
+		<data>
+		Lp866JvMlU5pl1SVeEZxhviAUP4=
+		</data>
+		<key>avatar_glassesall.mlmodelc/metadata.json</key>
+		<data>
+		LpJg9sMOBRPPkxA5q7mWZOtYhMA=
+		</data>
+		<key>avatar_glassesall.mlmodelc/model.espresso.weights</key>
+		<data>
+		tjNd+3dPpmCwJ6v4gMtsMW+cYwI=
+		</data>
+		<key>avatar_glassesall.mlmodelc/model/coremldata.bin</key>
+		<data>
+		96qx+hsg/KmPREzNXdnSj6vRz1w=
+		</data>
+		<key>avatar_glassesall.mlmodelc/neural_network_optionals/coremldata.bin</key>
+		<data>
+		tkgF5pxT7RlO+9uypQti9obolyA=
 		</data>
 		<key>bgr_iOS_hori.mlmodelc/analytics/coremldata.bin</key>
 		<data>
@@ -129,6 +177,30 @@
 		sAilHvVxCPam2pSz/l8ae9uYGG4=
 		</data>
 		<key>flm.mlmodelc/neural_network_optionals/coremldata.bin</key>
+		<data>
+		uA3l0Th1hUHF8FJlrRRKufqG0ds=
+		</data>
+		<key>hair_seg.mlmodelc/analytics/coremldata.bin</key>
+		<data>
+		QIm0gpvBW8X0beAlfzBYZftA0j4=
+		</data>
+		<key>hair_seg.mlmodelc/coremldata.bin</key>
+		<data>
+		eGUT+UfcrQO/TLMGc5NLA/i8OHI=
+		</data>
+		<key>hair_seg.mlmodelc/metadata.json</key>
+		<data>
+		1VhO8wr/bvaAqZxW7Ivc7MXm2Lk=
+		</data>
+		<key>hair_seg.mlmodelc/model.espresso.weights</key>
+		<data>
+		Q0/jHwwI+cwY68QIgjbgaeh6v98=
+		</data>
+		<key>hair_seg.mlmodelc/model/coremldata.bin</key>
+		<data>
+		CunO+xmBog0UtaIyLShgOlzDs2c=
+		</data>
+		<key>hair_seg.mlmodelc/neural_network_optionals/coremldata.bin</key>
 		<data>
 		uA3l0Th1hUHF8FJlrRRKufqG0ds=
 		</data>
@@ -203,6 +275,30 @@
 		<key>lip_sync.mlmodelc/neural_network_optionals/coremldata.bin</key>
 		<data>
 		uA3l0Th1hUHF8FJlrRRKufqG0ds=
+		</data>
+		<key>modelNet.mlmodelc/analytics/coremldata.bin</key>
+		<data>
+		4Y+SjFw57T3qVu5LMbJpXgUh2kw=
+		</data>
+		<key>modelNet.mlmodelc/coremldata.bin</key>
+		<data>
+		2dp9yo5t03EfLeKCu8A4Ix+ajNo=
+		</data>
+		<key>modelNet.mlmodelc/metadata.json</key>
+		<data>
+		4VWWVg9F6vRj67e+Ina84VakvY8=
+		</data>
+		<key>modelNet.mlmodelc/model.espresso.weights</key>
+		<data>
+		UIH7Cc5sWI58maU/nHOsPME0mDs=
+		</data>
+		<key>modelNet.mlmodelc/model/coremldata.bin</key>
+		<data>
+		BAcGz5nP3d6p5ZJBOTSb+iF6Wa0=
+		</data>
+		<key>modelNet.mlmodelc/neural_network_optionals/coremldata.bin</key>
+		<data>
+		tkgF5pxT7RlO+9uypQti9obolyA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -296,6 +392,90 @@
 			<key>hash2</key>
 			<data>
 			LDTOHfI7g4xavyp/ZDfMo9MGftUJ/yXxHfaxG1grUes=
+			</data>
+		</dict>
+		<key>avatar_beardall.mlmodelc/analytics/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HtS+M+EsYZcPbqjWdupnF5skiPP9uHcRKR6i0EJAkDo=
+			</data>
+		</dict>
+		<key>avatar_beardall.mlmodelc/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ElDVVJu5anGTOf71FA2oRPNrNxmtBMuVAMaO2XjcNoc=
+			</data>
+		</dict>
+		<key>avatar_beardall.mlmodelc/metadata.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FMugS5WfLyYMKctv5qbzipquC67usEEGq5BqLbO50Z0=
+			</data>
+		</dict>
+		<key>avatar_beardall.mlmodelc/model.espresso.weights</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NGfHNxfZ7AuQjPU4PmpSAyMlmqXCLWyxXn1SmiiA7DA=
+			</data>
+		</dict>
+		<key>avatar_beardall.mlmodelc/model/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zSt3jGhCcfXUGWvU7K0QFRCm0NIkGKXNfok8ZH1Iugo=
+			</data>
+		</dict>
+		<key>avatar_beardall.mlmodelc/neural_network_optionals/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WTG9U2xFUClKISxvyNPBvuddqBeYC6C2cchgPa+zYjg=
+			</data>
+		</dict>
+		<key>avatar_glassesall.mlmodelc/analytics/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rt4wyvWPjNRdpfl49U+R9XKs2P9sKPZrtJGmKzldXZY=
+			</data>
+		</dict>
+		<key>avatar_glassesall.mlmodelc/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FnbEPX+MPQ2FnZ/btJvTcWMp2zrURWitowcvsgyfPFQ=
+			</data>
+		</dict>
+		<key>avatar_glassesall.mlmodelc/metadata.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			p8q+0z47RtDEiMyEGvoSysGeCI2qBRy8M4nKs96eI0I=
+			</data>
+		</dict>
+		<key>avatar_glassesall.mlmodelc/model.espresso.weights</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uJ8yj/C4+v5lJkwWUK0F2dxBocJm6abPn86QLhJs4VM=
+			</data>
+		</dict>
+		<key>avatar_glassesall.mlmodelc/model/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zSt3jGhCcfXUGWvU7K0QFRCm0NIkGKXNfok8ZH1Iugo=
+			</data>
+		</dict>
+		<key>avatar_glassesall.mlmodelc/neural_network_optionals/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WTG9U2xFUClKISxvyNPBvuddqBeYC6C2cchgPa+zYjg=
 			</data>
 		</dict>
 		<key>bgr_iOS_hori.mlmodelc/analytics/coremldata.bin</key>
@@ -418,6 +598,48 @@
 			</data>
 		</dict>
 		<key>flm.mlmodelc/neural_network_optionals/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LDTOHfI7g4xavyp/ZDfMo9MGftUJ/yXxHfaxG1grUes=
+			</data>
+		</dict>
+		<key>hair_seg.mlmodelc/analytics/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KvTosgIoFDJlwrKulAdFstBUuC6LGAEsXdKn2OKkZ9Q=
+			</data>
+		</dict>
+		<key>hair_seg.mlmodelc/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1kAKxFNApxYIVFR8w5yr+/ZYFXgeZ3FFb3at33NxYcY=
+			</data>
+		</dict>
+		<key>hair_seg.mlmodelc/metadata.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hdOroNbrqIz7+5dH01R1WmEeLV7+MKrBixfsMMIj0vA=
+			</data>
+		</dict>
+		<key>hair_seg.mlmodelc/model.espresso.weights</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AU4Vgih6hjsYWmJ+cu2kfNQKK9lyeSs+ylKxVZmixWk=
+			</data>
+		</dict>
+		<key>hair_seg.mlmodelc/model/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qAA5TguZhLD1Kwwz3IwU4w4AMwn2OwJjQEh1VMTG2kk=
+			</data>
+		</dict>
+		<key>hair_seg.mlmodelc/neural_network_optionals/coremldata.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -548,6 +770,48 @@
 			<key>hash2</key>
 			<data>
 			LDTOHfI7g4xavyp/ZDfMo9MGftUJ/yXxHfaxG1grUes=
+			</data>
+		</dict>
+		<key>modelNet.mlmodelc/analytics/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			19s8AXS/AhyAUhjhR1dnivOSQYqqew5Hn4FWxmSdTDk=
+			</data>
+		</dict>
+		<key>modelNet.mlmodelc/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			V2lThknzaptzUOC9TDP6FHCnlNoEBxwOxrjdmuQUjTw=
+			</data>
+		</dict>
+		<key>modelNet.mlmodelc/metadata.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			daGbgKrUoQzyKPQ2VHYldGsTrrPHcLO6dMNz/oQA02s=
+			</data>
+		</dict>
+		<key>modelNet.mlmodelc/model.espresso.weights</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Icdt7MAW9F8zucTppqES5P4vSdjKx9MP5j52mDPr9F0=
+			</data>
+		</dict>
+		<key>modelNet.mlmodelc/model/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8h7KONKYEx+DqOLQr00ATInPArA1kULynzXM/tcXx/A=
+			</data>
+		</dict>
+		<key>modelNet.mlmodelc/neural_network_optionals/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WTG9U2xFUClKISxvyNPBvuddqBeYC6C2cchgPa+zYjg=
 			</data>
 		</dict>
 	</dict>

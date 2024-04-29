@@ -1,0 +1,84 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "storagePrecision" : "Float32",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 5)",
+        "shortDescription" : "",
+        "shape" : "[1, 5]",
+        "name" : "jaw",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 3)",
+        "shortDescription" : "",
+        "shape" : "[1, 3]",
+        "name" : "moustache",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 3)",
+        "shortDescription" : "",
+        "shape" : "[1, 3]",
+        "name" : "whisker",
+        "type" : "MultiArray"
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 4,
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "visionOS" : "1.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "neuralNetworkLayerTypeHistogram" : {
+      "Squeeze" : 3,
+      "ActivationReLU" : 41,
+      "Softmax" : 3,
+      "ReshapeStatic" : 3,
+      "ExpandDims" : 3,
+      "Convolution" : 40,
+      "AddBroadcastable" : 12,
+      "PoolingMax" : 7
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "userDefinedMetadata" : {
+      "coremltoolsVersion" : "3.4"
+    },
+    "generatedClassName" : "avatar_beardall",
+    "inputSchema" : [
+      {
+        "height" : "128",
+        "colorspace" : "RGB",
+        "isOptional" : "0",
+        "width" : "256",
+        "isColor" : "1",
+        "formattedType" : "Image (Color 256 × 128)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "input_1"
+      }
+    ],
+    "method" : "predict"
+  }
+]

@@ -99,6 +99,10 @@
  */
 - (NSString *_Nullable)getCustomUserId;
 /*!
+ @brief Get the user's reference.
+ */
+- (NSString *_Nullable)getUserReference;
+/*!
  @brief Determine whether the user is the host.
  */
 - (BOOL)isHost;
