@@ -248,6 +248,17 @@
  */
 - (NSString * _Nullable)getSDKVersion;
 
+/**
+ @brief Exporting a log file to local disk.
+ @return If the function succeeds, the return value is the exported log file path.
+ */
+- (NSString * _Nullable)exportLog;
+
+/**
+ @brief Clean all exported logs.
+ @return If the function succeeds, it will return ZMVideoSDKErrors_Success. Otherwise failed.
+ */
+- (ZoomVideoSDKError)cleanAllExportedLogs;
 /*!
  @brief Returns an instance to manage audio controls related to the current video SDK session.
  @return The object of ZoomVideoSDKAudioHelper. See [ZoomVideoSDKAudioHelper]

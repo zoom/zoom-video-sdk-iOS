@@ -34,16 +34,6 @@
 /*!
  @brief Subscribe to the user's video or share view.
  @param view the object of UIView, that's you need render data.
- @param aspect Specify a render's aspect, valid only for video canvas.
- @return The result of this method.
- */
-- (ZoomVideoSDKError)subscribeWithView:(UIView * _Nullable)view
-                         andAspectMode:(ZoomVideoSDKVideoAspect)aspect
-DEPRECATED_MSG_ATTRIBUTE("Use subscribeWithView:aspectMode:andResolution: instead");
-
-/*!
- @brief Subscribe to the user's video or share view.
- @param view the object of UIView, that's you need render data.
  @param aspect the render's aspect.
  @param resolution Specify a render's resolution, valid only for video canvas.
  @return The result of this method.
