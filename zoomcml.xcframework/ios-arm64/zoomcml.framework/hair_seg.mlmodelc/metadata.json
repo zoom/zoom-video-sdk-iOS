@@ -1,0 +1,65 @@
+[
+  {
+    "shortDescription" : "Hair Segmentation Model",
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "MultiArray of shape (1, 1, 16, 40, 40). The first and second dimensions correspond to sequence and batch size, respectively",
+        "shape" : "[]",
+        "name" : "hair_mask",
+        "type" : "MultiArray"
+      }
+    ],
+    "version" : "v1.0",
+    "modelParameters" : [
+
+    ],
+    "author" : "Russell Lv",
+    "specificationVersion" : 1,
+    "storagePrecision" : "Float32",
+    "license" : "Copyright ©2021 Zoom Video Communications, Inc. All rights reserved.",
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.13",
+      "tvOS" : "11.0",
+      "visionOS" : "1.0",
+      "watchOS" : "4.0",
+      "iOS" : "11.0",
+      "macCatalyst" : "11.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "height" : "160",
+        "colorspace" : "RGB",
+        "isOptional" : "0",
+        "width" : "160",
+        "isColor" : "1",
+        "formattedType" : "Image (Color 160 × 160)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "input_image"
+      }
+    ],
+    "userDefinedMetadata" : {
+
+    },
+    "generatedClassName" : "hair_seg",
+    "neuralNetworkLayerTypeHistogram" : {
+      "Convolution" : 50,
+      "ActivationSigmoid" : 1,
+      "BatchNorm" : 28,
+      "ActivationReLU" : 39,
+      "Add" : 9
+    },
+    "method" : "predict"
+  }
+]
