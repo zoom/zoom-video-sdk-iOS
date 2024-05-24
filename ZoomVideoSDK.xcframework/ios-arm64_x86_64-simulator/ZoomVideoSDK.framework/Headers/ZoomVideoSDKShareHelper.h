@@ -145,4 +145,18 @@
  @return The result of it.
  */
 - (ZoomVideoSDKError)destroyAnnotationHelper:(ZoomVideoSDKAnnotationHelper * _Nullable)helper;
+
+/*!
+ @brief Enable or disable participants can share simultaneously.
+ @param enable True to enable. False to disable.
+ @return If the function succeeds, the return value is Errors_Success.
+ @warning When you switch multi share from enable to disable, all sharing will be stopped
+ */
+- (ZoomVideoSDKError)enableMultiShare:(BOOL)enable;
+
+/*!
+ @brief Determine whether multi share is enabled or not..
+ @return true enabled, false not enabled.
+ */
+- (BOOL)isMultiShareEnabled;
 @end

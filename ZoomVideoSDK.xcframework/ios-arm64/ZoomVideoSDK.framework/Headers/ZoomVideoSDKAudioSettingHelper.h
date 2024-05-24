@@ -17,7 +17,7 @@
 /*!
  @brief Call this method to enable or disable the original input of mic.
  @param enable YES to enable the original input of the microphone or NO to disable it.
- @return Error code defined in [ZoomVideoSDKErrors].
+ @return Error code defined in [ZoomVideoSDKError].
  */
 - (ZoomVideoSDKError)enableMicOriginalInput:(BOOL)enable;
 
@@ -30,7 +30,7 @@
 /*!
  @brief Call this method to enable or disable the auto adjust input of mic.
  @param enable YES to enable auto adjust input or false to disable it.
- @return Error code defined in [ZoomVideoSDKErrors].
+ @return Error code defined in [ZoomVideoSDKError].
  */
 - (ZoomVideoSDKError)enableAutoAdjustMicVolume:(BOOL)enable;
 

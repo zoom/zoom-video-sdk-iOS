@@ -2,6 +2,8 @@
 
 #import <Foundation/Foundation.h>
 #import <ZoomVideoSDK/ZoomVideoSDKUser.h>
+
+#pragma mark - Statistic Information -
 /*!
  @class ZoomVideoSDKSessionAudioStatisticInfo
  @brief Session audio statistic information
@@ -67,7 +69,7 @@
 @end
 
 
-
+#pragma mark - ZoomVideoSDKSession -
 /*!
  @brief Zoom Video SDK session.
  */
@@ -134,5 +136,33 @@
 @brief Get the session's screen share statistic information.
 */
 - (ZoomVideoSDKSessionASVStatisticInfo * _Nullable)getSessionShareStatisticInfo;
+
+#pragma mark - file transfer -
+
+/*!
+@brief Determine whether file transfer is enabled.
+@return True if file transfer is enabled, otherwise false.
+*/
+- (BOOL)isFileTransferEnable;
+
+/*!
+@brief Send file to all users in current session.
+@param filePath The local path of the file
+@return If the function succeeds, the return value is Errors_Success.
+@warning this interface will related with chat  privilege see @{ZoomVideoSDKChatPrivilegeType}.
+*/
+- (ZoomVideoSDKError)transferFile:(NSString * _Nullable)filePath;
+
+/*!
+@brief Get the list of allowed file types in transfer.
+@return The value of allowed file types in transfer, comma-separated if there are multiple values. Exe files are by default forbidden from being transferred.
+*/
+- (NSString *_Nullable)getTransferFileTypeWhiteList;
+
+/*!
+@brief Get the maximum size for file transfer.
+@return The maximum number of bytes for file transfer.
+*/
+- (unsigned long long)getMaxTransferFileSize;
 
 @end

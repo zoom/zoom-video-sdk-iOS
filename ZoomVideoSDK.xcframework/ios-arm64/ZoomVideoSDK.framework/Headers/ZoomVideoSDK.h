@@ -263,84 +263,84 @@
  @brief Returns an instance to manage audio controls related to the current video SDK session.
  @return The object of ZoomVideoSDKAudioHelper. See [ZoomVideoSDKAudioHelper]
  */
-- (ZoomVideoSDKAudioHelper * _Nonnull)getAudioHelper;
+- (ZoomVideoSDKAudioHelper * _Nullable)getAudioHelper;
 
 /*!
  @brief Returns an instance to manage cameras and video during a video SDK session.
  @return The object of ZoomVideoSDKVideoHelper.  See [ZoomVideoSDKVideoHelper].
  */
-- (ZoomVideoSDKVideoHelper * _Nonnull)getVideoHelper;
+- (ZoomVideoSDKVideoHelper * _Nullable)getVideoHelper;
 
 /*!
  @brief Returns an instance to manage users present in a video SDK session.
  @return The object of ZoomVideoSDKUserHelper. See [ZoomVideoSDKUserHelper].
  */
-- (ZoomVideoSDKUserHelper * _Nonnull)getUserHelper;
+- (ZoomVideoSDKUserHelper * _Nullable)getUserHelper;
 
 /*!
  @brief Returns an instance to manage screen sharing during a video SDK session.
  @return The object of ZoomVideoSDKShareHelper. See [ZoomVideoSDKShareHelper].
  */
-- (ZoomVideoSDKShareHelper * _Nonnull)getShareHelper;
+- (ZoomVideoSDKShareHelper * _Nullable)getShareHelper;
 
 /*!
  @brief Returns an instance to manage live streaming during a video SDK session.
  @return The object of ZoomVideoSDKLiveStreamHelper. See [ZoomVideoSDKLiveStreamHelper].
  */
-- (ZoomVideoSDKLiveStreamHelper * _Nonnull)getLiveStreamHelper;
+- (ZoomVideoSDKLiveStreamHelper * _Nullable)getLiveStreamHelper;
 
 /*!
  @brief Returns an instance to send and receive chat messages within video SDK session participants.
  @return The object of ZoomVideoSDKChatHelper. See [ZoomVideoSDKChatHelper].
  */
-- (ZoomVideoSDKChatHelper * _Nonnull)getChatHelper;
+- (ZoomVideoSDKChatHelper * _Nullable)getChatHelper;
 
 /*!
  @brief Returns an instance to manage phone invitations during a video SDK session.
  @return The object of ZoomVideoSDKPhoneHelper. See [ZoomVideoSDKPhoneHelper].
  */
-- (ZoomVideoSDKPhoneHelper * _Nonnull)getPhoneHelper;
+- (ZoomVideoSDKPhoneHelper * _Nullable)getPhoneHelper;
 
 /*!
  @brief Returns an instance to use command channel features during a video SDK session.
  @return A [ZoomVideoSDKCmdChannel] instance.
  */
-- (ZoomVideoSDKCmdChannel * _Nonnull)getCmdChannel;
+- (ZoomVideoSDKCmdChannel * _Nullable)getCmdChannel;
 
 /*!
  @brief Returns an instance to manage cloud recordings during a video SDK session.
  @return A [ZoomVideoSDKRecordingHelper] instance.
  */
-- (ZoomVideoSDKRecordingHelper * _Nonnull)getRecordingHelper;
+- (ZoomVideoSDKRecordingHelper * _Nullable)getRecordingHelper;
 
 /*!
  @brief Get audio setting helper.
  @return A [ZoomVideoSDKAudioSettingHelper] instance.
  */
-- (ZoomVideoSDKAudioSettingHelper * _Nonnull)getAudioSettingHelper;
+- (ZoomVideoSDKAudioSettingHelper * _Nullable)getAudioSettingHelper;
 
 /*!
  @brief Get test audio device helper
  @return A [ZoomVideoSDKTestAudioDeviceHelper] instance.
  */
-- (ZoomVideoSDKTestAudioDeviceHelper * _Nonnull)getTestAudioDeviceHelper;
+- (ZoomVideoSDKTestAudioDeviceHelper * _Nullable)getTestAudioDeviceHelper;
 
 /*!
  @brief Get live transcription helper object.
  @return A [ZoomVideoSDKLiveTranscriptionHelper] instance.
  */
-- (ZoomVideoSDKLiveTranscriptionHelper * _Nonnull)getLiveTranscriptionHelper;
+- (ZoomVideoSDKLiveTranscriptionHelper * _Nullable)getLiveTranscriptionHelper;
 
 /*!
  @brief Get virtual background helper object.
  @return A [ZoomVideoSDKLiveTranscriptionHelper] instance.
  */
-- (ZoomVideoSDKVirtualBackgroundHelper * _Nonnull)getVirtualBackgroundHelper;
+- (ZoomVideoSDKVirtualBackgroundHelper * _Nullable)getVirtualBackgroundHelper;
 
 /**
  @brief Get crc helper object.
  @return If the function succeeds, the return value is the crc helper object. Otherwise returns nil.
  */
-- (ZoomVideoSDKCRCHelper * _Nonnull)getCRCHelper;
+- (ZoomVideoSDKCRCHelper * _Nullable)getCRCHelper;
 
 @end

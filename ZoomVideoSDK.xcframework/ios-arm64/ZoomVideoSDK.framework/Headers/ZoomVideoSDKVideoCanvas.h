@@ -64,8 +64,9 @@
  @brief Set the video aspect mode.
  @param aspect The aspect mode of video.
  @param view The UIView object to render video.
+ @return The result of the method.
  */
-- (void)setAspectMode:(ZoomVideoSDKVideoAspect)aspect toView:(UIView * _Nullable)view;
+- (ZoomVideoSDKError)setAspectMode:(ZoomVideoSDKVideoAspect)aspect toView:(UIView * _Nullable)view;
 
 /**
  @brief Set the video resolution.

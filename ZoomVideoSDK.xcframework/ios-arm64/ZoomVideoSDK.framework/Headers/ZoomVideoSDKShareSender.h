@@ -19,7 +19,7 @@
  @param height Frame height.
  @param frameLength Buffer length.
  @param format buffer format.
- @return If the function succeeds, the return value is ZoomVideoSDKError_Success.Otherwise failed. To get extended error information, see [ZoomVideoSDKError].
+ @return If the function succeeds, the return value is Errors_Success.Otherwise failed. To get extended error information, see [ZoomVideoSDKError].
  */
 - (ZoomVideoSDKError)sendShareFrame:(char*)frameBuffer width:(int)width height:(int)height frameLength:(int)frameLength format:(ZoomVideoSDKFrameDataFormat)format;
 

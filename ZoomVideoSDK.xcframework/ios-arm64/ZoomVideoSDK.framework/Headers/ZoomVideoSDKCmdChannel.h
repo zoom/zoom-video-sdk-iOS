@@ -20,7 +20,7 @@
  @param user An instance of ZoomVideoSDKUser associated with the user who receives the command. See [ZoomVideoSDKUser]
  If receiver is set to nil, the command is broadcast to all users.
  @return Errors_Success if the command sends successfully. Otherwise, the send command request fails.
- See error codes defined in [ZoomVideoSDKErrors].
+ See error codes defined in [ZoomVideoSDKError].
  */
 - (ZoomVideoSDKError)sendCommand:(NSString * _Nullable)commandContent receiveUser:(ZoomVideoSDKUser * _Nullable)user;
 
