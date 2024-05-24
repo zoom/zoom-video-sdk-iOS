@@ -10,23 +10,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		AFkNMhVS1KL4Yuh+ITIrMA8dqnw=
+		6VC+tH/vFFaCGxkAZeH7MbVNCys=
 		</data>
 		<key>afn_iOS_hori.mlmodelc/analytics/coremldata.bin</key>
 		<data>
-		3anhfC8bGv4yX8koMxsp8AEENNI=
+		xib7FM8WfEwKe7gSwCBWMW4EljM=
 		</data>
 		<key>afn_iOS_hori.mlmodelc/coremldata.bin</key>
 		<data>
-		aAt0FUIYBf+1J/hgGdlGlBig1aU=
+		9psSHgmJK0qBT4JPG0JalVhXYiA=
 		</data>
 		<key>afn_iOS_hori.mlmodelc/metadata.json</key>
 		<data>
-		sc3CHCsMdVAATScZtakt/Cr8iPA=
+		Cy2o8qyLsWgiVkuUBWs0EqZGLow=
 		</data>
 		<key>afn_iOS_hori.mlmodelc/model.espresso.weights</key>
 		<data>
-		j4MV1kvbWJrtMQ+wyeIfZiFwG6c=
+		VeKlTqKtqJrVx/H04mWroW63SD8=
 		</data>
 		<key>afn_iOS_hori.mlmodelc/model/coremldata.bin</key>
 		<data>
@@ -38,19 +38,19 @@
 		</data>
 		<key>afn_iOS_vert.mlmodelc/analytics/coremldata.bin</key>
 		<data>
-		JDc7CZHiV/zwK3ygSpnQiRrEXLU=
+		NVrMk4QdNvdZMBQYUh5+1K+gSd0=
 		</data>
 		<key>afn_iOS_vert.mlmodelc/coremldata.bin</key>
 		<data>
-		XMgIr97VqWV5hXkYIDHbcnQLoE0=
+		9psSHgmJK0qBT4JPG0JalVhXYiA=
 		</data>
 		<key>afn_iOS_vert.mlmodelc/metadata.json</key>
 		<data>
-		mECXr1vtVgDC4sY1TstsUZsFr1g=
+		xbjEYvytfHPJagNOLRLc0vip+E0=
 		</data>
 		<key>afn_iOS_vert.mlmodelc/model.espresso.weights</key>
 		<data>
-		Hi/KAIj2r5nvYrpID1Ni49kkpyg=
+		W5s8O4u5BjG6uM5xN1SZf7qvhkI=
 		</data>
 		<key>afn_iOS_vert.mlmodelc/model/coremldata.bin</key>
 		<data>
@@ -110,19 +110,19 @@
 		</data>
 		<key>bgr_iOS_hori.mlmodelc/analytics/coremldata.bin</key>
 		<data>
-		cQg7Q3mXe4w1yMts7AjIyaIt4GQ=
+		XCfBRM+Jn6x1wo6yL9FjlLxJOVE=
 		</data>
 		<key>bgr_iOS_hori.mlmodelc/coremldata.bin</key>
 		<data>
-		Lw44r5bo0Weq4ypfPMERhowkIgI=
+		dGbzCvauW2PkuNAAUq1QyOOJhmc=
 		</data>
 		<key>bgr_iOS_hori.mlmodelc/metadata.json</key>
 		<data>
-		eYataR8/GsnWporaE2dbmwy1RqQ=
+		j9H/rgB/TMGioNAw+QACvZ0iq5M=
 		</data>
 		<key>bgr_iOS_hori.mlmodelc/model.espresso.weights</key>
 		<data>
-		cLjU4QoOYCRBSTzmxkYm7UGnXdk=
+		WYz/nsapBlRK0R7MEe8ExKLjUmk=
 		</data>
 		<key>bgr_iOS_hori.mlmodelc/model/coremldata.bin</key>
 		<data>
@@ -134,19 +134,19 @@
 		</data>
 		<key>bgr_iOS_vert.mlmodelc/analytics/coremldata.bin</key>
 		<data>
-		hYt3kHcSr4XCCIUt3mESqvQGnWA=
+		9gcAnCVCafpeJtzpvZxtHJR0yRs=
 		</data>
 		<key>bgr_iOS_vert.mlmodelc/coremldata.bin</key>
 		<data>
-		3nYaw7NRy7wW4duPAFr4c35AtJQ=
+		dGbzCvauW2PkuNAAUq1QyOOJhmc=
 		</data>
 		<key>bgr_iOS_vert.mlmodelc/metadata.json</key>
 		<data>
-		V8i+oD2kRpOllB6oAPxJO87Dzm4=
+		krHwliyUb9O0hDNrWB154T/Mdvc=
 		</data>
 		<key>bgr_iOS_vert.mlmodelc/model.espresso.weights</key>
 		<data>
-		OXkWCjZ3Bo0RJwX0nrjQ+G70qfU=
+		1kwMiKgYyP2QUfZod8w970O3tjw=
 		</data>
 		<key>bgr_iOS_vert.mlmodelc/model/coremldata.bin</key>
 		<data>
@@ -282,7 +282,7 @@
 		</data>
 		<key>modelNet.mlmodelc/coremldata.bin</key>
 		<data>
-		2dp9yo5t03EfLeKCu8A4Ix+ajNo=
+		ODUMcaeYTiP81/+M6FWlhB2LInU=
 		</data>
 		<key>modelNet.mlmodelc/metadata.json</key>
 		<data>
@@ -314,28 +314,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nD8ZFXLqB4QehuBkNyfTvxlYypmixDCzlXDlqfLsWoU=
+			1/N0cY5eNVid2lvQHXHYWmijfKALxpEjt7I0gJVXEa4=
 			</data>
 		</dict>
 		<key>afn_iOS_hori.mlmodelc/coremldata.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			l51mArSGDZsmj0dHt8bX/4dhJkUrUFN6rqHKsIHmhQw=
+			xac6q1Y6SW6bRsfZDJZYvH/CNbwB1n/p+rLlIvHP2gU=
 			</data>
 		</dict>
 		<key>afn_iOS_hori.mlmodelc/metadata.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cSe/rNynMzKaq4MyZXTQOdmxpNgyrHNcqxOQJK84/BI=
+			G3U20ojT4uv3mKg/UBqorf4D1PwCmFY0UqrxABTnmLI=
 			</data>
 		</dict>
 		<key>afn_iOS_hori.mlmodelc/model.espresso.weights</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ax4KUlqNSOu7YXsRDNYyhjhuvkgxzr4gi7OjfTjY61w=
+			rw9Iw4KP7t7UG0E7iCyY2jOumZbZM8OptMhH3+ALZAM=
 			</data>
 		</dict>
 		<key>afn_iOS_hori.mlmodelc/model/coremldata.bin</key>
@@ -356,28 +356,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sbrxGYBEfTzCjG18ZbcmjC+ohgJS2zzlO66SDD8a1dc=
+			GDJpwqowCjex4NWDUQvkPtvJgEAj70S001FZ3Kvokb8=
 			</data>
 		</dict>
 		<key>afn_iOS_vert.mlmodelc/coremldata.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QpUj3h2vWgZT0QewscxvFO77TcW3JeLl+8mapDQAns8=
+			xac6q1Y6SW6bRsfZDJZYvH/CNbwB1n/p+rLlIvHP2gU=
 			</data>
 		</dict>
 		<key>afn_iOS_vert.mlmodelc/metadata.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AQDYP8Qj2a4LX2liErfYE/4hpf+OgoesayhzzQHbMKU=
+			JP9Xqr0lLkR4WN3DqfbrqVjJg/R7f20C00iY1oW/Ing=
 			</data>
 		</dict>
 		<key>afn_iOS_vert.mlmodelc/model.espresso.weights</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KxI1WLjd6q36nsOk0sGacVmn9dlWtyDnddx4+qqDbC0=
+			7X9fm37zeZYePi/+Jk1yLNETzAOKH8FkiSQ2/5RD+dA=
 			</data>
 		</dict>
 		<key>afn_iOS_vert.mlmodelc/model/coremldata.bin</key>
@@ -482,28 +482,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2M18Xuvi0c0+torcvoLPVz4OuVEU7fLt/Lo0kfmCrpY=
+			hL4Z0I7F5q0LUnbFpys1znRs+ISJMUm6ufouYgw1bpQ=
 			</data>
 		</dict>
 		<key>bgr_iOS_hori.mlmodelc/coremldata.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qwU4+DdPfBdnHb5KHmmfcgkf/kuK6shgtrw8nNpQYWQ=
+			5RqJjpmWWRrkwjZwvjLbBdXyiZKqBlAbIdpgq/us5Ns=
 			</data>
 		</dict>
 		<key>bgr_iOS_hori.mlmodelc/metadata.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NXrpfD8vnMZp7NRBx6Th25ZYKzrL+mabT0g2tK+0RzI=
+			FmWVgvmWJpHQTxf7J9MNwwiTHVJXmHF6SGHufeoC0JE=
 			</data>
 		</dict>
 		<key>bgr_iOS_hori.mlmodelc/model.espresso.weights</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZNoaEYsAoV4k/VkTjILR9IvYbEj7Ua2gdmYceY+couQ=
+			V/qV9+giuMqb+t5YddwbWQDrjTYvdbWQJExwGLNqL4o=
 			</data>
 		</dict>
 		<key>bgr_iOS_hori.mlmodelc/model/coremldata.bin</key>
@@ -524,28 +524,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+Gp5qySTJwoudU6/K1L3UZzrLXnYYDmvOHC53mPxZY0=
+			es3PcsOHiLnCcSm5KDy4ax5WpjL+maSLfy9c4Bop164=
 			</data>
 		</dict>
 		<key>bgr_iOS_vert.mlmodelc/coremldata.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3APwxy3uhbQm+ETOHBs0Gv1gTjzo+UIdU6zAu7xb5ls=
+			5RqJjpmWWRrkwjZwvjLbBdXyiZKqBlAbIdpgq/us5Ns=
 			</data>
 		</dict>
 		<key>bgr_iOS_vert.mlmodelc/metadata.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iId1Q0CVDH5HgvjT5GQ/siQJHD5MM85CEkvbezXbmhM=
+			wavPoVbp6Fn7ZlLw8zWmfcJxFBGvr8XGme+IcPOMquw=
 			</data>
 		</dict>
 		<key>bgr_iOS_vert.mlmodelc/model.espresso.weights</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1lOYFLuP++nw/J8ONoeCC3ZxnX+44N1/GOQR8eYDoMg=
+			pnJHpKiBrSYEyNiH5IfIMjmLCdw9YDrGL9razIi5t7w=
 			</data>
 		</dict>
 		<key>bgr_iOS_vert.mlmodelc/model/coremldata.bin</key>
@@ -783,7 +783,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			V2lThknzaptzUOC9TDP6FHCnlNoEBxwOxrjdmuQUjTw=
+			Y8qoe5xrKzfulW5YvhgEH5vLs5+5M/CX5Sg6qy9m3CQ=
 			</data>
 		</dict>
 		<key>modelNet.mlmodelc/metadata.json</key>
