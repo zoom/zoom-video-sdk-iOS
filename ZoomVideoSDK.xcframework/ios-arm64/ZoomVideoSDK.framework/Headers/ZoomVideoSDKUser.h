@@ -89,7 +89,7 @@
 /*!
  @brief Get the user's id.
  */
-- (NSUInteger)getUserID;
+- (NSInteger)getUserID;
 /*!
  @brief Get the name of the user in the session.
  */
@@ -154,6 +154,7 @@
  @return If the function succeeds, the return value is the remote camera control helper object. Otherwise returns null. For more details, see {@link ZoomVideoSDKRemoteCameraControlHelper}.
  */
 - (ZoomVideoSDKRemoteCameraControlHelper *_Nullable)getRemoteCameraControlHelper;
+
 /*!
  @brief The user's share canvas.
  */
@@ -181,5 +182,13 @@
  @return if success return YES, otherwise NO.
  */
 - (BOOL)canSetUserVolume:(BOOL)isSharingAudio;
+
+/*!
+ @brief Send file to current user
+ @param filePath The local path of the file.
+ @return If the function succeeds, the return value is Errors_Success.
+ @warning this interface will related with chat  privilege see @{ZoomVideoSDKChatPrivilegeType}.
+ */
+- (ZoomVideoSDKError)transferFile:(NSString * _Nullable)filePath;
 
 @end
