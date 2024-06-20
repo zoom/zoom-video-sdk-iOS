@@ -7,9 +7,9 @@
         "hasShapeFlexibility" : "0",
         "isOptional" : "0",
         "dataType" : "Float32",
-        "formattedType" : "MultiArray (Float32 1 × 5)",
+        "formattedType" : "MultiArray (Float32)",
         "shortDescription" : "",
-        "shape" : "[1, 5]",
+        "shape" : "[]",
         "name" : "jaw",
         "type" : "MultiArray"
       },
@@ -17,9 +17,9 @@
         "hasShapeFlexibility" : "0",
         "isOptional" : "0",
         "dataType" : "Float32",
-        "formattedType" : "MultiArray (Float32 1 × 3)",
+        "formattedType" : "MultiArray (Float32)",
         "shortDescription" : "",
-        "shape" : "[1, 3]",
+        "shape" : "[]",
         "name" : "moustache",
         "type" : "MultiArray"
       },
@@ -27,9 +27,9 @@
         "hasShapeFlexibility" : "0",
         "isOptional" : "0",
         "dataType" : "Float32",
-        "formattedType" : "MultiArray (Float32 1 × 3)",
+        "formattedType" : "MultiArray (Float32)",
         "shortDescription" : "",
-        "shape" : "[1, 3]",
+        "shape" : "[]",
         "name" : "whisker",
         "type" : "MultiArray"
       }
@@ -37,42 +37,41 @@
     "modelParameters" : [
 
     ],
-    "specificationVersion" : 4,
+    "specificationVersion" : 1,
     "computePrecision" : "Float16",
     "isUpdatable" : "0",
     "availability" : {
-      "macOS" : "10.15",
-      "tvOS" : "13.0",
+      "macOS" : "10.13",
+      "tvOS" : "11.0",
       "visionOS" : "1.0",
-      "watchOS" : "6.0",
-      "iOS" : "13.0",
-      "macCatalyst" : "13.0"
+      "watchOS" : "4.0",
+      "iOS" : "11.0",
+      "macCatalyst" : "11.0"
     },
     "neuralNetworkLayerTypeHistogram" : {
-      "Squeeze" : 3,
-      "ActivationReLU" : 41,
-      "Softmax" : 3,
-      "ReshapeStatic" : 3,
-      "ExpandDims" : 3,
-      "Convolution" : 40,
-      "AddBroadcastable" : 12,
-      "PoolingMax" : 7
+      "Concat" : 1,
+      "ActivationLinear" : 60,
+      "Flatten" : 3,
+      "ActivationSigmoidHard" : 30,
+      "Add" : 10,
+      "Convolution" : 45,
+      "InnerProduct" : 3
     },
     "modelType" : {
       "name" : "MLModelType_neuralNetwork"
     },
     "userDefinedMetadata" : {
-      "coremltoolsVersion" : "3.4"
+
     },
     "generatedClassName" : "avatar_beardall",
     "inputSchema" : [
       {
-        "height" : "128",
+        "height" : "112",
         "colorspace" : "RGB",
         "isOptional" : "0",
-        "width" : "256",
+        "width" : "112",
         "isColor" : "1",
-        "formattedType" : "Image (Color 256 × 128)",
+        "formattedType" : "Image (Color 112 × 112)",
         "hasSizeFlexibility" : "0",
         "type" : "Image",
         "shortDescription" : "",

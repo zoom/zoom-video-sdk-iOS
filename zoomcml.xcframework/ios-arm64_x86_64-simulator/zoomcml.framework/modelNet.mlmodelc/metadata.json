@@ -22,6 +22,16 @@
         "shape" : "[]",
         "name" : "skincolor",
         "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "beardable",
+        "type" : "MultiArray"
       }
     ],
     "modelParameters" : [
@@ -44,15 +54,15 @@
       "PoolingAverage" : 1,
       "Clip" : 35,
       "Convolution" : 52,
-      "ActivationSigmoid" : 1,
-      "InnerProduct" : 2
+      "ActivationSigmoid" : 2,
+      "InnerProduct" : 4
     },
     "modelType" : {
       "name" : "MLModelType_neuralNetwork"
     },
     "userDefinedMetadata" : {
       "com.github.apple.coremltools.version" : "6.3.0",
-      "com.github.apple.coremltools.source" : "torch==2.0.1"
+      "com.github.apple.coremltools.source" : "torch==2.0.1+cu117"
     },
     "generatedClassName" : "modelNet",
     "inputSchema" : [

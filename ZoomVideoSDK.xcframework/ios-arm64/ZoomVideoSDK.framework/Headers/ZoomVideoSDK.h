@@ -153,6 +153,10 @@
  */
 @property (nonatomic, assign) NSInteger sessionIdleTimeoutMins;
 /*!
+ @brief [Optional] Whether to cancel the bandwidth limit, If YES is set, the network bandwidth is no longer limited, and better audio and video quality can be obtained.Bandwidth is not limited by default. If it is a wifi network, the bandwidth is not limited, and this setting is invalid.
+ */
+@property (nonatomic, assign) BOOL enable5GHighBandWidth;
+/*!
  @brief [Optional]  Audio Option.
  */
 @property (nonatomic, strong) ZoomVideoSDKAudioOptions * _Nullable audioOption;

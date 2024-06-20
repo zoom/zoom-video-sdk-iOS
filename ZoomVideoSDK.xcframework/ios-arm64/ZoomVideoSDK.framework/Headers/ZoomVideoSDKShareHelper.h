@@ -45,7 +45,17 @@
  @return If the function succeeds, it will return Errors_Success.Otherwise failed. To get extended error information, see [ZoomVideoSDKError].
  @warning   If audioDelegate is non-null, it means share user-defined audio at the same time.
  */
-- (ZoomVideoSDKError)startSharingExternalSource:(id<ZoomVideoSDKShareSource> _Nullable)shareDelegate andAudioSource:(id <ZoomVideoSDKShareAudioSource> _Nullable)audioDelegate;
+- (ZoomVideoSDKError)startSharingExternalSource:(id<ZoomVideoSDKShareSource> _Nullable)shareDelegate andAudioSource:(id <ZoomVideoSDKShareAudioSource> _Nullable)audioDelegate DEPRECATED_MSG_ATTRIBUTE("use startSharingExternalSource:andAudioSource:isPlaying: instead");;
+
+/*!
+ @brief Share an external source.
+ @param shareDelegate External share source,To get extended information, see {@link ZoomVideoSDKShareSource}.
+ @param audioDelegate External share audio source,To get extended information, see {@link ZoomVideoSDKShareAudioSource}.
+ @param isPlaying YES to play shared audio raw data, false not to play.
+ @return If the function succeeds, it will return Errors_Success.Otherwise failed. To get extended error information, see [ZoomVideoSDKError].
+ @warning   If audioDelegate is non-null, it means share user-defined audio at the same time.
+ */
+- (ZoomVideoSDKError)startSharingExternalSource:(id<ZoomVideoSDKShareSource> _Nullable)shareDelegate andAudioSource:(id <ZoomVideoSDKShareAudioSource> _Nullable)audioDelegate isPlaying:(BOOL)isPlaying;
 
 /*!
  @brief Stop view or screen share.

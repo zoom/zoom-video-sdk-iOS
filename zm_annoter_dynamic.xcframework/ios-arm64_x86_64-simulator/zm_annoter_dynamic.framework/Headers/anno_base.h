@@ -376,7 +376,7 @@ public:
         OUT	AnnoToolState& annoToolState
         ) = 0;
 
-	//
+	// 
 	// Call this method to reset the state of current selected annotation tool
     
      virtual int ConfirmDetectionText(
@@ -686,8 +686,8 @@ public:
 
 	virtual int SendWCLWBMessage( 
 		IN const uint8_t* p_data, 
-		IN uint32_t data_len
-	) = 0;
+		IN uint32_t data_len  
+	) = 0; 
 
 	virtual int SendWCLWBContent(
 		IN const void* wb_content
