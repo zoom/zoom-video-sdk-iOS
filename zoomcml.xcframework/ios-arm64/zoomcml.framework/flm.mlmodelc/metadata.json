@@ -72,7 +72,7 @@
       "name" : "MLModelType_neuralNetwork"
     },
     "userDefinedMetadata" : {
-      "coremltoolsVersion" : "3.4"
+
     },
     "generatedClassName" : "flm",
     "inputSchema" : [
