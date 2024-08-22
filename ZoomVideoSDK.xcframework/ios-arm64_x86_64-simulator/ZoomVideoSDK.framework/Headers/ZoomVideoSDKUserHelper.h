@@ -55,4 +55,10 @@
  */
 - (BOOL)removeUser:(ZoomVideoSDKUser * _Nullable)user;
 
+/*!
+ @brief Reclaim host permission.
+ @return YES indicates that the function succeeds. Otherwise, this function returns NO.
+ */
+- (BOOL)reclaimHost;
+
 @end

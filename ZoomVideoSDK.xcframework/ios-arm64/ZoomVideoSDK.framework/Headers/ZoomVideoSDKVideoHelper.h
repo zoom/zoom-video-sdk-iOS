@@ -129,8 +129,9 @@
  @param preferenceSetting An instance of ZoomVideoSDKVideoPreferenceSetting.
  @return If the function succeeds, it will return Errors_Success.
  */
--(ZoomVideoSDKError)setVideoQualityPreference:(ZoomVideoSDKVideoPreferenceSetting * _Nullable)preferenceSetting;
+- (ZoomVideoSDKError)setVideoQualityPreference:(ZoomVideoSDKVideoPreferenceSetting * _Nullable)preferenceSetting;
 
+#pragma mark - OriginalAspec -
 /**
  @brief Determine whether current aspect ratio is the original aspect ratio of video.
  @return YES if is original aspect ratio, otherwise NO.
@@ -144,5 +145,36 @@
  @warning If session is using video source and data_mode is not VideoSourceDataMode_None, default always use original aspect ration of video.
  */
 - (BOOL)enableOriginalAspectRatio:(BOOL)enabled;
+
+#pragma mark - alpha channel -
+/**
+ @brief Determine if alpha channel mode can be enabled.
+ @return YES means it can be enabled. Otherwise NO.
+ @warning Only host can enable the alpha mode. Your account must have this feature turned on by Support.
+ */
+- (BOOL)canEnableAlphaChannelMode;
+
+/**
+ @brief Enable or disable video alpha channel mode.
+ @param enable YES indicates to enable alpha channel mode. Otherwise, disable it.
+ @return If the function succeeds, the return value is Errors_Success.
+ Otherwise it failed. To get extended error information, see {@link ZoomVideoSDKError}.
+ */
+- (ZoomVideoSDKError)enableAlphaChannelMode:(BOOL)enable;
+
+/**
+ @brief Determine if alpha channel mode is enabled.
+ @return YES indicates alpha channel mode is enabled. Otherwise NO.
+ */
+- (BOOL)isAlphaChannelModeEnabled;
+
+/**
+ @brief Determines whether the device hardware capabilities are capable of supporting video alpha mode.
+ @return YES indicates that current device supports it,
+ Otherwise, it indicates that the device performance is weak and does not support it.
+ @warning Device should be iPhone 8/ 8 plus X or above or be iPad Pro 9.7 above, OS should be iOS 11 or above.
+ And should be embed zoomcml.xcframework.
+ */
+- (BOOL)isDeviceSupportAlphaChannelMode;
 
 @end

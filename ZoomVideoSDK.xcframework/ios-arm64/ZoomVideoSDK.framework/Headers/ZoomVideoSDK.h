@@ -91,6 +91,10 @@
  @brief Local video on or off
  */
 @property (assign, nonatomic) BOOL localVideoOn;
+/*!
+ @brief set the multitaskingCameraAccessEnabled for AVCaptureSession of local camera. For more informaton, refer to https://developer.apple.com/documentation/avfoundation/avcapturesession/4013228-multitaskingcameraaccesssupporte
+ */
+@property (assign, nonatomic) BOOL multitaskingCameraAccessEnabled;
 
 @end
 
