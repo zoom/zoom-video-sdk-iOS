@@ -62,6 +62,7 @@ public:
 		IN unsigned char method, 
 		IN const unsigned char* data, 
 		IN unsigned int dataLen,
+		IN bool bFromMeshParent,
 		OUT unsigned char* decryptData,
 		OUT unsigned int& decryptDataLen
 		) { return 0; }
@@ -612,7 +613,8 @@ public:
 	virtual int ReceiveRTPPacket(
 		IN const unsigned char* data, 
 		IN unsigned int dataLen,
-		IN unsigned int recvTimeMs
+		IN unsigned int recvTimeMs,
+		IN bool bFromMeshParent
 		) = 0;
 
 	virtual int ReceivedPagePackageRsp(
