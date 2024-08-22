@@ -57,6 +57,13 @@
  */
 - (ZoomVideoSDKError)startSharingExternalSource:(id<ZoomVideoSDKShareSource> _Nullable)shareDelegate andAudioSource:(id <ZoomVideoSDKShareAudioSource> _Nullable)audioDelegate isPlaying:(BOOL)isPlaying;
 
+/**
+ @brief Enable or disable local playback of shared audio raw data.
+ @param bPlay YES to play shared audio raw data, NO not to play it.
+ @return If the function succeeds, it will return Errors_Success. Otherwise failed. To get extended error information, see {@link ZoomVideoSDKError}.
+ */
+- (ZoomVideoSDKError)enablePlaySharingAudioRawdata:(BOOL)bPlay;
+
 /*!
  @brief Stop view or screen share.
  @return If the function succeeds, the return value is Errors_Success. Otherwise failed. To get extended error information, see [ZoomVideoSDKError].
