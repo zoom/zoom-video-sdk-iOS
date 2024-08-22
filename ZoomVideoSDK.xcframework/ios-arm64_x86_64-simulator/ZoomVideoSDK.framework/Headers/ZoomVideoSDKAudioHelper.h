@@ -28,20 +28,45 @@
 - (ZoomVideoSDKError)stopAudio;
 
 /*!
- @brief Mute user audio by userId
+ @brief Mute user's audio.
  @return the result of it
  @warning If mute self use userid=0.
- @warning Only user who start the session can mute others audio..
+ @warning Only host or manager can mute others audio.
  */
 - (ZoomVideoSDKError)muteAudio:(ZoomVideoSDKUser * _Nullable)user;
 
 /*!
- @brief Unmute user audio by userId
+ @brief Ask unmute user's audio.
  @return the result of it
  @warning If unmute self use userid=0.
- @warning Only user who start the session can unmute others audio..
+ @warning Only host or manager can unmute others audio.
+ @warning This functinon will trigger the callback {@link onHostAskUnmute}.
  */
 - (ZoomVideoSDKError)unmuteAudio:(ZoomVideoSDKUser * _Nullable)user;
+
+/*!
+ @brief Mute all user's VOIP audio except my self.
+ @param allowUnmute Yes means allow the user to unmute themself, otherwise NO.
+ @return The result of it.
+ @warning Only host or manager can mute all user's audio.
+ */
+- (ZoomVideoSDKError)muteAllAudio:(BOOL)allowUnmute;
+
+/*!
+ @brief Allow the others to unmute themselves or not.
+ @param allowUnmute Yes means allow the user to unmute themself, otherwise NO.
+ @return The result of it.
+ @warning Only host or manager can chagne this property.
+ */
+- (ZoomVideoSDKError)allowAudioUnmutedBySelf:(BOOL)allowUnmute;
+
+/*!
+ @brief Ask unmute all user's VOIP audio.
+ @return The result of it.
+ @warning Only host or manager can ask unmute all user's audio.
+ @warning This functinon will trigger the callback {@link onHostAskUnmute}.
+ */
+- (ZoomVideoSDKError)unmuteAllAudio;
 
 /*!
  @brief Call the function to subscribe audio rawdata.

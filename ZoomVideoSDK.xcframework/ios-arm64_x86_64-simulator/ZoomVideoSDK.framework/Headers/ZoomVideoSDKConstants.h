@@ -56,6 +56,7 @@ typedef NS_ENUM(NSUInteger,ZoomVideoSDKError)
     Errors_Session_Remote_DB_Error,
     Errors_Session_Invalid_Param,
     Errors_Session_Client_Incompatible,
+    Errors_Session_Account_FreeMinutesExceeded,
     Errors_Session_Audio_Error = 3000,
     Errors_Session_Audio_No_Microphone,
     Errors_Session_Audio_No_Speaker,
