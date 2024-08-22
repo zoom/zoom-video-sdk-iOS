@@ -45,6 +45,12 @@
 - (void)onSessionLeave;
 
 /*!
+ @brief Invoked when the current user leaves the session with reason.
+ @param reason Leave session reason. See [ZMVideoSDKSessionLeaveReason] for more information.
+ */
+- (void)onSessionLeave:(ZoomVideoSDKSessionLeaveReason)reason;
+
+/*!
  @brief Callback: Invoked when errors occur.
  @param ErrorType Provides error code associated with the error. See [ZoomVideoSDKError] for more information.
  @param details The detail of error message.
@@ -354,6 +360,11 @@
  */
 - (void)onReceiveFileStatus:(ZoomVideoSDKReceiveFile * _Nullable)file status:(ZoomVideoSDKFileTransferStatus)status;
 
+/**
+ @brief Callback event of video alpha channel mode changes.
+ @param isAlphaChannelOn True means that alpha channel mode is on, otherwise off.
+ */
+- (void)onVideoAlphaChannelStatusChanged:(BOOL)isAlphaChannelOn;
 
 @end
 

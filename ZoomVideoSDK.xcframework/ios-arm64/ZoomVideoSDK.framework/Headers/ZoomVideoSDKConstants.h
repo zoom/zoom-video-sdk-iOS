@@ -48,8 +48,8 @@ typedef NS_ENUM(NSUInteger,ZoomVideoSDKError)
     Errors_Session_Already_In_Progress,
     Errors_Session_Dont_Support_SessionType,
     Errors_Session_You_Have_No_Share,
-    Errors_Session_Reconncting,
-    Errors_Session_Disconncting,
+    Errors_Session_Reconnecting,
+    Errors_Session_Disconnecting,
     Errors_Session_Not_Started = 2010,
     Errors_Session_Need_Password,
     Errors_Session_Password_Wrong,
@@ -115,7 +115,7 @@ typedef NS_ENUM(NSUInteger,ZoomVideoSDKAudioType) {
     ZoomVideoSDKAudioType_None   = 0,
     ZoomVideoSDKAudioType_VOIP,
     ZoomVideoSDKAudioType_TELEPHONY,
-    ZoomVideoSDKAudioType_Unknow,
+    ZoomVideoSDKAudioType_Unknown,
 };
 
 /*!
@@ -459,6 +459,14 @@ typedef NS_ENUM(NSInteger, ZoomVideoSDKFileTransferStatus) {
     FileTransferState_Transfering,      /// The file transfer is in progress
     FileTransferState_TransferFailed,   /// The file transfer failed
     FileTransferState_TransferDone,     /// The file transfer completed successfully
+};
+
+typedef NS_ENUM(NSInteger, ZoomVideoSDKSessionLeaveReason) {
+    ZoomVideoSDKSessionLeaveReason_Unknown = 0,     /// Unknown.
+    ZoomVideoSDKSessionLeaveReason_BySelf,          /// Leave session by self.
+    ZoomVideoSDKSessionLeaveReason_KickByHost,      /// Kicked by host.
+    ZoomVideoSDKSessionLeaveReason_EndByHost,       /// Ended by host.
+    ZoomVideoSDKSessionLeaveReason_NetworkError,    /// Network error.
 };
 
 #endif /* ZoomVideoSDKConstants_h */
