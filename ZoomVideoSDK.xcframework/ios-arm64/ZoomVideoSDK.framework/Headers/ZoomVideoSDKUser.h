@@ -114,6 +114,10 @@
  @brief are user agreed with the individual record.
  */
 - (BOOL)isIndividualRecordAgreed;
+/**
+ @brief check if user be spotlighted.
+ */
+- (BOOL)isVideoSpotLighted;
 /*!
  @brief Get the user's audio status.
  */

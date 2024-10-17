@@ -177,4 +177,35 @@
  */
 - (BOOL)isDeviceSupportAlphaChannelMode;
 
+#pragma mark - spotlight -
+/**
+ @brief Call this method to spotlight user's video.
+ @param user The user which you want to spotlight
+ @return If the function succeeds, the return value is Errors_Success,
+ Otherwise failed. To get extended error information, see [ZoomVideoSDKError] enum.
+ */
+- (ZoomVideoSDKError)spotLightVideo:(ZoomVideoSDKUser * _Nullable)user;
+
+/**
+ @brief Call this method to unSpotlight user's video.
+ @param user The user which you want to unSpotlight
+ @return If the function succeeds, the return value is Errors_Success,
+ Otherwise failed. To get extended error information, see [ZoomVideoSDKError] enum.
+ */
+- (ZoomVideoSDKError)unSpotLightVideo:(ZoomVideoSDKUser * _Nullable)user;
+
+/**
+ @brief Call this method to set all user's video unSpotlight.
+ @return If the function succeeds, the return value is Errors_Success,
+ Otherwise failed. To get extended error information, see [ZoomVideoSDKError] enum.
+ */
+- (ZoomVideoSDKError)unSpotlightAllVideos;
+
+/**
+ @brief Call this method to get spotlighted video user list.
+ @return If the function succeeds, the return value is Errors_Success,
+ Otherwise failed. To get extended error information, see [ZoomVideoSDKError] enum.
+ */
+- (NSArray <ZoomVideoSDKUser *>* _Nullable)getSpotlightedVideoUserList;
+
 @end
