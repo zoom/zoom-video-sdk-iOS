@@ -105,7 +105,13 @@ typedef NS_ENUM(NSUInteger,ZoomVideoSDKError)
     
     Errors_Session_Filetransfer_UnknownError = 7500,
     Errors_Session_Filetransfer_FileTypeBlocked,
-    Errors_Session_Filetransfer_FileSizelimited
+    Errors_Session_Filetransfer_FileSizelimited,
+    
+    Errors_Spotlight_NotEnoughUsers = 7600,
+    Errors_Spotlight_ToMuchSpotlightedUsers,
+    Errors_Spotlight_UserCannotBeSpotlighted,
+    Errors_Spotlight_UserWithoutVideo,
+    Errors_Spotlight_UserNotSpotlighted
 };
 
 /*!

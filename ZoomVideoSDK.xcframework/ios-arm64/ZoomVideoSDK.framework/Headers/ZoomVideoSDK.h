@@ -264,7 +264,7 @@
 
 /**
  @brief Clean all exported logs.
- @return If the function succeeds, it will return ZMVideoSDKErrors_Success. Otherwise failed.
+ @return If the function succeeds, it will return Errors_Success. Otherwise failed.
  */
 - (ZoomVideoSDKError)cleanAllExportedLogs;
 /*!

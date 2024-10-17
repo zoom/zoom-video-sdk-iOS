@@ -18,11 +18,11 @@
 		</data>
 		<key>ios-arm64/zm_annoter_dynamic.framework/Info.plist</key>
 		<data>
-		JXknaKtde7JV0eSjk4LORARyqCw=
+		T5cjCH3a4Gf66NCMDaXh83zsLcc=
 		</data>
 		<key>ios-arm64/zm_annoter_dynamic.framework/zm_annoter_dynamic</key>
 		<data>
-		ltI2/kF2yvmYQ4owtkbUAgIKhB4=
+		+6m51aCeuSHEj35qbnMrb3UA4ds=
 		</data>
 		<key>ios-arm64_x86_64-simulator/zm_annoter_dynamic.framework/Headers/anno.h</key>
 		<data>
@@ -38,15 +38,15 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/zm_annoter_dynamic.framework/Info.plist</key>
 		<data>
-		mUYyy5E65qR36wE8LIDDcsuE+5Q=
+		zt1vxAdmkn1aPWr5QcyVj0W+jeA=
 		</data>
 		<key>ios-arm64_x86_64-simulator/zm_annoter_dynamic.framework/_CodeSignature/CodeResources</key>
 		<data>
-		VKK6Cdj1FQBIgDaQR7L8UedflwQ=
+		YXYSu9bUvUGxUbLc0vZUP2KYuxg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/zm_annoter_dynamic.framework/zm_annoter_dynamic</key>
 		<data>
-		RmgNuun6MrcY6RCcQ4aqa7azU9o=
+		qplbOHFBVBh++T6ZQJwi0E9NZI8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -88,22 +88,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JXknaKtde7JV0eSjk4LORARyqCw=
+			T5cjCH3a4Gf66NCMDaXh83zsLcc=
 			</data>
 			<key>hash2</key>
 			<data>
-			GDVffz/gnTDIDwxwGkOc9/MGb6nrB+jOexgg9HVpVNk=
+			QCIGoyvR995idZhDuBqJ3cu4LZ/BI1JRAljGLOiqad8=
 			</data>
 		</dict>
 		<key>ios-arm64/zm_annoter_dynamic.framework/zm_annoter_dynamic</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ltI2/kF2yvmYQ4owtkbUAgIKhB4=
+			+6m51aCeuSHEj35qbnMrb3UA4ds=
 			</data>
 			<key>hash2</key>
 			<data>
-			fRbAfrqmed2d+oc+aPuhFyHvUWJMfhmcNViaJIWFTR4=
+			6Fgn7lIjwQLm4DyEkG/88nGe2eg5U9PhC2rR75YXXQA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/zm_annoter_dynamic.framework/Headers/anno.h</key>
@@ -143,33 +143,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mUYyy5E65qR36wE8LIDDcsuE+5Q=
+			zt1vxAdmkn1aPWr5QcyVj0W+jeA=
 			</data>
 			<key>hash2</key>
 			<data>
-			z1ZqECGC+ri3aK8xfQ2bWLBXA5TGZJHRUBAnwal2tv8=
+			IV51px20Iu3Bphsx/bRVQ46iLv/wwEjItLdXHZpw/JE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/zm_annoter_dynamic.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VKK6Cdj1FQBIgDaQR7L8UedflwQ=
+			YXYSu9bUvUGxUbLc0vZUP2KYuxg=
 			</data>
 			<key>hash2</key>
 			<data>
-			4QQ8AcmWGMpdg0Iwz3han2dTzkRGDTFeRwJQO88IJCU=
+			LELMCs0gYVcpaGYMfTsRrPGi4j8FBsKXCgkGlMPvvCE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/zm_annoter_dynamic.framework/zm_annoter_dynamic</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RmgNuun6MrcY6RCcQ4aqa7azU9o=
+			qplbOHFBVBh++T6ZQJwi0E9NZI8=
 			</data>
 			<key>hash2</key>
 			<data>
-			XbVeLbZJlXlkg6+TdaC24mVEZFefZ3fpy7F7tUwhyb0=
+			sPpbwokb9gbSPIEhukhavR+o74zA5SDGATZ6YVmeUL0=
 			</data>
 		</dict>
 	</dict>

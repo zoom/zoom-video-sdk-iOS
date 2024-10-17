@@ -86,13 +86,19 @@
  @brief Reset Audio Session including Category and Mode for ZoomVideoSDK Audio Session Environment When developer change audio session in session
  @return Yes means set auidio success, otherwise failed.
  */
-- (BOOL)resetAudioSession;
+- (BOOL)resetAudioSession DEPRECATED_MSG_ATTRIBUTE("Use setSDKAuidoSessionEnv instead");
+
+/*!
+ @brief  Set the AVAudio Session Environment for Zoom Video SDK Session
+ @warning Developer change AVAudio Session by self special needs in SDK session，will cause the audio output abnormal. Then developer can set SDK AVAudio Session environment
+ @return Yes means set audio success, otherwise failed.
+ */
+- (BOOL)setSDKAudioSessionEnv;
 
 /*!
  @brief Clean Audio Session including Category and Mode.
  @warning SDK will restore audio session status after session end. if developer call overrideOutputAudioPort interface wtth AVAudioSessionPortBuiltInSpeaker in AVAudioSessionCategoryPlayAndRecord Category before join session, then sdk can not restore audio session BuiltInSpeaker output when session end,
  */
-- (void)cleanAudioSession;
-
+- (void)cleanAudioSession DEPRECATED_MSG_ATTRIBUTE("No longer maintain anymore!");
 @end
 
