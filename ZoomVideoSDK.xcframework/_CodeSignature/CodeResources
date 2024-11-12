@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/ZoomVideoSDK.framework/Headers/ZoomVideoSDK.h</key>
 		<data>
-		Qc+7p+diLpko3D/Ln3lDBxoHQYo=
+		NChKhiROyIGuQ4Jn47DQhGZgoiU=
 		</data>
 		<key>ios-arm64/ZoomVideoSDK.framework/Headers/ZoomVideoSDKAnnotationHelper.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>ios-arm64/ZoomVideoSDK.framework/Headers/ZoomVideoSDKAudioHelper.h</key>
 		<data>
-		6J2cC4+IcCO3JXuVyNBM3CKC9H0=
+		hVpxKGDyCpIt3XltsXXMml2nvH0=
 		</data>
 		<key>ios-arm64/ZoomVideoSDK.framework/Headers/ZoomVideoSDKAudioRawData.h</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>ios-arm64/ZoomVideoSDK.framework/Headers/ZoomVideoSDKConstants.h</key>
 		<data>
-		lXJII9+ZwsCctE/yiwDRrx8XTpc=
+		N43/yyeRQt83ruUUYIxjDyJpRSg=
 		</data>
 		<key>ios-arm64/ZoomVideoSDK.framework/Headers/ZoomVideoSDKDelegate.h</key>
 		<data>
-		dYu2ZstHooOcHK7N7nSMlpL4Xeg=
+		feNTYTLvJjHgEPrPGW4ec7d1b9M=
 		</data>
 		<key>ios-arm64/ZoomVideoSDK.framework/Headers/ZoomVideoSDKFileTranserHandle.h</key>
 		<data>
@@ -59,6 +59,10 @@
 		<key>ios-arm64/ZoomVideoSDK.framework/Headers/ZoomVideoSDKLiveTranscriptionHelper.h</key>
 		<data>
 		f9IpyfCuHVwD8N/ynUZHyxJ+fbw=
+		</data>
+		<key>ios-arm64/ZoomVideoSDK.framework/Headers/ZoomVideoSDKMaskHelper.h</key>
+		<data>
+		Ods3ROQZQ8VJHFEDdEBfp4I5xaw=
 		</data>
 		<key>ios-arm64/ZoomVideoSDK.framework/Headers/ZoomVideoSDKNetworkConnectionHelper.h</key>
 		<data>
@@ -138,7 +142,7 @@
 		</data>
 		<key>ios-arm64/ZoomVideoSDK.framework/Info.plist</key>
 		<data>
-		oXaat1IYXeIfZFIJksuk6NIBxeU=
+		epFcudF7N0qwHwUxPym/rX9tll8=
 		</data>
 		<key>ios-arm64/ZoomVideoSDK.framework/Modules/module.modulemap</key>
 		<data>
@@ -150,7 +154,7 @@
 		</data>
 		<key>ios-arm64/ZoomVideoSDK.framework/ZoomVideoSDK</key>
 		<data>
-		D0YNGfM/fDbCckQFGSNyMKZnAi8=
+		v9EdeI/beTX0Mubd/yaQ1cigG9E=
 		</data>
 		<key>ios-arm64/ZoomVideoSDK.framework/nydusDefault.metallib</key>
 		<data>
@@ -158,7 +162,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDK.framework/Headers/ZoomVideoSDK.h</key>
 		<data>
-		Qc+7p+diLpko3D/Ln3lDBxoHQYo=
+		NChKhiROyIGuQ4Jn47DQhGZgoiU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDK.framework/Headers/ZoomVideoSDKAnnotationHelper.h</key>
 		<data>
@@ -166,7 +170,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDK.framework/Headers/ZoomVideoSDKAudioHelper.h</key>
 		<data>
-		6J2cC4+IcCO3JXuVyNBM3CKC9H0=
+		hVpxKGDyCpIt3XltsXXMml2nvH0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDK.framework/Headers/ZoomVideoSDKAudioRawData.h</key>
 		<data>
@@ -194,11 +198,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDK.framework/Headers/ZoomVideoSDKConstants.h</key>
 		<data>
-		lXJII9+ZwsCctE/yiwDRrx8XTpc=
+		N43/yyeRQt83ruUUYIxjDyJpRSg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDK.framework/Headers/ZoomVideoSDKDelegate.h</key>
 		<data>
-		dYu2ZstHooOcHK7N7nSMlpL4Xeg=
+		feNTYTLvJjHgEPrPGW4ec7d1b9M=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDK.framework/Headers/ZoomVideoSDKFileTranserHandle.h</key>
 		<data>
@@ -211,6 +215,10 @@
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDK.framework/Headers/ZoomVideoSDKLiveTranscriptionHelper.h</key>
 		<data>
 		f9IpyfCuHVwD8N/ynUZHyxJ+fbw=
+		</data>
+		<key>ios-arm64_x86_64-simulator/ZoomVideoSDK.framework/Headers/ZoomVideoSDKMaskHelper.h</key>
+		<data>
+		Ods3ROQZQ8VJHFEDdEBfp4I5xaw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDK.framework/Headers/ZoomVideoSDKNetworkConnectionHelper.h</key>
 		<data>
@@ -290,7 +298,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDK.framework/Info.plist</key>
 		<data>
-		m0NBsDZ6I5Kvgis25DzpoCT1Drg=
+		x5KMIffQX0hDE9eZj/grhbPvxnw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDK.framework/Modules/module.modulemap</key>
 		<data>
@@ -302,11 +310,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDK.framework/ZoomVideoSDK</key>
 		<data>
-		R3NteoggJvFsFsN6JduQHdIt1W8=
+		zI5vqOpZknecx0iGrJOjY4kRPYc=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDK.framework/_CodeSignature/CodeResources</key>
 		<data>
-		EpJYLhB7cwoQfr0jSijCcW1Vnbs=
+		lNlqa7L0WdbArcrUnpcxMG8obYA=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDK.framework/nydusDefault.metallib</key>
 		<data>
@@ -319,11 +327,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Qc+7p+diLpko3D/Ln3lDBxoHQYo=
+			NChKhiROyIGuQ4Jn47DQhGZgoiU=
 			</data>
 			<key>hash2</key>
 			<data>
-			irrRU7rItWfOyVaY8DjfWy2zvfjkIKIYKtjfS8c/pLo=
+			rSk6fmPwKi10tiUOdtMJ1HwCScm9IW/LwvuoxBcynsY=
 			</data>
 		</dict>
 		<key>ios-arm64/ZoomVideoSDK.framework/Headers/ZoomVideoSDKAnnotationHelper.h</key>
@@ -341,11 +349,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6J2cC4+IcCO3JXuVyNBM3CKC9H0=
+			hVpxKGDyCpIt3XltsXXMml2nvH0=
 			</data>
 			<key>hash2</key>
 			<data>
-			YYDBcSBTzoP/BLIAJMNjWkL6UC5j8AKfuF68BtX3wes=
+			ZSlzXltWZaERjA3IPTWJVFLu/PuyuxukBUlqhz/kj7k=
 			</data>
 		</dict>
 		<key>ios-arm64/ZoomVideoSDK.framework/Headers/ZoomVideoSDKAudioRawData.h</key>
@@ -418,22 +426,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lXJII9+ZwsCctE/yiwDRrx8XTpc=
+			N43/yyeRQt83ruUUYIxjDyJpRSg=
 			</data>
 			<key>hash2</key>
 			<data>
-			yqu0ukmmd+qDIuvWLc9xiFFtf+70I+lILZi9FKGEQUE=
+			Alvm3DCGb2/ePx1UhY0VKOE/QpmHZfTwp5DIDAUIpsg=
 			</data>
 		</dict>
 		<key>ios-arm64/ZoomVideoSDK.framework/Headers/ZoomVideoSDKDelegate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dYu2ZstHooOcHK7N7nSMlpL4Xeg=
+			feNTYTLvJjHgEPrPGW4ec7d1b9M=
 			</data>
 			<key>hash2</key>
 			<data>
-			gmN0FGWnvoivF/fshKPrh51EyXbc5Dkx0AnHZDX0sq8=
+			QbdoHX3hMf1xAcUb/NHjwyuw0MIno9GGX2q+siabczk=
 			</data>
 		</dict>
 		<key>ios-arm64/ZoomVideoSDK.framework/Headers/ZoomVideoSDKFileTranserHandle.h</key>
@@ -467,6 +475,17 @@
 			<key>hash2</key>
 			<data>
 			2Sk9n6+EOXNBRNGeRxRcRWTte14SAfQ5Z6xtDEFvt2M=
+			</data>
+		</dict>
+		<key>ios-arm64/ZoomVideoSDK.framework/Headers/ZoomVideoSDKMaskHelper.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ods3ROQZQ8VJHFEDdEBfp4I5xaw=
+			</data>
+			<key>hash2</key>
+			<data>
+			NR2ZWyddL9IJniu8vF52fHKJya93sGiGSVB58Tg8vpc=
 			</data>
 		</dict>
 		<key>ios-arm64/ZoomVideoSDK.framework/Headers/ZoomVideoSDKNetworkConnectionHelper.h</key>
@@ -682,11 +701,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oXaat1IYXeIfZFIJksuk6NIBxeU=
+			epFcudF7N0qwHwUxPym/rX9tll8=
 			</data>
 			<key>hash2</key>
 			<data>
-			96zMDOJ6lKzA4mPeqalAt/XVL9Divj0JxVchxxpyrM8=
+			Xfv3JuVmIc/0syh1MTBqQ33rmC0hFIgC4KEv2JQ254c=
 			</data>
 		</dict>
 		<key>ios-arm64/ZoomVideoSDK.framework/Modules/module.modulemap</key>
@@ -715,11 +734,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			D0YNGfM/fDbCckQFGSNyMKZnAi8=
+			v9EdeI/beTX0Mubd/yaQ1cigG9E=
 			</data>
 			<key>hash2</key>
 			<data>
-			1e8zz3WVNbyXrsMwNH5wreAdPaS5R/PTa6DQ+D8OiC0=
+			6hM+2/2hN8S/WfcS/G+wUBqfP4qsAmHQj5qs/jwCG9I=
 			</data>
 		</dict>
 		<key>ios-arm64/ZoomVideoSDK.framework/nydusDefault.metallib</key>
@@ -737,11 +756,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Qc+7p+diLpko3D/Ln3lDBxoHQYo=
+			NChKhiROyIGuQ4Jn47DQhGZgoiU=
 			</data>
 			<key>hash2</key>
 			<data>
-			irrRU7rItWfOyVaY8DjfWy2zvfjkIKIYKtjfS8c/pLo=
+			rSk6fmPwKi10tiUOdtMJ1HwCScm9IW/LwvuoxBcynsY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDK.framework/Headers/ZoomVideoSDKAnnotationHelper.h</key>
@@ -759,11 +778,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6J2cC4+IcCO3JXuVyNBM3CKC9H0=
+			hVpxKGDyCpIt3XltsXXMml2nvH0=
 			</data>
 			<key>hash2</key>
 			<data>
-			YYDBcSBTzoP/BLIAJMNjWkL6UC5j8AKfuF68BtX3wes=
+			ZSlzXltWZaERjA3IPTWJVFLu/PuyuxukBUlqhz/kj7k=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDK.framework/Headers/ZoomVideoSDKAudioRawData.h</key>
@@ -836,22 +855,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lXJII9+ZwsCctE/yiwDRrx8XTpc=
+			N43/yyeRQt83ruUUYIxjDyJpRSg=
 			</data>
 			<key>hash2</key>
 			<data>
-			yqu0ukmmd+qDIuvWLc9xiFFtf+70I+lILZi9FKGEQUE=
+			Alvm3DCGb2/ePx1UhY0VKOE/QpmHZfTwp5DIDAUIpsg=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDK.framework/Headers/ZoomVideoSDKDelegate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dYu2ZstHooOcHK7N7nSMlpL4Xeg=
+			feNTYTLvJjHgEPrPGW4ec7d1b9M=
 			</data>
 			<key>hash2</key>
 			<data>
-			gmN0FGWnvoivF/fshKPrh51EyXbc5Dkx0AnHZDX0sq8=
+			QbdoHX3hMf1xAcUb/NHjwyuw0MIno9GGX2q+siabczk=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDK.framework/Headers/ZoomVideoSDKFileTranserHandle.h</key>
@@ -885,6 +904,17 @@
 			<key>hash2</key>
 			<data>
 			2Sk9n6+EOXNBRNGeRxRcRWTte14SAfQ5Z6xtDEFvt2M=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/ZoomVideoSDK.framework/Headers/ZoomVideoSDKMaskHelper.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ods3ROQZQ8VJHFEDdEBfp4I5xaw=
+			</data>
+			<key>hash2</key>
+			<data>
+			NR2ZWyddL9IJniu8vF52fHKJya93sGiGSVB58Tg8vpc=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDK.framework/Headers/ZoomVideoSDKNetworkConnectionHelper.h</key>
@@ -1100,11 +1130,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			m0NBsDZ6I5Kvgis25DzpoCT1Drg=
+			x5KMIffQX0hDE9eZj/grhbPvxnw=
 			</data>
 			<key>hash2</key>
 			<data>
-			XH11zJdyGgZSbypDdZplprV26UBl33kKurKMP/x+UAI=
+			K4USrD3D/JXeUygQY0gonAfNIo3pi8k0NwPZ3fxTPF4=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDK.framework/Modules/module.modulemap</key>
@@ -1133,22 +1163,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R3NteoggJvFsFsN6JduQHdIt1W8=
+			zI5vqOpZknecx0iGrJOjY4kRPYc=
 			</data>
 			<key>hash2</key>
 			<data>
-			2JbfmapPFitwavQ6Pv6n3Cq2ipvwsICv2MvJ9Z8JrOA=
+			vhxs8v41E5IgyJ1BcANxvHE0Wh0VgawKIUImwURBU3s=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDK.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EpJYLhB7cwoQfr0jSijCcW1Vnbs=
+			lNlqa7L0WdbArcrUnpcxMG8obYA=
 			</data>
 			<key>hash2</key>
 			<data>
-			i6iGkrKHIQTqly8phmxl0CzIKOjtyloCTXxmrPONphg=
+			2OTbBb8lXZoGjCR2KYHO0ITleLyVnJ24KGEglv6LPfo=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDK.framework/nydusDefault.metallib</key>
