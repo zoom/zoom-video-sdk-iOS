@@ -22,7 +22,7 @@
 		</data>
 		<key>ios-arm64/zm_annoter_dynamic.framework/zm_annoter_dynamic</key>
 		<data>
-		Ro83Ef3E4xQxOYDYyON8VqbvhjU=
+		mpvwKyVMMsvhpMWLsFGpDqT5L4o=
 		</data>
 		<key>ios-arm64_x86_64-simulator/zm_annoter_dynamic.framework/Headers/anno.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/zm_annoter_dynamic.framework/zm_annoter_dynamic</key>
 		<data>
-		KDAH7HdZXKH2cqw8nPqEODkFHmg=
+		SrYfiZD2DSlCBVGbnu0IoWMkObs=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -99,11 +99,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ro83Ef3E4xQxOYDYyON8VqbvhjU=
+			mpvwKyVMMsvhpMWLsFGpDqT5L4o=
 			</data>
 			<key>hash2</key>
 			<data>
-			jaXG8yQrcDh2RBEgbnemVV3Jts1VXoChLl5U7YDeulQ=
+			/lMpnmmquIwcoqQOQ0ArMt7UXQ7cDZ/KXOZ5yzb8gpU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/zm_annoter_dynamic.framework/Headers/anno.h</key>
@@ -165,11 +165,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KDAH7HdZXKH2cqw8nPqEODkFHmg=
+			SrYfiZD2DSlCBVGbnu0IoWMkObs=
 			</data>
 			<key>hash2</key>
 			<data>
-			rXkJGZA1gh1LFOx4aLYtAol/Nh/HDZ0SZLYvZne4+EQ=
+			SwxvKnoia3PKU70J2TMfpC5LiD+IMinvTiM0Z4YzpyQ=
 			</data>
 		</dict>
 	</dict>
