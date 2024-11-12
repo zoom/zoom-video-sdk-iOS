@@ -10,7 +10,7 @@
 		</data>
 		<key>ios-arm64/ZoomVideoSDKScreenShare.framework/Info.plist</key>
 		<data>
-		SxC38XyU10rQeNDPfIUyn2eaOa8=
+		HaruVl0HZyvRnKUEEOiz8oVIxNA=
 		</data>
 		<key>ios-arm64/ZoomVideoSDKScreenShare.framework/ZoomVideoSDKScreenShare</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDKScreenShare.framework/Info.plist</key>
 		<data>
-		Dtz0jDAlw6M/UbVDQoE1TGOjnFI=
+		mwlFYmPLAD6ptX9dlXZYbpLE/FI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDKScreenShare.framework/ZoomVideoSDKScreenShare</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDKScreenShare.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		otVNiJMTO3Za0TcWpGkqivCVmfc=
+		v+4AvQoiekH3s8DWh370xD9nQ6g=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDKScreenShare.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDKScreenShare.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		KTFMpLIJwCCa6Mjab/UyGZ+AMj8=
+		icGKfYip04BAN0Z601vZVWNgj/0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDKScreenShare.framework/_CodeSignature/CodeResources</key>
 		<data>
-		kS9p2fqS/69QX/ENDt3hc4FPEnA=
+		s7wukEQt7hNuB/vne46DE8m84Lg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDKScreenShare.framework/_CodeSignature/CodeSignature</key>
 		<data>
@@ -66,11 +66,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SxC38XyU10rQeNDPfIUyn2eaOa8=
+			HaruVl0HZyvRnKUEEOiz8oVIxNA=
 			</data>
 			<key>hash2</key>
 			<data>
-			Pmuos/DENyr+c9G4416P6b6Pxz8hPzqrEv2CTil8RDs=
+			kCekOKYL5evApUxPypzkur0soSppDdZjjDuUQSuH7DU=
 			</data>
 		</dict>
 		<key>ios-arm64/ZoomVideoSDKScreenShare.framework/ZoomVideoSDKScreenShare</key>
@@ -99,11 +99,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Dtz0jDAlw6M/UbVDQoE1TGOjnFI=
+			mwlFYmPLAD6ptX9dlXZYbpLE/FI=
 			</data>
 			<key>hash2</key>
 			<data>
-			6AIfapb5ObR4k8EweY6j26NnimquaTKebWfEpJ0fWVY=
+			wq7As2q6D4PZfYuQWWX+9zFS8LEktZ7wqx94tkmb+Xc=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDKScreenShare.framework/ZoomVideoSDKScreenShare</key>
@@ -121,11 +121,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			otVNiJMTO3Za0TcWpGkqivCVmfc=
+			v+4AvQoiekH3s8DWh370xD9nQ6g=
 			</data>
 			<key>hash2</key>
 			<data>
-			DN2KafDTTwIVJAqseO0a1afeBIk69FHizdZjrum6ckM=
+			3K6uGcxu8mY73jNlcOG0L0G94bX+n/0eGhmfNa6YacA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDKScreenShare.framework/_CodeSignature/CodeRequirements</key>
@@ -143,22 +143,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KTFMpLIJwCCa6Mjab/UyGZ+AMj8=
+			icGKfYip04BAN0Z601vZVWNgj/0=
 			</data>
 			<key>hash2</key>
 			<data>
-			bItq94V3COcoPCN8CNXeLGXIfW/67f15KiGVJd00mS0=
+			WAMHIdt2sAnMhwdSuT5SBG3XTV1Sp6qXw/AADkXy5wQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDKScreenShare.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kS9p2fqS/69QX/ENDt3hc4FPEnA=
+			s7wukEQt7hNuB/vne46DE8m84Lg=
 			</data>
 			<key>hash2</key>
 			<data>
-			5Y3y/L9CK84KoRloWZDVqQPKDp4lRwCOyRj9lXB3BbI=
+			frw3yvNHlM3ZEcBx2zGxBQnUDggvuOie/LKzHZQ66SE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ZoomVideoSDKScreenShare.framework/_CodeSignature/CodeSignature</key>
