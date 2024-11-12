@@ -255,8 +255,8 @@
 
 /**
  @brief Callback: Notify the current mic or speaker volume when testing.
- @param micVolume Specify the volume of the mic.
- @param speakerVolume Specify the volume of the speaker.
+ @param micVolume Specify the volume of the mic when testing or in session.
+ @param speakerVolume Specify the volume of the speaker when testing.
  */
 - (void)onMicSpeakerVolumeChanged:(int)micVolume speakerVolume:(int)speakerVolume;
 

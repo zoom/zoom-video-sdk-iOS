@@ -86,7 +86,7 @@
  @brief Reset Audio Session including Category and Mode for ZoomVideoSDK Audio Session Environment When developer change audio session in session
  @return Yes means set auidio success, otherwise failed.
  */
-- (BOOL)resetAudioSession DEPRECATED_MSG_ATTRIBUTE("Use setSDKAuidoSessionEnv instead");
+- (BOOL)resetAudioSession DEPRECATED_MSG_ATTRIBUTE("Use setSDKAudioSessionEnv instead");
 
 /*!
  @brief  Set the AVAudio Session Environment for Zoom Video SDK Session

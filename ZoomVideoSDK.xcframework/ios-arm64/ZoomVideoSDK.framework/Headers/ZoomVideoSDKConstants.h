@@ -475,4 +475,12 @@ typedef NS_ENUM(NSInteger, ZoomVideoSDKSessionLeaveReason) {
     ZoomVideoSDKSessionLeaveReason_NetworkError,    /// Network error.
 };
 
+/**
+ @brief The mask shape.
+ */
+typedef NS_ENUM(NSUInteger, ZoomVideoSDKMaskShape) {
+    ZoomVideoSDKMaskShape_Rectangle, ///Rectangle
+    ZoomVideoSDKMaskShape_Circle,    ///Circle
+    ZoomVideoSDKMaskShape_Oval,      ///Oval
+};
 #endif /* ZoomVideoSDKConstants_h */

@@ -26,6 +26,7 @@
 #import <ZoomVideoSDK/ZoomVideoSDKNetworkConnectionHelper.h>
 #import <ZoomVideoSDK/ZoomVideoSDKVirtualBackgroundHelper.h>
 #import <ZoomVideoSDK/ZoomVideoSDKCRCHelper.h>
+#import <ZoomVideoSDK/ZoomVideoSDKMaskHelper.h>
 #import <ZoomVideoSDK/ZoomVideoSDKRemoteCameraControlHelper.h>
 
 /*!
@@ -350,5 +351,11 @@
  @return If the function succeeds, the return value is the crc helper object. Otherwise returns nil.
  */
 - (ZoomVideoSDKCRCHelper * _Nullable)getCRCHelper;
+
+/*!
+ @brief Get mask helper Object.
+ @return If the function succeeds, the return value is the mask helper object. Otherwise returns nil.
+ */
+- (ZoomVideoSDKMaskHelper * _Nullable)getMaskHelper;
 
 @end
