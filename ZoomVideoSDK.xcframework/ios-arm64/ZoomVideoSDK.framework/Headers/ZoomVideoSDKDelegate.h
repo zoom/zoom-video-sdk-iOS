@@ -373,6 +373,14 @@
  */
 - (void)onSpotlightVideoChanged:(ZoomVideoSDKVideoHelper * _Nullable)videoHelper userList:(NSArray <ZoomVideoSDKUser *>* _Nullable)userList;
 
+#pragma mark - external camera change -
+/**
+ @brief Callback is invoked when  the external UVC camera status changes.
+ @param status UVC camera status.
+ @warning Only iOS 17.0 or above and iPad device can receive this callback.
+ */
+- (void)onUVCCameraStatusChange:(ZoomVideoSDKUVCCameraStatus)status;
+
 @end
 
 #pragma mark - ZoomVideoSDKVirtualAudioSpeaker

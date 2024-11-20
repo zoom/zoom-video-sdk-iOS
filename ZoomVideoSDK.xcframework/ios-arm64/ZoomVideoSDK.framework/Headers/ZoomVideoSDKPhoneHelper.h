@@ -52,7 +52,7 @@
 /*!
  @brief Dial in number format string for display.
  */
-@property (nonatomic, strong) NSString     * _Nullable displayNumber;
+@property (nonatomic, copy) NSString     * _Nullable displayNumber;
 /*!
  @brief Dial in number type.
  */

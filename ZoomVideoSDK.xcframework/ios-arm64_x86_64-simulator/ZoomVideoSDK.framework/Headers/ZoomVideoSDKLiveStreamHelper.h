@@ -39,3 +39,19 @@
 
 @end
 
+@interface ZoomVideoSDKIncomingLiveStreamStatus : NSObject
+/*!
+ @brief The incoming live stream id.
+ */
+@property(nonatomic, copy) NSString* _Nullable streamKeyID;
+/**
+ @brief Is the streaming software(such as OBS) connected to the zoom platform.
+ */
+@property(nonatomic, assign) BOOL isRTMPConnected;
+/**
+ @brief Has the video stream been pushed to the session.
+ */
+@property(nonatomic, assign) BOOL isStreamPushed;
+
+@end
+

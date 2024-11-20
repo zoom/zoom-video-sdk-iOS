@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AVFoundation/AVFoundation.h>
 #import <ZoomVideoSDK/ZoomVideoSDKConstants.h>
 
 @protocol ZoomVideoSDKRawDataPipeDelegate;
@@ -48,6 +49,17 @@
 
 @end
 
+
+@interface ZoomVideoSDKCameraDevice : NSObject
+@property (nonatomic, readonly, nullable, copy) NSString* deviceId;         /// camera device ID.
+@property (nonatomic, readonly, nullable, copy) NSString* deviceName;       /// camera name.
+@property (nonatomic, readonly, assign)         BOOL isSelectDevice;        /// is current use.
+@property (nonatomic, readonly, assign)         AVCaptureDevicePosition position;   /// camera position.
+@property (nonatomic, readonly, nullable, copy) AVCaptureDeviceType deviceType; /// camera device type.
+@property (nonatomic, readonly, assign)         CGFloat maxZoomFactor;  // camera maximum zoom factor. Maximum supported is 10.
+@property (nonatomic, readonly, assign)         CGFloat videoZoomFactorUpscaleThreshold;/// the maximum optical zoom factor.
+
+@end
 
 /*!
  @class ZoomVideoSDKVideoHelper
@@ -123,6 +135,26 @@
  @brief Switch to the next available camera.
  */
 - (void)switchCamera;
+
+/*!
+ @brief Get the camera device list.
+ @return The list of cameras.
+ @warning Only iOS 17.0 or above and iPad device can get the external camera devices.
+ */
+- (NSArray <ZoomVideoSDKCameraDevice *>* _Nullable)getCameraDeviceList;
+
+/*!
+ @brief Switch camera by camera ID.
+ @param cameraId The target camera ID.
+ @return Yes means it successfully switched camera, otherwise not.
+ */
+- (BOOL)switchCamera:(NSString * _Nullable)cameraId;
+
+/*!
+ @brief Get the current camera device in use.
+ @return return the current camra device in use.
+ */
+- (ZoomVideoSDKCameraDevice * _Nullable)getSelectedCamera;
 
 /**
  @brief Adjust user's video resolution and frame-rate.

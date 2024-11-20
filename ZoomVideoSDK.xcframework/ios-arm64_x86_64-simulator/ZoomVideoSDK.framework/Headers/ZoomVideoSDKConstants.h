@@ -483,4 +483,9 @@ typedef NS_ENUM(NSUInteger, ZoomVideoSDKMaskShape) {
     ZoomVideoSDKMaskShape_Circle,    ///Circle
     ZoomVideoSDKMaskShape_Oval,      ///Oval
 };
+
+typedef NS_ENUM(NSInteger, ZoomVideoSDKUVCCameraStatus) {
+    ZoomVideoSDKUVCCameraStatus_Attached = 0,       /// UVC camera attached
+    ZoomVideoSDKUVCCameraStatus_Detached          /// UVC camera detached.
+};
 #endif /* ZoomVideoSDKConstants_h */
