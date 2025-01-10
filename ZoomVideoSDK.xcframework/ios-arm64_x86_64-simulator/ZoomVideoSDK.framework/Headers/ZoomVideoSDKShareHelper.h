@@ -3,7 +3,7 @@
 //  ZoomVideoSDK
 //
 //  Created by Zoom Video Communications on 2018/12/13.
-//  Copyright © 2018 Zoom Video Communications, Inc. All rights reserved.
+//  Copyright © Zoom Video Communications, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -22,6 +22,49 @@
 @property (nonatomic, assign) ZoomVideoSDKReceiveSharingStatus  sharingStatus;
 
 @end
+
+@class ZoomVideoSDKVideoCanvas;
+@class ZoomVideoSDKRawDataPipe;
+
+@interface ZoomVideoSDKShareAction : NSObject
+/*
+@brief Get share source ID.
+@return The user ID of the user object.
+*/
+- (NSInteger)getShareSourceId;
+/*
+@brief Get the render canvas object.
+@return If the function succeeds, the return value is the share render helper object. Otherwise, this function fails and returns NULL. For more details, see \link ZoomVideoSDKVideoCanvas \endlink.
+*/
+- (ZoomVideoSDKVideoCanvas *_Nullable)getShareCanvas;
+/*
+@brief Get the share status.
+@return Share status of the share object.
+*/
+- (ZoomVideoSDKReceiveSharingStatus )getShareStatus;
+/*
+@brief Get the share raw data pipe.
+@return The share pipe. For more information, see \link ZoomVideoSDKRawDataPipe \endlink
+*/
+- (ZoomVideoSDKRawDataPipe *_Nullable)getSharePipe;
+/*
+@brief Get the subscribe fail reason.
+@return failed reason of the subscription.
+*/
+- (ZoomVideoSDKSubscribeFailReason)getSubscribeFailReason;
+/*
+@brief Determine whether annotation privilege is enabled.
+@return YES indicates that annotation privilege is enabled, otherwise false.
+*/
+- (BOOL)isAnnotationPrivilegeEnabled;
+/*
+@brief Get the share type.
+@return Share type of the share object.
+*/
+- (ZoomVideoSDKShareType)getShareType;
+
+@end
+
 
 /*!
  @class ZoomVideoSDKShareHelper

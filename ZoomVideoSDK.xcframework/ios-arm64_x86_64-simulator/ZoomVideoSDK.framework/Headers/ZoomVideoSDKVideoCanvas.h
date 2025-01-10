@@ -3,7 +3,7 @@
 //  ZoomVideoSDK
 //
 //  Created by Zoom Video Communications on 2018/12/7.
-//  Copyright © 2018 Zoom Video Communications, Inc. All rights reserved.
+//  Copyright © Zoom Video Communications, Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

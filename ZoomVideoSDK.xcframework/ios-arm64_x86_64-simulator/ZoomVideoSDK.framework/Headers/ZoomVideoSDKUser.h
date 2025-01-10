@@ -3,13 +3,15 @@
 //  ZoomVideoSDK
 //
 //  Created by Zoom Video Communications on 2018/12/7.
-//  Copyright © 2018 Zoom Video Communications, Inc. All rights reserved.
+//  Copyright © Zoom Video Communications, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <ZoomVideoSDK/ZoomVideoSDKRawDataPipe.h>
 #import <ZoomVideoSDK/ZoomVideoSDKVideoCanvas.h>
 #import <ZoomVideoSDK/ZoomVideoSDKRemoteCameraControlHelper.h>
+#import <ZoomVideoSDK/ZoomVideoSDKShareHelper.h>
+
 /*!
  @class ZoomVideoSDKVideoStatisticInfo
  @brief Video statistic information.
@@ -139,10 +141,7 @@
  @return a list of all streaming cameras pipe. For more information, see [ZoomVideoSDKRawDataPipe].
  */
 - (NSArray <ZoomVideoSDKRawDataPipe *> *_Nullable)getMultiCameraStreamList;
-/*!
- @brief Get the user's share pipe.
- */
-- (ZoomVideoSDKRawDataPipe *_Nullable)getSharePipe;
+
 /*!
  @brief Get the user's video canvas.
  */
@@ -159,10 +158,11 @@
  */
 - (ZoomVideoSDKRemoteCameraControlHelper *_Nullable)getRemoteCameraControlHelper;
 
-/*!
- @brief The user's share canvas.
+/**
+ @brief Get the user's share-action list.
+ @return A list of all share information. For more information, see {@link ZoomVideoSDKShareAction}.
  */
-- (ZoomVideoSDKVideoCanvas *_Nullable)getShareCanvas;
+- (NSArray <ZoomVideoSDKShareAction *>*_Nullable)getShareActionList;
 
 /*!
  @brief Set the user's local volume. This does not affect how other participants hear the user.
@@ -194,5 +194,11 @@
  @warning this interface will related with chat  privilege see @{ZoomVideoSDKChatPrivilegeType}.
  */
 - (ZoomVideoSDKError)transferFile:(NSString * _Nullable)filePath;
+
+/**
+ @brief Determine whether the user is an incoming live stream user.
+ @return YES indicates that the user is an incoming live stream, otherwise NO.
+ */
+- (BOOL)isIncomingLiveStreamUser;
 
 @end

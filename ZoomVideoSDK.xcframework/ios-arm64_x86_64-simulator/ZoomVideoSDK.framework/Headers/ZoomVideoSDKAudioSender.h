@@ -3,7 +3,7 @@
 //  ZoomVideoSDK
 //
 //  Created by Zoom on 2021/3/16.
-//  Copyright © 2021 Zoom Video Communications, Inc. All rights reserved.
+//  Copyright © Zoom Video Communications, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

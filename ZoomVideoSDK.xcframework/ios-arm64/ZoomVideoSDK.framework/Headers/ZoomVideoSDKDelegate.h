@@ -86,12 +86,19 @@
 - (void)onUserAudioStatusChanged:(ZoomVideoSDKAudioHelper * _Nullable)helper user:(NSArray <ZoomVideoSDKUser *>* _Nullable)userArray;
 
 /*!
- @brief Callback: Invoked when a user makes changes to their sharing status, such as starting screen sharing, starting view sharing, or stopping sharing.
- @param helper Share helper utility.
- @param status Share status in enumeration. See [ZoomVideoSDKReceiveSharingStatus].
+ @brief Invoked when a user makes changes to their sharing status, such as starting screen sharing, starting view sharing, or stopping sharing.
+ @param helper The pointer to a share helper object, see {@link ZoomVideoSDKShareHelper}.
+ @param user The pointer to a user object.
+ @param shareAction he pointer to the ZoomVideoSDKShareAction object. For more details, refer to {@link ZoomVideoSDKShareAction}.
  */
-- (void)onUserShareStatusChanged:(ZoomVideoSDKShareHelper * _Nullable)helper user:(ZoomVideoSDKUser * _Nullable)user status:(ZoomVideoSDKReceiveSharingStatus)status;
+- (void)onUserShareStatusChanged:(ZoomVideoSDKShareHelper * _Nullable)helper user:(ZoomVideoSDKUser * _Nullable)user shareAction:(ZoomVideoSDKShareAction*_Nullable)shareAction;
 
+/*!
+ @brief Invoked when a user failed to start sharing.
+ @param helper The pointer to a share helper object,
+ @param user The pointer to a user object.
+ */
+- (void)onFailedToStartShare:(ZoomVideoSDKShareHelper* _Nonnull)helper user:(ZoomVideoSDKUser* _Nullable)user;
 /*!
  @brief Callback: Invoked when a user makes changes to their live stream status.
  @param helper Live stream helper utility.
@@ -328,7 +335,14 @@
  @param enable YES means the user is able to annotate, NO means the user is not able to annotate.
  @param user The user who changed viewer's annotation privilege
  */
-- (void)onAnnotationPrivilegeChange:(BOOL)enable shareOwner:(ZoomVideoSDKUser *_Nullable)user;
+- (void)onAnnotationPrivilegeChange:(BOOL)enable shareOwner:(ZoomVideoSDKUser *_Nullable)user DEPRECATED_MSG_ATTRIBUTE("use -[ZoomVideoSDKDelegate onAnnotationPrivilegeChangeWithUser:shareAction:] instead");
+
+/*!
+ @brief Callback for the annotation privilege change.
+ @param user The pointer to a user object who changed viewer's annotation privilege. For more details, refer to {@link ZoomVideoSDKUser}.
+ @param shareAction The pointer to a share object. For more details, refer to {@link ZoomVideoSDKShareAction}.
+ */
+- (void)onAnnotationPrivilegeChangeWithUser:(ZoomVideoSDKUser *_Nullable)user shareAction:(ZoomVideoSDKShareAction*_Nullable)shareAction;
 
 /**
  @brief Callback event for the subscribed user's video fail reason.
@@ -344,7 +358,15 @@
  @param user The pointer to the user whose view we would like to subscribe. For more details, refer to {@link ZoomVideoSDKUser}.
  @param view The view that failed to subscribe.
  */
-- (void)onShareCanvasSubscribeFail:(ZoomVideoSDKSubscribeFailReason)failReason user:(ZoomVideoSDKUser *_Nullable)user view:(UIView *_Nullable)view;
+- (void)onShareCanvasSubscribeFail:(ZoomVideoSDKSubscribeFailReason)failReason user:(ZoomVideoSDKUser *_Nullable)user view:(UIView *_Nullable)view DEPRECATED_MSG_ATTRIBUTE("use -[ZoomVideoSDKDelegate onShareCanvasSubscribeFailWithUser:view:shareAction:] instead");
+
+/**
+ @brief Callback event for the share canvas that failed to subscribe.
+ @param user The pointer to the user object whose view we would like to subscribe to. For more details, refer to {@link ZoomVideoSDKUser}.
+ @param view The view that failed to subscribe.
+ @param shareAction The pointer to a share object. For more details, refer to {@link ZoomVideoSDKShareAction}.
+ */
+- (void)onShareCanvasSubscribeFailWithUser:(ZoomVideoSDKUser *_Nullable)user view:(UIView *_Nullable)view shareAction:(ZoomVideoSDKShareAction*_Nullable)shareAction;
 
 /**
  @brief Invoked when send file status make change.
@@ -372,6 +394,46 @@
  * @param userList List of users who has been spotlighted.
  */
 - (void)onSpotlightVideoChanged:(ZoomVideoSDKVideoHelper * _Nullable)videoHelper userList:(NSArray <ZoomVideoSDKUser *>* _Nullable)userList;
+
+/**
+ * @brief Callback event of binds the incoming live stream.
+ * @param helper Incoming live stream helper utility.
+ * @param success YES is success, otherwise NO.
+ * @param streamKeyID Corresponding stream key ID.
+ */
+- (void)onBindIncomingLiveStreamResponse:(ZoomVideoSDKIncomingLiveStreamHelper * _Nullable)helper success:(BOOL)success streamKeyID:(NSString *_Nullable)streamKeyID;
+
+/**
+ * @brief Callback event of unbinds the incoming live stream.
+ * @param helper Incoming live stream helper utility.
+ * @param success YES is success, otherwise NO.
+ * @param streamKeyID Corresponding stream key ID.
+ */
+- (void)onUnbindIncomingLiveStreamResponse:(ZoomVideoSDKIncomingLiveStreamHelper * _Nullable)helper success:(BOOL)success streamKeyID:(NSString *_Nullable)streamKeyID;
+
+/**
+ * @brief Callback event of gets the streams status.
+ * @param helper Incoming live stream helper utility.
+ * @param success YES is success, otherwise NO.
+ * @param streamsStatusList The streams status list.
+ */
+- (void)onIncomingLiveStreamStatusResponse:(ZoomVideoSDKIncomingLiveStreamHelper * _Nullable)helper success:(BOOL)success streamsStatusList:(NSArray<ZoomVideoSDKIncomingLiveStreamStatus *> *_Nullable)streamsStatusList;
+
+/**
+ * @brief Callback event of starts the binded stream.
+ * @param helper Incoming live stream helper utility.
+ * @param success YES is success, otherwise NO.
+ * @param streamKeyID Corresponding stream key ID.
+ */
+- (void)onStartIncomingLiveStreamResponse:(ZoomVideoSDKIncomingLiveStreamHelper * _Nullable)helper success:(BOOL)success streamKeyID:(NSString *_Nullable)streamKeyID;
+
+/**
+ * @brief Callback event of stops the binded stream.
+ * @param helper Incoming live stream helper utility.
+ * @param success YES is success, otherwise NO.
+ * @param streamKeyID Corresponding stream key ID.
+ */
+- (void)onStopIncomingLiveStreamResponse:(ZoomVideoSDKIncomingLiveStreamHelper * _Nullable)helper success:(BOOL)success streamKeyID:(NSString *_Nullable)streamKeyID;
 
 #pragma mark - external camera change -
 /**

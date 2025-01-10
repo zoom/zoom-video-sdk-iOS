@@ -432,6 +432,16 @@ typedef NS_ENUM(NSUInteger, ZoomVideoSDKSubscribeFailReason) {
     ZoomVideoSDKSubscribeFailReason_HasSubscribeOneShare, // try to subscribe the second share
 };
 
+typedef NS_ENUM(NSUInteger,ZoomVideoSDKShareType)
+{
+    ZoomVideoSDKShareType_None,
+    //Application or desktop share.
+    ZoomVideoSDKShareType_Normal,
+    //Pure computer audio share.
+    ZoomVideoSDKShareType_PureAudio,
+};
+
+
 /**
  * @brief Enumerations of the type for chat Privilege type
  */

@@ -3,7 +3,7 @@
 //  ZoomVideoSDK
 //
 //  Created by Zoom Video Communications on 2018/12/26.
-//  Copyright © 2018 Zoom Video Communications, Inc. All rights reserved.
+//  Copyright © Zoom Video Communications, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -41,17 +41,60 @@
 
 @interface ZoomVideoSDKIncomingLiveStreamStatus : NSObject
 /*!
- @brief The incoming live stream id.
+ @brief The incoming live stream ID.
  */
 @property(nonatomic, copy) NSString* _Nullable streamKeyID;
 /**
- @brief Is the streaming software(such as OBS) connected to the zoom platform.
+ @brief Is the streaming software(such as OBS) connected to the Zoom platform?
  */
 @property(nonatomic, assign) BOOL isRTMPConnected;
 /**
- @brief Has the video stream been pushed to the session.
+ @brief Has the video stream been pushed to the session?
  */
 @property(nonatomic, assign) BOOL isStreamPushed;
+
+@end
+
+@interface ZoomVideoSDKIncomingLiveStreamHelper : NSObject
+/*!
+ @brief Bind incoming live stream with a stream key ID.
+ @param streamKeyID The stream key ID to bind.
+ @return If the function succeeds, it will return Errors_Success.
+ @warning Only host can bind incoming live stream.
+ */
+- (ZoomVideoSDKError)bindIncomingLiveStream:(NSString *_Nullable)streamKeyID;
+
+/*!
+ @brief Unbind the binded incoming live stream.
+ @param streamKeyID The stream key ID to bind.
+ @return If the function succeeds, it will return Errors_Success.
+ @warning Only host can unbind incoming live stream.
+ */
+- (ZoomVideoSDKError)unbindIncomingLiveStream:(NSString *_Nullable)streamKeyID;
+
+/*!
+ @brief Get the status of binded streams.
+ @note Will receive callback "-onIncomingLiveStreamStatusResponse:"
+ @return If the function succeeds, it will return Errors_Success.
+ @warning Only host can get incoming live stream status.
+ */
+- (ZoomVideoSDKError)getIncomingLiveStreamStatus;
+
+/**
+ @brief Start the binded stream as a special participant.
+ @param streamKeyID The stream key ID to bind.
+ @return If the function succeeds, it will return Errors_Success.
+ @warning Only host can start incoming live stream.
+ */
+- (ZoomVideoSDKError)startIncomingLiveStream:(NSString *_Nullable)streamKeyID;
+
+/*!
+ @brief Stop the binded stream as a special participant.
+ @param streamKeyID The stream key ID to bind.
+ @return If the function succeeds, it will return Errors_Success.
+ @warning Only host can stop incoming live stream.
+ */
+- (ZoomVideoSDKError)stopIncomingLiveStream:(NSString *_Nullable)streamKeyID;
 
 @end
 
