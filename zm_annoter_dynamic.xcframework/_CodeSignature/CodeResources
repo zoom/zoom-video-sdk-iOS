@@ -10,7 +10,7 @@
 		</data>
 		<key>ios-arm64/zm_annoter_dynamic.framework/Headers/anno_base.h</key>
 		<data>
-		ivzMjosZvofQHf1GbG6qJlC9rvY=
+		W4HKAD8yWPdYPd40giDNIdSf5GI=
 		</data>
 		<key>ios-arm64/zm_annoter_dynamic.framework/Headers/zm_annoter_dynamic.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>ios-arm64/zm_annoter_dynamic.framework/Info.plist</key>
 		<data>
-		T5cjCH3a4Gf66NCMDaXh83zsLcc=
+		B7tbTyxNHyeuSeD5sChv/oJfv5o=
 		</data>
 		<key>ios-arm64/zm_annoter_dynamic.framework/zm_annoter_dynamic</key>
 		<data>
-		rBwEULywyiFRpZVNLxnrAW3Jsoc=
+		vo2rtys6lIxzOnSMsFFgin4HHTE=
 		</data>
 		<key>ios-arm64_x86_64-simulator/zm_annoter_dynamic.framework/Headers/anno.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/zm_annoter_dynamic.framework/Headers/anno_base.h</key>
 		<data>
-		ivzMjosZvofQHf1GbG6qJlC9rvY=
+		W4HKAD8yWPdYPd40giDNIdSf5GI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/zm_annoter_dynamic.framework/Headers/zm_annoter_dynamic.h</key>
 		<data>
@@ -38,15 +38,15 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/zm_annoter_dynamic.framework/Info.plist</key>
 		<data>
-		zt1vxAdmkn1aPWr5QcyVj0W+jeA=
+		4oo/h0JIv3FPXaEY2PkkprO3Wag=
 		</data>
 		<key>ios-arm64_x86_64-simulator/zm_annoter_dynamic.framework/_CodeSignature/CodeResources</key>
 		<data>
-		YXYSu9bUvUGxUbLc0vZUP2KYuxg=
+		9SvEd+3HdiOGUk6dFiqFrClMVpM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/zm_annoter_dynamic.framework/zm_annoter_dynamic</key>
 		<data>
-		dvvNXcT1ZC1DueSCkY8wYUBiPdk=
+		i9YdvGmgYIfFAs1XZtY9ggqPw9w=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -66,11 +66,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ivzMjosZvofQHf1GbG6qJlC9rvY=
+			W4HKAD8yWPdYPd40giDNIdSf5GI=
 			</data>
 			<key>hash2</key>
 			<data>
-			cnpyAY1YVIw8dcqRwiobpoK0U31f5QnVs/h7nCQYflQ=
+			0yCtOXKAsuPsHqT5VwrgcOMgM+Ce8nMMVhhdqnxMCU4=
 			</data>
 		</dict>
 		<key>ios-arm64/zm_annoter_dynamic.framework/Headers/zm_annoter_dynamic.h</key>
@@ -88,22 +88,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			T5cjCH3a4Gf66NCMDaXh83zsLcc=
+			B7tbTyxNHyeuSeD5sChv/oJfv5o=
 			</data>
 			<key>hash2</key>
 			<data>
-			QCIGoyvR995idZhDuBqJ3cu4LZ/BI1JRAljGLOiqad8=
+			8I11ySaXinpqAheoU5bi6V/WtJYxIu4ZmRS5GrwccHw=
 			</data>
 		</dict>
 		<key>ios-arm64/zm_annoter_dynamic.framework/zm_annoter_dynamic</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rBwEULywyiFRpZVNLxnrAW3Jsoc=
+			vo2rtys6lIxzOnSMsFFgin4HHTE=
 			</data>
 			<key>hash2</key>
 			<data>
-			VqCcajQp3UCARAEZXAfcftqQReZN6nentt/m6kXHA9M=
+			zi0EODa3rVnoqtRxaLc1+S1QoUH9bygLqrjjexAkk7A=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/zm_annoter_dynamic.framework/Headers/anno.h</key>
@@ -121,11 +121,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ivzMjosZvofQHf1GbG6qJlC9rvY=
+			W4HKAD8yWPdYPd40giDNIdSf5GI=
 			</data>
 			<key>hash2</key>
 			<data>
-			cnpyAY1YVIw8dcqRwiobpoK0U31f5QnVs/h7nCQYflQ=
+			0yCtOXKAsuPsHqT5VwrgcOMgM+Ce8nMMVhhdqnxMCU4=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/zm_annoter_dynamic.framework/Headers/zm_annoter_dynamic.h</key>
@@ -143,33 +143,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zt1vxAdmkn1aPWr5QcyVj0W+jeA=
+			4oo/h0JIv3FPXaEY2PkkprO3Wag=
 			</data>
 			<key>hash2</key>
 			<data>
-			IV51px20Iu3Bphsx/bRVQ46iLv/wwEjItLdXHZpw/JE=
+			zuxSSciM721Oq2cikYcoBBO94O945pPnhU60wVZByyw=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/zm_annoter_dynamic.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YXYSu9bUvUGxUbLc0vZUP2KYuxg=
+			9SvEd+3HdiOGUk6dFiqFrClMVpM=
 			</data>
 			<key>hash2</key>
 			<data>
-			LELMCs0gYVcpaGYMfTsRrPGi4j8FBsKXCgkGlMPvvCE=
+			hdxuMK0ZdIFi6Vh+fIOtp8rmqxvdXStmlPYldwIu9pU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/zm_annoter_dynamic.framework/zm_annoter_dynamic</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dvvNXcT1ZC1DueSCkY8wYUBiPdk=
+			i9YdvGmgYIfFAs1XZtY9ggqPw9w=
 			</data>
 			<key>hash2</key>
 			<data>
-			nBnuUvxnneqYCxq0svLyGKeOJSKcBmi8XN5S5WTDLIs=
+			S30fASo/zlpfKtUczUiwkmyjpl+FcBYy7W7sYBqakuk=
 			</data>
 		</dict>
 	</dict>
