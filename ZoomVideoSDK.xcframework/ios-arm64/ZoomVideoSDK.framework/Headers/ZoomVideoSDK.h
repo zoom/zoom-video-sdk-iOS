@@ -298,6 +298,12 @@
  */
 - (ZoomVideoSDKLiveStreamHelper * _Nullable)getLiveStreamHelper;
 
+/**
+ @brief Get incoming live stream helper object.
+ @return The object of ZoomVideoSDKLiveStreamHelper. See [ZoomVideoSDKIncomingLiveStreamHelper].
+ */
+- (ZoomVideoSDKIncomingLiveStreamHelper * _Nullable)getIncomingLiveStreamHelper;
+
 /*!
  @brief Returns an instance to send and receive chat messages within video SDK session participants.
  @return The object of ZoomVideoSDKChatHelper. See [ZoomVideoSDKChatHelper].

@@ -3,7 +3,7 @@
 //  ZoomVideoSDK
 //
 //  Created by Zoom Video Communications on 2019/1/9.
-//  Copyright © 2019 Zoom Video Communications, Inc. All rights reserved.
+//  Copyright © Zoom Video Communications, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -76,7 +76,7 @@
  @param msgID The message ID.
  @return YES if the message can be deleted, otherwise NO.
  */
--(BOOL)canChatMessageBeDeleted:(NSString *__nonnull)msgID;
+- (BOOL)canChatMessageBeDeleted:(NSString *__nonnull)msgID;
 
 /*!
  @brief Call this method to delete a specific chat message from the Zoom server.

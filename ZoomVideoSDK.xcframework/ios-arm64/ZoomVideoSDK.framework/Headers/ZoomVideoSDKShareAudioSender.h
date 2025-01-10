@@ -2,8 +2,8 @@
 //  ZoomVideoSDKShareAudioSender.h
 //  ZoomVideoSDK
 //
-//  Created by Jackie Chen on 7/12/23.
-//  Copyright © 2023 Zoom Video Communications, Inc. All rights reserved.
+//  Created by Zoom on on 7/12/23.
+//  Copyright © Zoom Video Communications, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
