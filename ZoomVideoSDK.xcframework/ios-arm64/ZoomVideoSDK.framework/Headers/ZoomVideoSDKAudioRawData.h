@@ -17,7 +17,7 @@
 /*!
  @brief Pointer of audio buffer data.
  */
-@property (nonatomic, assign) char      *buffer;
+@property (nonatomic, assign, nullable) char      *buffer;
 
 /*!
  @brief Audio buffer data length.
@@ -33,6 +33,11 @@
  @brief Number of audio channels.
  */
 @property (nonatomic, assign) NSInteger channelNum;
+
+/*!
+ @brief TimeStamp of audio data.
+ */
+@property(nonatomic, strong, nullable)  NSDate *timeStamp;
 
 /*!
  @brief Determine if the reference count for the interface pointer can be increased.
