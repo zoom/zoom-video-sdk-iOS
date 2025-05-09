@@ -30,6 +30,9 @@
     "specificationVersion" : 1,
     "computePrecision" : "Float16",
     "isUpdatable" : "0",
+    "stateSchema" : [
+
+    ],
     "availability" : {
       "macOS" : "10.13",
       "tvOS" : "11.0",
@@ -38,22 +41,12 @@
       "iOS" : "11.0",
       "macCatalyst" : "11.0"
     },
-    "neuralNetworkLayerTypeHistogram" : {
-      "Concat" : 1,
-      "ActivationLinear" : 64,
-      "Flatten" : 3,
-      "ActivationSigmoidHard" : 32,
-      "Add" : 10,
-      "Convolution" : 49,
-      "InnerProduct" : 1
-    },
     "modelType" : {
       "name" : "MLModelType_neuralNetwork"
     },
     "userDefinedMetadata" : {
 
     },
-    "generatedClassName" : "hlm",
     "inputSchema" : [
       {
         "height" : "112",
@@ -68,6 +61,16 @@
         "name" : "inputs"
       }
     ],
+    "generatedClassName" : "hlm",
+    "neuralNetworkLayerTypeHistogram" : {
+      "Concat" : 1,
+      "ActivationLinear" : 64,
+      "Flatten" : 3,
+      "ActivationSigmoidHard" : 32,
+      "Add" : 10,
+      "Convolution" : 49,
+      "InnerProduct" : 1
+    },
     "method" : "predict"
   }
 ]

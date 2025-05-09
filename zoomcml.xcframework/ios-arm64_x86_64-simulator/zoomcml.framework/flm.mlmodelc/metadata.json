@@ -60,6 +60,9 @@
     "specificationVersion" : 4,
     "computePrecision" : "Float16",
     "isUpdatable" : "0",
+    "stateSchema" : [
+
+    ],
     "availability" : {
       "macOS" : "10.15",
       "tvOS" : "13.0",
@@ -68,15 +71,6 @@
       "iOS" : "13.0",
       "macCatalyst" : "13.0"
     },
-    "neuralNetworkLayerTypeHistogram" : {
-      "ReshapeStatic" : 8,
-      "Add" : 10,
-      "Clip" : 34,
-      "ConcatND" : 3,
-      "Convolution" : 52,
-      "ActivationSigmoid" : 2,
-      "InnerProduct" : 5
-    },
     "modelType" : {
       "name" : "MLModelType_neuralNetwork"
     },
@@ -84,7 +78,6 @@
       "com.github.apple.coremltools.version" : "6.3.0",
       "com.github.apple.coremltools.source" : "torch==2.4.1"
     },
-    "generatedClassName" : "flm",
     "inputSchema" : [
       {
         "height" : "112",
@@ -99,6 +92,16 @@
         "name" : "input_1"
       }
     ],
+    "generatedClassName" : "flm",
+    "neuralNetworkLayerTypeHistogram" : {
+      "ReshapeStatic" : 8,
+      "Add" : 10,
+      "Clip" : 34,
+      "ConcatND" : 3,
+      "Convolution" : 52,
+      "InnerProduct" : 5,
+      "ActivationSigmoid" : 2
+    },
     "method" : "predict"
   }
 ]
