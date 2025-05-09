@@ -344,6 +344,15 @@
  */
 - (void)onAnnotationPrivilegeChangeWithUser:(ZoomVideoSDKUser *_Nullable)user shareAction:(ZoomVideoSDKShareAction*_Nullable)shareAction;
 
+/*!
+ @brief Callback: Invoked when a user makes changes to their share content type, such as switching camera share to normal share.
+ Find the share type in {@link ZoomVideoSDKShareType}.
+ @param shareHelper share helper util
+ @param userInfo current start or stop share userInfo.
+ @param shareAction {@link ZoomVideoSDKShareAction}
+ */
+- (void)onShareContentChanged:(ZoomVideoSDKShareHelper *_Nullable)shareHelper user:(ZoomVideoSDKUser *_Nullable)user shareAction:(ZoomVideoSDKShareAction *_Nullable)shareAction;
+
 /**
  @brief Callback event for the subscribed user's video fail reason.
  @param failReason The fail reason. For more details, see {@link ZoomVideoSDKSubscribeFailReason}.
@@ -434,6 +443,14 @@
  * @param streamKeyID Corresponding stream key ID.
  */
 - (void)onStopIncomingLiveStreamResponse:(ZoomVideoSDKIncomingLiveStreamHelper * _Nullable)helper success:(BOOL)success streamKeyID:(NSString *_Nullable)streamKeyID;
+
+/*!
+ @brief Invoked when the share content size has changed.
+ @param helper The pointer to a share helper object, see {@link ZoomVideoSDKShareHelper}.
+ @param user The pointer to a user object who's share content size has changed, see {@link ZoomVideoSDKUser}.
+ @param shareAction The pointer to the ZoomVideoSDKShareAction object. For more details, refer to {@link ZoomVideoSDKShareAction}.
+ */
+- (void)onShareContentSizeChanged:(ZoomVideoSDKShareHelper * _Nullable)helper user:(ZoomVideoSDKUser * _Nullable)user shareAction:(ZoomVideoSDKShareAction*_Nullable)shareAction;
 
 #pragma mark - external camera change -
 /**

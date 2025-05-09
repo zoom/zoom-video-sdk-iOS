@@ -16,7 +16,13 @@
  @brief Whether annotation was disabled or not by the share owner.
  @return The result of it.
  */
-- (BOOL)isSenderDisableAnnotation;
+- (BOOL)isSenderDisableAnnotation DEPRECATED_MSG_ATTRIBUTE("use canDoAnnotation instead");
+
+/*!
+ @brief Whether the current user can do annotation on the share.
+ @return YES means the user can do annotation, otherwise can't.
+ */
+- (BOOL)canDoAnnotation;
 
 /*!
  @brief Starts annotation.

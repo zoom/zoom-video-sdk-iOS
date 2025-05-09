@@ -10,7 +10,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		sK0txTzgsrpsmAozQEsWFamwKtA=
+		9+FMQp68OhgLY/BiB1Y4CB03Bzk=
 		</data>
 		<key>afn_iOS_hori.mlmodelc/analytics/coremldata.bin</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>afn_iOS_hori.mlmodelc/metadata.json</key>
 		<data>
-		Cy2o8qyLsWgiVkuUBWs0EqZGLow=
+		kFDVetYjPisj1JsDcrLvBbMCKDQ=
 		</data>
 		<key>afn_iOS_hori.mlmodelc/model.espresso.weights</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>afn_iOS_vert.mlmodelc/metadata.json</key>
 		<data>
-		xbjEYvytfHPJagNOLRLc0vip+E0=
+		kXwyVesTaEfLkql1o8ImjNWerko=
 		</data>
 		<key>afn_iOS_vert.mlmodelc/model.espresso.weights</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>bgr_iOS_hori.mlmodelc/metadata.json</key>
 		<data>
-		j9H/rgB/TMGioNAw+QACvZ0iq5M=
+		jl1kOS+BvnSAFKQI9efwJ0XsZnM=
 		</data>
 		<key>bgr_iOS_hori.mlmodelc/model.espresso.weights</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>bgr_iOS_vert.mlmodelc/metadata.json</key>
 		<data>
-		krHwliyUb9O0hDNrWB154T/Mdvc=
+		WBHMRijRFI/gsZLn8PjMkre+Wcw=
 		</data>
 		<key>bgr_iOS_vert.mlmodelc/model.espresso.weights</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>flm.mlmodelc/metadata.json</key>
 		<data>
-		eNBwAIAP1D4MNXHpGRI4aS+oxoM=
+		UAAxKKJDgWsFsOfITvAAsDfRkcI=
 		</data>
 		<key>flm.mlmodelc/model.espresso.weights</key>
 		<data>
@@ -142,7 +142,7 @@
 		</data>
 		<key>hd.mlmodelc/metadata.json</key>
 		<data>
-		Sj94CEDCFHv6ecujI3Nni+0C7Hk=
+		02Xa+RH2vT1fpihQP78HbI07l9Q=
 		</data>
 		<key>hd.mlmodelc/model.espresso.weights</key>
 		<data>
@@ -166,7 +166,7 @@
 		</data>
 		<key>hlm.mlmodelc/metadata.json</key>
 		<data>
-		1PbMYWusZProN9Hw7ciegGY2/K0=
+		JxgJDi45/VwdDceDp+6lmP3PYDA=
 		</data>
 		<key>hlm.mlmodelc/model.espresso.weights</key>
 		<data>
@@ -190,7 +190,7 @@
 		</data>
 		<key>lip_sync.mlmodelc/metadata.json</key>
 		<data>
-		YSmu8Trq1WOXMYuAWOOQTqnuaSQ=
+		g3tPxJ0Vd5MDlkhtI3cHkOEODDY=
 		</data>
 		<key>lip_sync.mlmodelc/model.espresso.weights</key>
 		<data>
@@ -232,7 +232,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			G3U20ojT4uv3mKg/UBqorf4D1PwCmFY0UqrxABTnmLI=
+			X4fxcSKqeixRdOn+T3MgKb9jFlPkCbeKZ08oeaXz0mU=
 			</data>
 		</dict>
 		<key>afn_iOS_hori.mlmodelc/model.espresso.weights</key>
@@ -274,7 +274,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JP9Xqr0lLkR4WN3DqfbrqVjJg/R7f20C00iY1oW/Ing=
+			6KtS3f82YShkpxQ6F/2Wu56Tvdcc687kR5wGhTnxloA=
 			</data>
 		</dict>
 		<key>afn_iOS_vert.mlmodelc/model.espresso.weights</key>
@@ -316,7 +316,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FmWVgvmWJpHQTxf7J9MNwwiTHVJXmHF6SGHufeoC0JE=
+			2Vmc3WUHDvo5C3+vLzpFWwypvL6dT67Pc/NJmRufEyE=
 			</data>
 		</dict>
 		<key>bgr_iOS_hori.mlmodelc/model.espresso.weights</key>
@@ -358,7 +358,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wavPoVbp6Fn7ZlLw8zWmfcJxFBGvr8XGme+IcPOMquw=
+			EpJgWBz/MHPlUdTXPZJ8Qp1EvSei3FntgfgEed9PBLE=
 			</data>
 		</dict>
 		<key>bgr_iOS_vert.mlmodelc/model.espresso.weights</key>
@@ -400,7 +400,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BAvFjQxatRNoxymMObjradtXZTlOkgdP3eV+zQIYV/c=
+			9y8Wc0ho+A/i81xXeRH4+hCVH5lgY6b7D6pNeri1cck=
 			</data>
 		</dict>
 		<key>flm.mlmodelc/model.espresso.weights</key>
@@ -442,7 +442,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yG96wSuu8uP0O/8rwgZyQccYXQgkyNeiSUA5r+g+QQc=
+			7tZlvCmEl6PvElOKYAuJAsUK1t5mwSdbSGtoo+1/Q7s=
 			</data>
 		</dict>
 		<key>hd.mlmodelc/model.espresso.weights</key>
@@ -484,7 +484,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UZJ9cxps+m93PyYqXw5gaGR673NxSju/uB4m41RfFS4=
+			oGH6m5q7CE2dycAwdUhdzOrUU8P9mA0dvWns504QD78=
 			</data>
 		</dict>
 		<key>hlm.mlmodelc/model.espresso.weights</key>
@@ -526,7 +526,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/Ujfo+me6d34qd3DeoTKdcn7mTk21xAQ9KQFP9u2v5k=
+			4qozD8tVMe0337bXU+I/ZFQ8CkY8y8ssoCZzEEhNVgQ=
 			</data>
 		</dict>
 		<key>lip_sync.mlmodelc/model.espresso.weights</key>

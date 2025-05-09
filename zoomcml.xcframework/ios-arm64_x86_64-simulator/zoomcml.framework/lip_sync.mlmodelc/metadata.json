@@ -40,6 +40,9 @@
     "specificationVersion" : 1,
     "computePrecision" : "Float16",
     "isUpdatable" : "0",
+    "stateSchema" : [
+
+    ],
     "availability" : {
       "macOS" : "10.13",
       "tvOS" : "11.0",
@@ -48,24 +51,12 @@
       "iOS" : "11.0",
       "macCatalyst" : "11.0"
     },
-    "neuralNetworkLayerTypeHistogram" : {
-      "Concat" : 6,
-      "LoadConstant" : 16,
-      "Multiply" : 55,
-      "UnaryInverse" : 16,
-      "Add" : 70,
-      "ActivationTanh" : 26,
-      "Convolution" : 27,
-      "ActivationSigmoid" : 39,
-      "Slice" : 82
-    },
     "modelType" : {
       "name" : "MLModelType_neuralNetwork"
     },
     "userDefinedMetadata" : {
 
     },
-    "generatedClassName" : "lip_sync",
     "inputSchema" : [
       {
         "hasShapeFlexibility" : "0",
@@ -98,6 +89,18 @@
         "type" : "MultiArray"
       }
     ],
+    "generatedClassName" : "lip_sync",
+    "neuralNetworkLayerTypeHistogram" : {
+      "LoadConstant" : 16,
+      "Concat" : 6,
+      "Multiply" : 55,
+      "UnaryInverse" : 16,
+      "Add" : 70,
+      "ActivationTanh" : 26,
+      "Convolution" : 27,
+      "Slice" : 82,
+      "ActivationSigmoid" : 39
+    },
     "method" : "predict"
   }
 ]

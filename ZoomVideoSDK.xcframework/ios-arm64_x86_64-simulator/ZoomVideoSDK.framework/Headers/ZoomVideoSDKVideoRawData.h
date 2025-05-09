@@ -18,22 +18,22 @@
 /*!
  @brief The YUVI420 Y buffer. The Y component represents the luma or brightness values.
  */
-@property (nonatomic, assign) char *yBuffer;
+@property (nonatomic, assign, nullable) char * yBuffer;
 
 /*!
  @brief The YUVI420 U buffer. The U component represents the chroma values.
  */
-@property (nonatomic, assign) char *uBuffer;
+@property (nonatomic, assign, nullable) char *uBuffer;
 
 /*!
  @brief The YUVI420 V buffer. The Y component represents the chroma values.
  */
-@property (nonatomic, assign) char *vBuffer;
+@property (nonatomic, assign, nullable) char *vBuffer;
 
 /*!
  @brief The YUVI420 data buffer. The alpha component represents the chroma values.
  */
-@property (nonatomic, assign) char *alphaBuffer;
+@property (nonatomic, assign, nullable) char *alphaBuffer;
 
 /*!
  @brief the alpha buffer data length
@@ -59,6 +59,11 @@
  @brief The video raw data rotation.
  */
 @property (nonatomic, assign) ZoomVideoSDKVideoRawDataRotation rotation;
+
+/*!
+ @brief TimeStamp of video data.
+ */
+@property(nonatomic, strong, nullable)  NSDate *timeStamp;
 
 /*!
  @brief Determine if the reference count for accessing the raw data buffer can be increased.

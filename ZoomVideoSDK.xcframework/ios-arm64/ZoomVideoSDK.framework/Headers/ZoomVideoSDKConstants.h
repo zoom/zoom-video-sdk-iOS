@@ -102,6 +102,8 @@ typedef NS_ENUM(NSUInteger,ZoomVideoSDKError)
     Errors_Session_Share_You_Are_Not_Sharing,
     Errors_Session_Share_Type_Is_Not_Support,
     Errors_Session_Share_Internal_Error,
+    Errors_Session_Share_Camera_Video_Not_Start,
+    Errors_Session_Share_Camera_Conflict_With_Video_Effects,
     
     Errors_Session_Filetransfer_UnknownError = 7500,
     Errors_Session_Filetransfer_FileTypeBlocked,
@@ -111,7 +113,7 @@ typedef NS_ENUM(NSUInteger,ZoomVideoSDKError)
     Errors_Spotlight_ToMuchSpotlightedUsers,
     Errors_Spotlight_UserCannotBeSpotlighted,
     Errors_Spotlight_UserWithoutVideo,
-    Errors_Spotlight_UserNotSpotlighted
+    Errors_Spotlight_UserNotSpotlighted,
 };
 
 /*!
@@ -435,10 +437,12 @@ typedef NS_ENUM(NSUInteger, ZoomVideoSDKSubscribeFailReason) {
 typedef NS_ENUM(NSUInteger,ZoomVideoSDKShareType)
 {
     ZoomVideoSDKShareType_None,
-    //Application or desktop share.
+    /// Application or desktop share.
     ZoomVideoSDKShareType_Normal,
-    //Pure computer audio share.
+    /// Pure computer audio share.
     ZoomVideoSDKShareType_PureAudio,
+    /// Camera share
+    ZoomVideoSDKShareType_Camera,
 };
 
 
